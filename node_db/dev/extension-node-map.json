@@ -769,7 +769,7 @@
             "title_aux": "ssd-1b-sdcfy"
         }
     ],
-    "https://github.com/ltdrdata/SD-CFY-Workflow-Component": [
+    "https://github.com/Kotomiya07/SD-CFY-Workflow-Component": [
         [
             "ComboToString",
             "ExecutionBlocker",

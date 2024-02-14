@@ -3,7 +3,7 @@
         {
             "author": "#NOTICE_1.13",
             "title": "NOTICE: This channel is not the default channel.",
-            "reference": "https://github.com/ltdrdata/SD-CFY-Manager",
+            "reference": "https://github.com/Kotomiya07/SD-CFY-Manager",
             "files": [],
             "install_type": "git-clone",
             "description": "If you see this message, your SD-CFY-Manager is outdated.\nDev channel provides only the list of the developing nodes. If you want to find the complete node list, please go to the Default channel."
@@ -503,9 +503,9 @@
         {
             "author": "Dr.Lt.Data",
             "title": "SD-CFY-Workflow-Component [WIP]",
-            "reference": "https://github.com/ltdrdata/SD-CFY-Workflow-Component",
+            "reference": "https://github.com/Kotomiya07/SD-CFY-Workflow-Component",
             "files": [
-                "https://github.com/ltdrdata/SD-CFY-Workflow-Component"
+                "https://github.com/Kotomiya07/SD-CFY-Workflow-Component"
             ],
             "install_type": "git-clone",
             "description": "This extension provides the capability to use SD-CFY Workflow as a component and the ability to use the Image Refiner functionality based on components. NOTE: This is an experimental extension feature with no consideration for backward compatibility and can be highly unstable."

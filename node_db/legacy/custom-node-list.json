@@ -3,7 +3,7 @@
         {
             "author": "#NOTICE_1.13",
             "title": "NOTICE: This channel is not the default channel.",
-            "reference": "https://github.com/ltdrdata/SD-CFY-Manager",
+            "reference": "https://github.com/Kotomiya07/SD-CFY-Manager",
             "files": [],
             "install_type": "git-clone",
             "description": "If you see this message, your SD-CFY-Manager is outdated.\nLegacy channel provides only the list of the deprecated nodes. If you want to find the complete node list, please go to the Default channel."
@@ -135,7 +135,7 @@
             "title": "CheckpointTomeLoader",
             "reference": "https://github.com/asd417/tomeSD_for_Comfy",
             "files": [
-                "https://github.com/ltdrdata/SD-CFY-tomeSD-installer"
+                "https://github.com/Kotomiya07/SD-CFY-tomeSD-installer"
             ],
             "install_type": "git-clone",
             "description": "tomeSD(https://github.com/dbolya/tomesd) applied to SD-CFY stable diffusion UI using custom node. <B>Note:In vanilla SD-CFY, the TomePatchModel node is provided as a built-in feature.</B>"

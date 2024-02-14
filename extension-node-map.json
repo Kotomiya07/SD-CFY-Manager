@@ -5962,7 +5962,7 @@
             "title_aux": "SD-CFYJasonNode"
         }
     ],
-    "https://github.com/ltdrdata/SD-CFY-Impact-Pack": [
+    "https://github.com/Kotomiya07/SD-CFY-Impact-Pack": [
         [
             "AddMask",
             "BasicPipeToDetailerPipe",
@@ -6149,7 +6149,7 @@
             "title_aux": "SD-CFY Impact Pack"
         }
     ],
-    "https://github.com/ltdrdata/SD-CFY-Inspire-Pack": [
+    "https://github.com/Kotomiya07/SD-CFY-Inspire-Pack": [
         [
             "AnimeLineArt_Preprocessor_Provider_for_SEGS //Inspire",
             "ApplyRegionalIPAdapters //Inspire",

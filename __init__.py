@@ -193,7 +193,7 @@ def read_config():
                     'preview_method': default_conf['preview_method'] if 'preview_method' in default_conf else get_current_preview_method(),
                     'badge_mode': default_conf['badge_mode'] if 'badge_mode' in default_conf else 'none',
                     'git_exe': default_conf['git_exe'] if 'git_exe' in default_conf else '',
-                    'channel_url': default_conf['channel_url'] if 'channel_url' in default_conf else 'https://raw.githubusercontent.com/ltdrdata/SD-CFY-Manager/main',
+                    'channel_url': default_conf['channel_url'] if 'channel_url' in default_conf else 'https://raw.githubusercontent.com/Kotomiya07/SD-CFY-Manager/main',
                     'share_option': default_conf['share_option'] if 'share_option' in default_conf else 'all',
                     'bypass_ssl': default_conf['bypass_ssl'] if 'bypass_ssl' in default_conf else False,
                     'file_logging': default_conf['file_logging'] if 'file_logging' in default_conf else True,
@@ -208,7 +208,7 @@ def read_config():
             'preview_method': get_current_preview_method(),
             'badge_mode': 'none',
             'git_exe': '',
-            'channel_url': 'https://raw.githubusercontent.com/ltdrdata/SD-CFY-Manager/main',
+            'channel_url': 'https://raw.githubusercontent.com/Kotomiya07/SD-CFY-Manager/main',
             'share_option': 'all',
             'bypass_ssl': False,
             'file_logging': True,
@@ -2337,7 +2337,7 @@ cm_global.register_api('cm.try-install-custom-node', confirm_try_install)
 import asyncio
 async def default_cache_update():
     async def get_cache(filename):
-        uri = 'https://raw.githubusercontent.com/ltdrdata/SD-CFY-Manager/main/' + filename
+        uri = 'https://raw.githubusercontent.com/Kotomiya07/SD-CFY-Manager/main/' + filename
         cache_uri = str(simple_hash(uri)) + '_' + filename
         cache_uri = os.path.join(cache_dir, cache_uri)
 

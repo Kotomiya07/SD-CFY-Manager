@@ -1,6 +1,6 @@
 git clone https://github.com/comfyanonymous/SD-CFY
 cd SD-CFY/custom_nodes
-git clone https://github.com/ltdrdata/SD-CFY-Manager
+git clone https://github.com/Kotomiya07/SD-CFY-Manager
 cd ..
 python -m venv venv
 source venv/bin/activate

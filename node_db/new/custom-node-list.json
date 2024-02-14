@@ -3,7 +3,7 @@
         {
             "author": "#NOTICE_1.13",
             "title": "NOTICE: This channel is not the default channel.",
-            "reference": "https://github.com/ltdrdata/SD-CFY-Manager",
+            "reference": "https://github.com/Kotomiya07/SD-CFY-Manager",
             "files": [],
             "install_type": "git-clone",
             "description": "If you see this message, your SD-CFY-Manager is outdated.\nRecent channel provides only the list of the latest nodes. If you want to find the complete node list, please go to the Default channel.\nMaking LoRA has never been easier!"

@@ -3,9 +3,9 @@
         {
             "author": "Dr.Lt.Data",
             "title": "SD-CFY-Manager",
-            "reference": "https://github.com/ltdrdata/SD-CFY-Manager",
+            "reference": "https://github.com/Kotomiya07/SD-CFY-Manager",
             "files": [
-                "https://github.com/ltdrdata/SD-CFY-Manager"
+                "https://github.com/Kotomiya07/SD-CFY-Manager"
             ],
             "install_type": "git-clone",
             "description": "SD-CFY-Manager itself is also a custom node."
@@ -13,9 +13,9 @@
         {
             "author": "Dr.Lt.Data",
             "title": "SD-CFY Impact Pack",
-            "reference": "https://github.com/ltdrdata/SD-CFY-Impact-Pack",
+            "reference": "https://github.com/Kotomiya07/SD-CFY-Impact-Pack",
             "files": [
-                "https://github.com/ltdrdata/SD-CFY-Impact-Pack"
+                "https://github.com/Kotomiya07/SD-CFY-Impact-Pack"
             ],
             "pip": ["ultralytics"],
             "install_type": "git-clone",
@@ -24,10 +24,10 @@
         {
             "author": "Dr.Lt.Data",
             "title": "SD-CFY Inspire Pack",
-            "reference": "https://github.com/ltdrdata/SD-CFY-Inspire-Pack",
+            "reference": "https://github.com/Kotomiya07/SD-CFY-Inspire-Pack",
             "nodename_pattern": "Inspire$",
             "files": [
-                "https://github.com/ltdrdata/SD-CFY-Inspire-Pack"
+                "https://github.com/Kotomiya07/SD-CFY-Inspire-Pack"
             ],
             "install_type": "git-clone",
             "description": "This extension provides various nodes to support Lora Block Weight and the Impact Pack. Provides many easily applicable regional features and applications for Variation Seed."
