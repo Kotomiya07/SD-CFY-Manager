@@ -1,14 +1,14 @@
 {
     "custom_nodes": [
         {
-            "author": "Dr.Lt.Data",
-            "title": "ComfyUI-Manager",
-            "reference": "https://github.com/ltdrdata/ComfyUI-Manager",
+            "author": "Kotomiya07",
+            "title": "SD-CFY-Manager",
+            "reference": "https://github.com/Kotomiya07/SD-CFY-Manager",
             "files": [
-                "https://github.com/ltdrdata/ComfyUI-Manager"
+                "https://github.com/Kotomiya07/SD-CFY-Manager"
             ],
             "install_type": "git-clone",
-            "description": "ComfyUI-Manager itself is also a custom node."
+            "description": "SD-CFY-Manager itself is also a custom node."
         },
         {
             "author": "Dr.Lt.Data",

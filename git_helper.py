@@ -139,10 +139,10 @@ def checkout_sdcfy_hash(target_hash):
 
     if commit_hash != target_hash:
         try:
-            print(f"CHECKOUT: ComfyUI [{target_hash}]")
+            print(f"CHECKOUT: SD-CFY [{target_hash}]")
             repo.git.checkout(target_hash)
         except git.GitCommandError as e:
-            print(f"Error checking out the ComfyUI: {str(e)}")
+            print(f"Error checking out the SD-CFY: {str(e)}")
 
 
 def checkout_custom_node_hash(git_custom_node_infos):
@@ -157,7 +157,7 @@ def checkout_custom_node_hash(git_custom_node_infos):
         repo_name_to_url[repo_name] = url
 
     for path in os.listdir(working_directory):
-        if path.endswith("ComfyUI-Manager"):
+        if path.endswith("SD-CFY-Manager"):
             continue
 
         fullpath = os.path.join(working_directory, path)
