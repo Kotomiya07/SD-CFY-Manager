@@ -1,1 +1,1 @@
-# CFY-Manager
+# CFY Manager
