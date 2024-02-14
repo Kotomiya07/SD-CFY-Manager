@@ -130,7 +130,7 @@ channel_list_path = os.path.join(comfyui_manager_path, 'channels.list')
 channel_dict = None
 channel_list = None
 
-from comfy.cli_args import args
+from sdcfy.cli_args import args
 import latent_preview
 
 
