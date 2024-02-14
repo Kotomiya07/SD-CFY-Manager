@@ -1,5 +1,5 @@
 {
-    "https://github.com/17Retoucher/SD-CFY_Fooocus": [
+    "https://github.com/17Retoucher/ComfyUI_Fooocus": [
         [
             "BasicScheduler",
             "CLIPLoader",
@@ -143,10 +143,10 @@
             "unCLIPConditioning"
         ],
         {
-            "title_aux": "SD-CFY_Fooocus"
+            "title_aux": "ComfyUI_Fooocus"
         }
     ],
-    "https://github.com/BadCafeCode/execution-inversion-demo-sdcfy": [
+    "https://github.com/BadCafeCode/execution-inversion-demo-comfyui": [
         [
             "AccumulateNode",
             "AccumulationGetItemNode",
@@ -180,10 +180,10 @@
             "WhileLoopOpen"
         ],
         {
-            "title_aux": "execution-inversion-demo-sdcfy"
+            "title_aux": "execution-inversion-demo-comfyui"
         }
     ],
-    "https://github.com/BlueDangerX/SD-CFY-BDXNodes": [
+    "https://github.com/BlueDangerX/ComfyUI-BDXNodes": [
         [
             "BDXTestInt",
             "ColorMatch",
@@ -207,10 +207,10 @@
         {
             "author": "BlueDangerX",
             "title": "BDXNodes",
-            "title_aux": "SD-CFY-BDXNodes [WIP]"
+            "title_aux": "ComfyUI-BDXNodes [WIP]"
         }
     ],
-    "https://github.com/Brandelan/SD-CFY_bd_customNodes": [
+    "https://github.com/Brandelan/ComfyUI_bd_customNodes": [
         [
             "BD Random Range",
             "BD Random Settings",
@@ -218,39 +218,39 @@
             "BD Settings"
         ],
         {
-            "title_aux": "SD-CFY_bd_customNodes"
+            "title_aux": "ComfyUI_bd_customNodes"
         }
     ],
-    "https://github.com/IvanZhd/sdcfy-codeformer": [
+    "https://github.com/IvanZhd/comfyui-codeformer": [
         [
             "RedBeanie_CustomImageInverter"
         ],
         {
-            "title_aux": "sdcfy-codeformer [WIP]"
+            "title_aux": "comfyui-codeformer [WIP]"
         }
     ],
-    "https://github.com/Jaxkr/sdcfy-terminal-command": [
+    "https://github.com/Jaxkr/comfyui-terminal-command": [
         [
             "Terminal"
         ],
         {
-            "title_aux": "sdcfy-terminal-command [UNSAFE]"
+            "title_aux": "comfyui-terminal-command [UNSAFE]"
         }
     ],
-    "https://github.com/Jordach/sdcfy-consistency-vae": [
+    "https://github.com/Jordach/comfy-consistency-vae": [
         [
             "Comfy_ConsistencyVAE"
         ],
         {
-            "title_aux": "sdcfy-consistency-vae"
+            "title_aux": "comfy-consistency-vae"
         }
     ],
-    "https://github.com/LarryJane491/SD-CFY-ModelUnloader": [
+    "https://github.com/LarryJane491/ComfyUI-ModelUnloader": [
         [
             "Model Unloader"
         ],
         {
-            "title_aux": "SD-CFY-ModelUnloader"
+            "title_aux": "ComfyUI-ModelUnloader"
         }
     ],
     "https://github.com/MrAdamBlack/CheckProgress": [
@@ -261,16 +261,16 @@
             "title_aux": "CheckProgress [WIP]"
         }
     ],
-    "https://github.com/PluMaZero/SD-CFY-SpaceFlower": [
+    "https://github.com/PluMaZero/ComfyUI-SpaceFlower": [
         [
             "SpaceFlower_HangulPrompt",
             "SpaceFlower_Prompt"
         ],
         {
-            "title_aux": "SD-CFY-SpaceFlower"
+            "title_aux": "ComfyUI-SpaceFlower"
         }
     ],
-    "https://github.com/Sai-SD-CFY/SD-CFY-MS-Nodes": [
+    "https://github.com/Sai-ComfyUI/ComfyUI-MS-Nodes": [
         [
             "FloatMath",
             "MS_Boolean",
@@ -282,7 +282,7 @@
             "VectorMath"
         ],
         {
-            "title_aux": "SD-CFY-MS-Nodes [WIP]"
+            "title_aux": "ComfyUI-MS-Nodes [WIP]"
         }
     ],
     "https://github.com/WSJUSA/Comfyui-StableSR": [
@@ -295,18 +295,18 @@
             "description": "This module enables StableSR in Comgfyui. Ported work of sd-webui-stablesr. Original work for Auotmaatic1111 version of this module and StableSR credit to LIightChaser and Jianyi Wang.",
             "nickname": "StableSR",
             "title": "StableSR",
-            "title_aux": "pre-sdcfy-stablsr"
+            "title_aux": "pre-comfyui-stablsr"
         }
     ],
-    "https://github.com/ZHO-ZHO-ZHO/SD-CFY-AnyText": [
+    "https://github.com/ZHO-ZHO-ZHO/ComfyUI-AnyText": [
         [
             "AnyTextNode_Zho"
         ],
         {
-            "title_aux": "SD-CFY-AnyText\uff08WIP\uff09"
+            "title_aux": "ComfyUI-AnyText\uff08WIP\uff09"
         }
     ],
-    "https://github.com/alt-key-project/sdcfy-dream-video-batches": [
+    "https://github.com/alt-key-project/comfyui-dream-video-batches": [
         [
             "Blended Transition [DVB]",
             "Calculation [DVB]",
@@ -346,7 +346,7 @@
             "title_aux": "Dream Project Video Batches [WIP]"
         }
     ],
-    "https://github.com/birnam/SD-CFY-GenData-Pack": [
+    "https://github.com/birnam/ComfyUI-GenData-Pack": [
         [
             "Checkpoint From String \ud83d\udc69\u200d\ud83d\udcbb",
             "Checkpoint Rerouter \ud83d\udc69\u200d\ud83d\udcbb",
@@ -370,16 +370,16 @@
             "title_aux": "Gen Data Tester [WIP]"
         }
     ],
-    "https://github.com/blepping/SD-CFY-sonar": [
+    "https://github.com/blepping/ComfyUI-sonar": [
         [
             "SamplerSonarEuler",
             "SamplerSonarEulerA"
         ],
         {
-            "title_aux": "SD-CFY-sonar (WIP)"
+            "title_aux": "ComfyUI-sonar (WIP)"
         }
     ],
-    "https://github.com/Kotomiya07/SD-CFY": [
+    "https://github.com/comfyanonymous/ComfyUI": [
         [
             "BasicScheduler",
             "CLIPLoader",
@@ -522,10 +522,10 @@
             "unCLIPConditioning"
         ],
         {
-            "title_aux": "SD-CFY"
+            "title_aux": "ComfyUI"
         }
     ],
-    "https://github.com/dnl13/SD-CFY-dnl13-seg": [
+    "https://github.com/dnl13/ComfyUI-dnl13-seg": [
         [
             "Automatic Segmentation (dnl13)",
             "BatchSelector (dnl13)",
@@ -536,10 +536,10 @@
             "SAM Model Loader (dnl13)"
         ],
         {
-            "title_aux": "SD-CFY-dnl13-seg"
+            "title_aux": "ComfyUI-dnl13-seg"
         }
     ],
-    "https://github.com/doucx/SD-CFY_WcpD_Utility_Kit": [
+    "https://github.com/doucx/ComfyUI_WcpD_Utility_Kit": [
         [
             "BlackImage",
             "CopyImage(Wayland)",
@@ -548,10 +548,10 @@
             "YamlToPrompt"
         ],
         {
-            "title_aux": "SD-CFY_WcpD_Utility_Kit"
+            "title_aux": "ComfyUI_WcpD_Utility_Kit"
         }
     ],
-    "https://github.com/eigenpunk/SD-CFY-audio": [
+    "https://github.com/eigenpunk/ComfyUI-audio": [
         [
             "ApplyVoiceFixer",
             "BatchAudio",
@@ -576,26 +576,26 @@
             "VALLEXVoicePromptLoader"
         ],
         {
-            "title_aux": "SD-CFY-audio"
+            "title_aux": "ComfyUI-audio"
         }
     ],
-    "https://github.com/flowtyone/sdcfy-flowty-lcm": [
+    "https://github.com/flowtyone/comfyui-flowty-lcm": [
         [
             "LCMSampler"
         ],
         {
-            "title_aux": "sdcfy-flowty-lcm"
+            "title_aux": "comfyui-flowty-lcm"
         }
     ],
-    "https://github.com/foglerek/sdcfy-cem-tools": [
+    "https://github.com/foglerek/comfyui-cem-tools": [
         [
             "ProcessImageBatch"
         ],
         {
-            "title_aux": "sdcfy-cem-tools"
+            "title_aux": "comfyui-cem-tools"
         }
     ],
-    "https://github.com/gameltb/SD-CFY_stable_fast": [
+    "https://github.com/gameltb/ComfyUI_stable_fast": [
         [
             "ApplyStableFastUnet",
             "ApplyTensorRTControlNet",
@@ -603,7 +603,7 @@
             "ApplyTensorRTVaeDecoder"
         ],
         {
-            "title_aux": "SD-CFY_stable_fast"
+            "title_aux": "ComfyUI_stable_fast"
         }
     ],
     "https://github.com/ilovejohnwhite/UncleBillyGoncho": [
@@ -625,7 +625,7 @@
             "title_aux": "TatToolkit"
         }
     ],
-    "https://github.com/jn-jairo/jn_node_suite_sdcfy": [
+    "https://github.com/jn-jairo/jn_node_suite_comfyui": [
         [
             "JN_AreaInfo",
             "JN_AreaNormalize",
@@ -699,18 +699,18 @@
             "JN_VAEPatch"
         ],
         {
-            "title_aux": "jn_node_suite_sdcfy [WIP]"
+            "title_aux": "jn_node_suite_comfyui [WIP]"
         }
     ],
-    "https://github.com/kadirnar/SD-CFY-Transformers": [
+    "https://github.com/kadirnar/ComfyUI-Transformers": [
         [
             "DepthEstimationPipeline"
         ],
         {
-            "title_aux": "SD-CFY-Transformers"
+            "title_aux": "ComfyUI-Transformers"
         }
     ],
-    "https://github.com/kadirnar/sdcfy_helpers": [
+    "https://github.com/kadirnar/comfyui_helpers": [
         [
             "CLIPSeg",
             "CircularVAEDecode",
@@ -740,36 +740,36 @@
             "NoisyLatentPerlin"
         ],
         {
-            "title_aux": "sdcfy_helpers"
+            "title_aux": "comfyui_helpers"
         }
     ],
-    "https://github.com/kappa54m/SD-CFY_Usability": [
+    "https://github.com/kappa54m/ComfyUI_Usability": [
         [
             "LoadImageByPath",
             "LoadImageDedup"
         ],
         {
-            "title_aux": "SD-CFY_Usability (WIP)"
+            "title_aux": "ComfyUI_Usability (WIP)"
         }
     ],
-    "https://github.com/komojini/SD-CFY_Prompt_Template_CustomNodes/raw/main/prompt_with_template.py": [
+    "https://github.com/komojini/ComfyUI_Prompt_Template_CustomNodes/raw/main/prompt_with_template.py": [
         [
             "ObjectPromptWithTemplate",
             "PromptWithTemplate"
         ],
         {
-            "title_aux": "SD-CFY_Prompt_Template_CustomNodes"
+            "title_aux": "ComfyUI_Prompt_Template_CustomNodes"
         }
     ],
-    "https://github.com/laksjdjf/ssd-1b-sdcfy": [
+    "https://github.com/laksjdjf/ssd-1b-comfyui": [
         [
             "SSD-1B-Loader"
         ],
         {
-            "title_aux": "ssd-1b-sdcfy"
+            "title_aux": "ssd-1b-comfyui"
         }
     ],
-    "https://github.com/Kotomiya07/SD-CFY-Workflow-Component": [
+    "https://github.com/ltdrdata/ComfyUI-Workflow-Component": [
         [
             "ComboToString",
             "ExecutionBlocker",
@@ -784,10 +784,10 @@
             "TensorToCPU"
         ],
         {
-            "title_aux": "SD-CFY-Workflow-Component [WIP]"
+            "title_aux": "ComfyUI-Workflow-Component [WIP]"
         }
     ],
-    "https://github.com/nidefawl/SD-CFY-nidefawl": [
+    "https://github.com/nidefawl/ComfyUI-nidefawl": [
         [
             "BlendImagesWithBoundedMasks",
             "CropImagesWithMasks",
@@ -810,10 +810,10 @@
             "gcLatentTunnel"
         ],
         {
-            "title_aux": "SD-CFY-nidefawl [UNSAFE]"
+            "title_aux": "ComfyUI-nidefawl [UNSAFE]"
         }
     ],
-    "https://github.com/nkchocoai/SD-CFY-PromptUtilities": [
+    "https://github.com/nkchocoai/ComfyUI-PromptUtilities": [
         [
             "PromptUtilitiesConstString",
             "PromptUtilitiesConstStringMultiLine",
@@ -823,10 +823,10 @@
             "PromptUtilitiesLoadPresetAdvanced"
         ],
         {
-            "title_aux": "SD-CFY-PromptUtilities"
+            "title_aux": "ComfyUI-PromptUtilities"
         }
     ],
-    "https://github.com/oyvindg/SD-CFY-TrollSuite": [
+    "https://github.com/oyvindg/ComfyUI-TrollSuite": [
         [
             "BinaryImageMask",
             "ImagePadding",
@@ -835,10 +835,10 @@
             "TransparentImage"
         ],
         {
-            "title_aux": "SD-CFY-TrollSuite"
+            "title_aux": "ComfyUI-TrollSuite"
         }
     ],
-    "https://github.com/phineas-pta/sdcfy-trt-test": [
+    "https://github.com/phineas-pta/comfy-trt-test": [
         [
             "TRT_Lora_Loader",
             "TRT_Torch_Compile",
@@ -846,10 +846,10 @@
         ],
         {
             "author": "PTA",
-            "description": "attempt to use TensorRT with SD-CFY, not yet compatible with SD-CFY-Manager, see README for instructions",
-            "nickname": "sdcfy trt test",
-            "title": "TensorRT with SD-CFY (work-in-progress)",
-            "title_aux": "sdcfy-trt-test [WIP]"
+            "description": "attempt to use TensorRT with ComfyUI, not yet compatible with ComfyUI-Manager, see README for instructions",
+            "nickname": "comfy trt test",
+            "title": "TensorRT with ComfyUI (work-in-progress)",
+            "title_aux": "comfy-trt-test [WIP]"
         }
     ],
     "https://github.com/poisenbery/NudeNet-Detector-Provider": [
@@ -860,7 +860,7 @@
             "title_aux": "NudeNet-Detector-Provider [WIP]"
         }
     ],
-    "https://github.com/prismwastaken/sdcfy-tools": [
+    "https://github.com/prismwastaken/comfyui-tools": [
         [
             "Prism-RandomNormal"
         ],
@@ -868,23 +868,23 @@
             "title_aux": "prism-tools"
         }
     ],
-    "https://github.com/unanan/SD-CFY-clip-interrogator": [
+    "https://github.com/unanan/ComfyUI-clip-interrogator": [
         [
-            "SD-CFYClipInterrogator",
+            "ComfyUIClipInterrogator",
             "ShowText"
         ],
         {
-            "title_aux": "SD-CFY-clip-interrogator [WIP]"
+            "title_aux": "ComfyUI-clip-interrogator [WIP]"
         }
     ],
-    "https://github.com/wormley/sdcfy-wormley-nodes": [
+    "https://github.com/wormley/comfyui-wormley-nodes": [
         [
             "CheckpointVAELoaderSimpleText",
             "CheckpointVAESelectorText",
             "LoRA_Tag_To_Stack"
         ],
         {
-            "title_aux": "sdcfy-wormley-nodes"
+            "title_aux": "comfyui-wormley-nodes"
         }
     ]
 }

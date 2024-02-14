@@ -5,7 +5,7 @@
       "type": "TAESD",
       "base": "SDXL",
       "save_path": "vae_approx",
-      "description": "(SDXL Verison) To view the preview in high quality while running samples in SD-CFY, you will need this model.",
+      "description": "(SDXL Verison) To view the preview in high quality while running samples in ComfyUI, you will need this model.",
       "reference": "https://github.com/madebyollin/taesd",
       "filename": "taesdxl_decoder.pth",
       "url": "https://github.com/madebyollin/taesd/raw/main/taesdxl_decoder.pth"
@@ -15,7 +15,7 @@
       "type": "TAESD",
       "base": "SDXL",
       "save_path": "vae_approx",
-      "description": "(SDXL Verison) To view the preview in high quality while running samples in SD-CFY, you will need this model.",
+      "description": "(SDXL Verison) To view the preview in high quality while running samples in ComfyUI, you will need this model.",
       "reference": "https://github.com/madebyollin/taesd",
       "filename": "taesdxl_encoder.pth",
       "url": "https://github.com/madebyollin/taesd/raw/main/taesdxl_encoder.pth"
@@ -25,7 +25,7 @@
       "type": "TAESD",
       "base": "SD1.x",
       "save_path": "vae_approx",
-      "description": "To view the preview in high quality while running samples in SD-CFY, you will need this model.",
+      "description": "To view the preview in high quality while running samples in ComfyUI, you will need this model.",
       "reference": "https://github.com/madebyollin/taesd",
       "filename": "taesd_decoder.pth",
       "url": "https://github.com/madebyollin/taesd/raw/main/taesd_decoder.pth"
@@ -35,7 +35,7 @@
       "type": "TAESD",
       "base": "SD1.x",
       "save_path": "vae_approx",
-      "description": "To view the preview in high quality while running samples in SD-CFY, you will need this model.",
+      "description": "To view the preview in high quality while running samples in ComfyUI, you will need this model.",
       "reference": "https://github.com/madebyollin/taesd",
       "filename": "taesd_encoder.pth",
       "url": "https://github.com/madebyollin/taesd/raw/main/taesd_encoder.pth"
@@ -125,7 +125,7 @@
       "type": "upscale",
       "base": "upscale",
       "save_path": "upscale_models/ldsr",
-      "description": "LDSR upscale model. Through the [a/SD-CFY-Flowty-LDSR](https://github.com/flowtyone/SD-CFY-Flowty-LDSR) extension, the upscale model can be utilized.",
+      "description": "LDSR upscale model. Through the [a/ComfyUI-Flowty-LDSR](https://github.com/flowtyone/ComfyUI-Flowty-LDSR) extension, the upscale model can be utilized.",
       "reference": "https://github.com/CompVis/latent-diffusion",
       "filename": "last.ckpt",
       "url": "https://heibox.uni-heidelberg.de/f/578df07c8fc04ffbadf3/?dl=1"
@@ -145,7 +145,7 @@
       "type": "insightface",
       "base" : "inswapper",
       "save_path": "insightface",
-      "description": "[264MB] Checkpoint of the insightface swapper model\n(used by SD-CFY-FaceSwap, sdcfy-reactor-node, CharacterFaceSwap,\nSD-CFY roop and comfy_mtb)",
+      "description": "[264MB] Checkpoint of the insightface swapper model\n(used by ComfyUI-FaceSwap, comfyui-reactor-node, CharacterFaceSwap,\nComfyUI roop and comfy_mtb)",
       "reference": "https://github.com/facefusion/facefusion-assets",
       "filename": "inswapper_128_fp16.onnx",
       "url": "https://github.com/facefusion/facefusion-assets/releases/download/models/inswapper_128_fp16.onnx"
@@ -155,7 +155,7 @@
       "type": "insightface",
       "base" : "inswapper",
       "save_path": "insightface",
-      "description": "[529MB] Checkpoint of the insightface swapper model\n(used by SD-CFY-FaceSwap, sdcfy-reactor-node, CharacterFaceSwap,\nSD-CFY roop and comfy_mtb)",
+      "description": "[529MB] Checkpoint of the insightface swapper model\n(used by ComfyUI-FaceSwap, comfyui-reactor-node, CharacterFaceSwap,\nComfyUI roop and comfy_mtb)",
       "reference": "https://github.com/facefusion/facefusion-assets",
       "filename": "inswapper_128.onnx",
       "url": "https://github.com/facefusion/facefusion-assets/releases/download/models/inswapper_128.onnx"
@@ -805,7 +805,7 @@
       "name": "kohya-ss/ControlNet-LLLite: SDXL Canny Anime",
       "type": "controlnet",
       "base": "SDXL",
-      "save_path": "custom_nodes/ControlNet-LLLite-SD-CFY/models",
+      "save_path": "custom_nodes/ControlNet-LLLite-ComfyUI/models",
       "description": "[46.2MB] An extremely compactly designed controlnet model (a.k.a. ControlNet-LLLite). Note: The model structure is highly experimental and may be subject to change in the future.",
       "reference": "https://huggingface.co/kohya-ss/controlnet-lllite",
       "filename": "controllllite_v01032064e_sdxl_canny_anime.safetensors",
@@ -1246,7 +1246,7 @@
     },
 
     {
-      "name": "animatediff/mmd_sd_v14.ckpt (sdcfy-animatediff) (Updated path)",
+      "name": "animatediff/mmd_sd_v14.ckpt (comfyui-animatediff) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "AnimateDiff",
@@ -1256,7 +1256,7 @@
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt"
     },
     {
-      "name": "animatediff/mm_sd_v15.ckpt (sdcfy-animatediff) (Updated path)",
+      "name": "animatediff/mm_sd_v15.ckpt (comfyui-animatediff) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "AnimateDiff",
@@ -1267,193 +1267,193 @@
     },
 
     {
-      "name": "animatediff/mmd_sd_v14.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/mmd_sd_v14.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "animatediff_models",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "mm_sd_v14.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt"
     },
     {
-      "name": "animatediff/mm_sd_v15.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/mm_sd_v15.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "animatediff_models",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "mm_sd_v15.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt"
     },
     {
-      "name": "animatediff/mm_sd_v15_v2.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/mm_sd_v15_v2.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "animatediff_models",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "mm_sd_v15_v2.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt"
     },
     {
-      "name": "animatediff/v3_sd15_mm.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/v3_sd15_mm.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "animatediff_models",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "v3_sd15_mm.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/v3_sd15_mm.ckpt"
     },
 
     {
-      "name": "animatediff/mm_sdxl_v10_beta.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/mm_sdxl_v10_beta.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "animatediff",
       "base": "SDXL",
       "save_path": "animatediff_models",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "mm_sdxl_v10_beta.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sdxl_v10_beta.ckpt"
     },
     {
-      "name": "AD_Stabilized_Motion/mm-Stabilized_high.pth (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "AD_Stabilized_Motion/mm-Stabilized_high.pth (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "animatediff_models",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/manshoety/AD_Stabilized_Motion",
       "filename": "mm-Stabilized_high.pth",
       "url": "https://huggingface.co/manshoety/AD_Stabilized_Motion/resolve/main/mm-Stabilized_high.pth"
     },
     {
-      "name": "AD_Stabilized_Motion/mm-Stabilized_mid.pth (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "AD_Stabilized_Motion/mm-Stabilized_mid.pth (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "animatediff_models",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/manshoety/AD_Stabilized_Motion",
       "filename": "mm-Stabilized_mid.pth",
       "url": "https://huggingface.co/manshoety/AD_Stabilized_Motion/resolve/main/mm-Stabilized_mid.pth"
     },
     {
-      "name": "CiaraRowles/temporaldiff-v1-animatediff.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "CiaraRowles/temporaldiff-v1-animatediff.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "animatediff_models",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/CiaraRowles/TemporalDiff",
       "filename": "temporaldiff-v1-animatediff.ckpt",
       "url": "https://huggingface.co/CiaraRowles/TemporalDiff/resolve/main/temporaldiff-v1-animatediff.ckpt"
     },
 
     {
-      "name": "animatediff/v2_lora_PanLeft.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/v2_lora_PanLeft.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "motion lora",
       "base": "SD1.x",
       "save_path": "animatediff_motion_lora",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "v2_lora_PanLeft.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanLeft.ckpt"
     },
     {
-      "name": "animatediff/v2_lora_PanRight.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/v2_lora_PanRight.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "motion lora",
       "base": "SD1.x",
       "save_path": "animatediff_motion_lora",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "v2_lora_PanRight.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_PanRight.ckpt"
     },
     {
-      "name": "animatediff/v2_lora_RollingAnticlockwise.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/v2_lora_RollingAnticlockwise.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "motion lora",
       "base": "SD1.x",
       "save_path": "animatediff_motion_lora",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "v2_lora_RollingAnticlockwise.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_RollingAnticlockwise.ckpt"
     },
     {
-      "name": "animatediff/v2_lora_RollingClockwise.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/v2_lora_RollingClockwise.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "motion lora",
       "base": "SD1.x",
       "save_path": "animatediff_motion_lora",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "v2_lora_RollingClockwise.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_RollingClockwise.ckpt"
     },
     {
-      "name": "animatediff/v2_lora_TiltDown.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/v2_lora_TiltDown.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "motion lora",
       "base": "SD1.x",
       "save_path": "animatediff_motion_lora",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "v2_lora_TiltDown.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltDown.ckpt"
     },
     {
-      "name": "animatediff/v2_lora_TiltUp.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/v2_lora_TiltUp.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "motion lora",
       "base": "SD1.x",
       "save_path": "animatediff_motion_lora",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "v2_lora_TiltUp.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_TiltUp.ckpt"
     },
     {
-      "name": "animatediff/v2_lora_ZoomIn.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/v2_lora_ZoomIn.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "motion lora",
       "base": "SD1.x",
       "save_path": "animatediff_motion_lora",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "v2_lora_ZoomIn.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomIn.ckpt"
     },
     {
-      "name": "animatediff/v2_lora_ZoomOut.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "animatediff/v2_lora_ZoomOut.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "motion lora",
       "base": "SD1.x",
       "save_path": "animatediff_motion_lora",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/guoyww/animatediff",
       "filename": "v2_lora_ZoomOut.ckpt",
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/v2_lora_ZoomOut.ckpt"
     },
     {
-      "name": "LongAnimatediff/lt_long_mm_32_frames.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "LongAnimatediff/lt_long_mm_32_frames.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "animatediff_models",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/Lightricks/LongAnimateDiff",
       "filename": "lt_long_mm_32_frames.ckpt",
       "url": "https://huggingface.co/Lightricks/LongAnimateDiff/resolve/main/lt_long_mm_32_frames.ckpt"
     },
     {
-      "name": "LongAnimatediff/lt_long_mm_16_64_frames.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "LongAnimatediff/lt_long_mm_16_64_frames.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "animatediff_models",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/Lightricks/LongAnimateDiff",
       "filename": "lt_long_mm_16_64_frames.ckpt",
       "url": "https://huggingface.co/Lightricks/LongAnimateDiff/resolve/main/lt_long_mm_16_64_frames.ckpt"
     },
     {
-      "name": "LongAnimatediff/lt_long_mm_16_64_frames_v1.1.ckpt (SD-CFY-AnimateDiff-Evolved) (Updated path)",
+      "name": "LongAnimatediff/lt_long_mm_16_64_frames_v1.1.ckpt (ComfyUI-AnimateDiff-Evolved) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "animatediff_models",
-      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/SD-CFY-AnimateDiff-Evolved extension node.",
+      "description": "Pressing 'install' directly downloads the model from the Kosinkadink/ComfyUI-AnimateDiff-Evolved extension node.",
       "reference": "https://huggingface.co/Lightricks/LongAnimateDiff",
       "filename": "lt_long_mm_16_64_frames_v1.1.ckpt",
       "url": "https://huggingface.co/Lightricks/LongAnimateDiff/resolve/main/lt_long_mm_16_64_frames_v1.1.ckpt"
@@ -1461,7 +1461,7 @@
 
     
     {
-      "name": "animatediff/v3_sd15_sparsectrl_rgb.ckpt (SD-CFY-AnimateDiff-Evolved)",
+      "name": "animatediff/v3_sd15_sparsectrl_rgb.ckpt (ComfyUI-AnimateDiff-Evolved)",
       "type": "controlnet",
       "base": "SD1.x",
       "save_path": "controlnet/SD1.5/animatediff",
@@ -1496,7 +1496,7 @@
       "type": "checkpoints",
       "base": "MotionCtrl",
       "save_path": "checkpoints/motionctrl",
-      "description": "To use the SD-CFY-MotionCtrl extension, downloading this model is required.",
+      "description": "To use the ComfyUI-MotionCtrl extension, downloading this model is required.",
       "reference": "https://huggingface.co/TencentARC/MotionCtrl",
       "filename": "motionctrl.pth",
       "url": "https://huggingface.co/TencentARC/MotionCtrl/resolve/main/motionctrl.pth"
@@ -1507,7 +1507,7 @@
       "type": "IP-Adapter",
       "base": "SD1.5",
       "save_path": "ipadapter",
-      "description": "You can use this model in the [a/SD-CFY IPAdapter plus](https://github.com/cubiq/SD-CFY_IPAdapter_plus) extension.",
+      "description": "You can use this model in the [a/ComfyUI IPAdapter plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus) extension.",
       "reference": "https://huggingface.co/h94/IP-Adapter",
       "filename": "ip-adapter_sd15.safetensors",
       "url": "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors"
@@ -1517,7 +1517,7 @@
       "type": "IP-Adapter",
       "base": "SD1.5",
       "save_path": "ipadapter",
-      "description": "You can use this model in the [a/SD-CFY IPAdapter plus](https://github.com/cubiq/SD-CFY_IPAdapter_plus) extension.",
+      "description": "You can use this model in the [a/ComfyUI IPAdapter plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus) extension.",
       "reference": "https://huggingface.co/h94/IP-Adapter",
       "filename": "ip-adapter_sd15_light.safetensors",
       "url": "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light.safetensors"
@@ -1527,7 +1527,7 @@
       "type": "IP-Adapter",
       "base": "SD1.5",
       "save_path": "ipadapter",
-      "description": "You can use this model in the [a/SD-CFY IPAdapter plus](https://github.com/cubiq/SD-CFY_IPAdapter_plus) extension.",
+      "description": "You can use this model in the [a/ComfyUI IPAdapter plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus) extension.",
       "reference": "https://huggingface.co/h94/IP-Adapter",
       "filename": "ip-adapter_sd15_vit-G.safetensors",
       "url": "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors"
@@ -1537,7 +1537,7 @@
       "type": "IP-Adapter",
       "base": "SD1.5",
       "save_path": "ipadapter",
-      "description": "You can use this model in the [a/SD-CFY IPAdapter plus](https://github.com/cubiq/SD-CFY_IPAdapter_plus) extension.",
+      "description": "You can use this model in the [a/ComfyUI IPAdapter plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus) extension.",
       "reference": "https://huggingface.co/h94/IP-Adapter",
       "filename": "ip-adapter-plus_sd15.safetensors",
       "url": "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors"
@@ -1547,7 +1547,7 @@
       "type": "IP-Adapter",
       "base": "SD1.5",
       "save_path": "ipadapter",
-      "description": "You can use this model in the [a/SD-CFY IPAdapter plus](https://github.com/cubiq/SD-CFY_IPAdapter_plus) extension.",
+      "description": "You can use this model in the [a/ComfyUI IPAdapter plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus) extension.",
       "reference": "https://huggingface.co/h94/IP-Adapter",
       "filename": "ip-adapter-plus-face_sd15.safetensors",
       "url": "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors"
@@ -1557,7 +1557,7 @@
       "type": "IP-Adapter",
       "base": "SD1.5",
       "save_path": "ipadapter",
-      "description": "You can use this model in the [a/SD-CFY IPAdapter plus](https://github.com/cubiq/SD-CFY_IPAdapter_plus) extension.",
+      "description": "You can use this model in the [a/ComfyUI IPAdapter plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus) extension.",
       "reference": "https://huggingface.co/h94/IP-Adapter",
       "filename": "ip-adapter-full-face_sd15.safetensors",
       "url": "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors"
@@ -1677,7 +1677,7 @@
       "type": "IP-Adapter",
       "base": "SDXL",
       "save_path": "ipadapter",
-      "description": "You can use this model in the [a/SD-CFY IPAdapter plus](https://github.com/cubiq/SD-CFY_IPAdapter_plus) extension.",
+      "description": "You can use this model in the [a/ComfyUI IPAdapter plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus) extension.",
       "reference": "https://huggingface.co/h94/IP-Adapter",
       "filename": "ip-adapter_sdxl.safetensors",
       "url": "https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors"
@@ -1717,8 +1717,8 @@
       "name": "pfg-novel-n10.pt",
       "type": "PFG",
       "base": "SD1.5",
-      "save_path": "custom_nodes/pfg-SD-CFY/models",
-      "description": "Pressing 'install' directly downloads the model from the pfg-SD-CFY/models extension node. (Note: Requires SD-CFY-Manager V0.24 or above)",
+      "save_path": "custom_nodes/pfg-ComfyUI/models",
+      "description": "Pressing 'install' directly downloads the model from the pfg-ComfyUI/models extension node. (Note: Requires ComfyUI-Manager V0.24 or above)",
       "reference": "https://huggingface.co/furusu/PFG",
       "filename": "pfg-novel-n10.pt",
       "url": "https://huggingface.co/furusu/PFG/resolve/main/pfg-novel-n10.pt"
@@ -1727,8 +1727,8 @@
       "name": "pfg-wd14-n10.pt",
       "type": "PFG",
       "base": "SD1.5",
-      "save_path": "custom_nodes/pfg-SD-CFY/models",
-      "description": "Pressing 'install' directly downloads the model from the pfg-SD-CFY/models extension node. (Note: Requires SD-CFY-Manager V0.24 or above)",
+      "save_path": "custom_nodes/pfg-ComfyUI/models",
+      "description": "Pressing 'install' directly downloads the model from the pfg-ComfyUI/models extension node. (Note: Requires ComfyUI-Manager V0.24 or above)",
       "reference": "https://huggingface.co/furusu/PFG",
       "filename": "pfg-wd14-n10.pt",
       "url": "https://huggingface.co/furusu/PFG/resolve/main/pfg-wd14-n10.pt"
@@ -1737,8 +1737,8 @@
       "name": "pfg-wd15beta2-n10.pt",
       "type": "PFG",
       "base": "SD1.5",
-      "save_path": "custom_nodes/pfg-SD-CFY/models",
-      "description": "Pressing 'install' directly downloads the model from the pfg-SD-CFY/models extension node. (Note: Requires SD-CFY-Manager V0.24 or above)",
+      "save_path": "custom_nodes/pfg-ComfyUI/models",
+      "description": "Pressing 'install' directly downloads the model from the pfg-ComfyUI/models extension node. (Note: Requires ComfyUI-Manager V0.24 or above)",
       "reference": "https://huggingface.co/furusu/PFG",
       "filename": "pfg-wd15beta2-n10.pt",
       "url": "https://huggingface.co/furusu/PFG/resolve/main/pfg-wd15beta2-n10.pt"
@@ -1819,7 +1819,7 @@
       "base": "inswapper",
       "save_path": "insightface/models/antelopev2",
       "description": "Antelopev2 1k3d68.onnx model for InstantId. (InstantId needs all Antelopev2 models)",
-      "reference": "https://github.com/cubiq/SD-CFY_InstantID#installation",
+      "reference": "https://github.com/cubiq/ComfyUI_InstantID#installation",
       "filename": "1k3d68.onnx",
       "url": "https://huggingface.co/MonsterMMORPG/tools/resolve/main/1k3d68.onnx"
     },
@@ -1829,7 +1829,7 @@
       "base": "inswapper",
       "save_path": "insightface/models/antelopev2",
       "description": "Antelopev2 2d106det.onnx model for InstantId. (InstantId needs all Antelopev2 models)",
-      "reference": "https://github.com/cubiq/SD-CFY_InstantID#installation",
+      "reference": "https://github.com/cubiq/ComfyUI_InstantID#installation",
       "filename": "2d106det.onnx",
       "url": "https://huggingface.co/MonsterMMORPG/tools/resolve/main/2d106det.onnx"
     },
@@ -1839,7 +1839,7 @@
       "base": "inswapper",
       "save_path": "insightface/models/antelopev2",
       "description": "Antelopev2 genderage.onnx model for InstantId. (InstantId needs all Antelopev2 models)",
-      "reference": "https://github.com/cubiq/SD-CFY_InstantID#installation",
+      "reference": "https://github.com/cubiq/ComfyUI_InstantID#installation",
       "filename": "genderage.onnx",
       "url": "https://huggingface.co/MonsterMMORPG/tools/resolve/main/genderage.onnx"
     },
@@ -1849,7 +1849,7 @@
       "base": "inswapper",
       "save_path": "insightface/models/antelopev2",
       "description": "Antelopev2 glintr100.onnx model for InstantId. (InstantId needs all Antelopev2 models)",
-      "reference": "https://github.com/cubiq/SD-CFY_InstantID#installation",
+      "reference": "https://github.com/cubiq/ComfyUI_InstantID#installation",
       "filename": "glintr100.onnx",
       "url": "https://huggingface.co/MonsterMMORPG/tools/resolve/main/glintr100.onnx"
     },
@@ -1859,7 +1859,7 @@
       "base": "inswapper",
       "save_path": "insightface/models/antelopev2",
       "description": "Antelopev2 scrfd_10g_bnkps.onnx model for InstantId. (InstantId needs all Antelopev2 models)",
-      "reference": "https://github.com/cubiq/SD-CFY_InstantID#installation",
+      "reference": "https://github.com/cubiq/ComfyUI_InstantID#installation",
       "filename": "scrfd_10g_bnkps.onnx",
       "url": "https://huggingface.co/MonsterMMORPG/tools/resolve/main/scrfd_10g_bnkps.onnx"
     },

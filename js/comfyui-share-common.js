@@ -1,8 +1,8 @@
 import { app } from "../../scripts/app.js";
 import { api } from "../../scripts/api.js";
 import { ComfyDialog, $el } from "../../scripts/ui.js";
-import { OpenArtShareDialog } from "./sdcfy-share-openart.js";
-import { YouMLShareDialog } from "./sdcfy-share-youml.js";
+import { OpenArtShareDialog } from "./comfyui-share-openart.js";
+import { YouMLShareDialog } from "./comfyui-share-youml.js";
 
 export const SUPPORTED_OUTPUT_NODE_TYPES = [
 	"PreviewImage",
@@ -228,12 +228,12 @@ export class ShareDialogChooser extends ComfyDialog {
 	static instance = null;
 	constructor() {
 		super();
-		this.element = $el("div.sdcfy-modal", {
+		this.element = $el("div.comfy-modal", {
 			parent: document.body, style: {
 				'overflow-y': "auto",
 			}
 		},
-			[$el("div.sdcfy-modal-content",
+			[$el("div.comfy-modal-content",
 				{},
 				[...this.createButtons()]),
 			]);
@@ -245,7 +245,7 @@ export class ShareDialogChooser extends ComfyDialog {
 				key: "openart",
 				textContent: "OpenArt AI",
 				website: "https://openart.ai/workflows/",
-				description: "Share SD-CFY workflows and art on OpenArt.ai",
+				description: "Share ComfyUI workflows and art on OpenArt.ai",
 				onclick: () => {
 				  showOpenArtShareDialog();
 				  this.close();
@@ -264,8 +264,8 @@ export class ShareDialogChooser extends ComfyDialog {
 			{
 				key: "matrix",
 				textContent: "Matrix Server",
-				website: "https://app.element.io/#/room/%23sdcfy_space%3Amatrix.org",
-				description: "Share your art on the official SD-CFY matrix server",
+				website: "https://app.element.io/#/room/%23comfyui_space%3Amatrix.org",
+				description: "Share your art on the official ComfyUI matrix server",
 				onclick: async () => {
 				  showShareDialog('matrix').then((suc) => {
 				    suc && this.close();
@@ -276,7 +276,7 @@ export class ShareDialogChooser extends ComfyDialog {
 				key: "comfyworkflows",
 				textContent: "ComfyWorkflows",
 				website: "https://comfyworkflows.com",
-				description: "Share & browse thousands of SD-CFY workflows and art 🎨<br/><br/><a style='color:white;' href='https://comfyworkflows.com' target='_blank'>ComfyWorkflows.com</a>",
+				description: "Share & browse thousands of ComfyUI workflows and art 🎨<br/><br/><a style='color:white;' href='https://comfyworkflows.com' target='_blank'>ComfyWorkflows.com</a>",
 				onclick: () => {
 				  showShareDialog('comfyworkflows').then((suc) => {
 				    suc && this.close();
@@ -389,7 +389,7 @@ export class ShareDialogChooser extends ComfyDialog {
 			),
 
 			$el("div.cm-menu-container", {
-				id: "sdcfy-share-container"
+				id: "comfyui-share-container"
 			}, [
 				$el("div.cm-menu-column", [
 					createShareButtonsWithDescriptions(),
@@ -397,7 +397,7 @@ export class ShareDialogChooser extends ComfyDialog {
 				]),
 			]),
 			$el("div.cm-menu-container", {
-				id: "sdcfy-share-container"
+				id: "comfyui-share-container"
 			}, [
 				$el("button", {
 					type: "button",
@@ -427,12 +427,12 @@ export class ShareDialog extends ComfyDialog {
 	constructor(share_option) {
 		super();
 		this.share_option = share_option;
-		this.element = $el("div.sdcfy-modal", {
+		this.element = $el("div.comfy-modal", {
 			parent: document.body, style: {
 				'overflow-y': "auto",
 			}
 		},
-			[$el("div.sdcfy-modal-content",
+			[$el("div.comfy-modal-content",
 				{},
 				[...this.createButtons()]),
 			]);
@@ -451,7 +451,7 @@ export class ShareDialog extends ComfyDialog {
 		this.is_nsfw_checkbox.checked = false;
 
 		this.matrix_destination_checkbox = $el("input", { type: 'checkbox', id: "matrix_destination" }, [])
-		const matrix_destination_checkbox_text = $el("label", {}, [" SD-CFY Matrix server"])
+		const matrix_destination_checkbox_text = $el("label", {}, [" ComfyUI Matrix server"])
 		this.matrix_destination_checkbox.style.color = "var(--fg-color)";
 		this.matrix_destination_checkbox.checked = this.share_option === 'matrix'; //true;
 
@@ -503,7 +503,7 @@ export class ShareDialog extends ComfyDialog {
 		}, []);
 
 		this.share_finalmessage_container = $el("div.cm-menu-container", {
-			id: "sdcfy-share-finalmessage-container",
+			id: "comfyui-share-finalmessage-container",
 			style: {
 				display: "none",
 			}
@@ -539,7 +539,7 @@ export class ShareDialog extends ComfyDialog {
 			])
 		]);
 		this.share_container = $el("div.cm-menu-container", {
-			id: "sdcfy-share-container"
+			id: "comfyui-share-container"
 		}, [
 			$el("div.cm-menu-column", [
 				$el("details", {
@@ -842,17 +842,17 @@ export class ShareDialog extends ComfyDialog {
 			if (response_json.comfyworkflows.url) {
 				this.final_message.innerHTML = "Your art has been shared: <a href='" + response_json.comfyworkflows.url + "' target='_blank'>" + response_json.comfyworkflows.url + "</a>";
 				if (response_json.matrix.success) {
-					this.final_message.innerHTML += "<br>Your art has been shared in the SD-CFY Matrix server's #share channel!";
+					this.final_message.innerHTML += "<br>Your art has been shared in the ComfyUI Matrix server's #share channel!";
 				}
 			} else {
 				if (response_json.matrix.success) {
-					this.final_message.innerHTML = "Your art has been shared in the SD-CFY Matrix server's #share channel!";
+					this.final_message.innerHTML = "Your art has been shared in the ComfyUI Matrix server's #share channel!";
 				}
 			}
 
 			this.final_message.style.color = "green";
 
-			// hide #sdcfy-share-container and show #sdcfy-share-finalmessage-container
+			// hide #comfyui-share-container and show #comfyui-share-finalmessage-container
 			this.share_container.style.display = "none";
 			this.share_finalmessage_container.style.display = "block";
 

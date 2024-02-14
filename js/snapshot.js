@@ -23,7 +23,7 @@ async function restore_snapshot(target) {
 		}
 		finally {
 			await SnapshotManager.instance.invalidateControl();
-			SnapshotManager.instance.updateMessage("<BR>To apply the snapshot, please <button id='cm-reboot-button' class='cm-small-button'>RESTART</button> SD-CFY. And refresh browser.", 'cm-reboot-button');
+			SnapshotManager.instance.updateMessage("<BR>To apply the snapshot, please <button id='cm-reboot-button' class='cm-small-button'>RESTART</button> ComfyUI. And refresh browser.", 'cm-reboot-button');
 		}
 	}
 }
@@ -91,7 +91,7 @@ export class SnapshotManager extends ComfyDialog {
 		super();
 		this.manager_dialog = manager_dialog;
 		this.search_keyword = '';
-		this.element = $el("div.sdcfy-modal", { parent: document.body }, []);
+		this.element = $el("div.comfy-modal", { parent: document.body }, []);
 	}
 
 	async remove_item() {

@@ -5,7 +5,7 @@ import traceback
 #
 # Usage:
 #   import cm_global
-#   cm_global.variables['sdcfy.revision'] = 1832
+#   cm_global.variables['comfyui.revision'] = 1832
 #   print(f"log mode: {cm_global.variables['logger.enabled']}")
 #
 variables = {}
@@ -102,9 +102,9 @@ def add_on_extension_registered(k, extension_name, f):
 
 
 def add_on_revision_detected(k, f):
-    if 'sdcfy.revision' in variables:
+    if 'comfyui.revision' in variables:
         try:
-            f(variables['sdcfy.revision'])
+            f(variables['comfyui.revision'])
         except Exception:
             print(f"[ERROR] '{k}' on_revision_detected_handler")
             traceback.print_exc()

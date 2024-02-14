@@ -161,7 +161,7 @@ def get_git_urls_from_json(json_file):
                 if files:
                     git_clone_files.append((files[0], node.get('title'), node.get('nodename_pattern')))
 
-    git_clone_files.append(("https://github.com/Kotomiya07/SD-CFY", "SD-CFY", None))
+    git_clone_files.append(("https://github.com/comfyanonymous/ComfyUI", "ComfyUI", None))
 
     return git_clone_files
 
@@ -245,9 +245,9 @@ def gen_json(node_info):
     # scan from .py file
     node_files, node_dirs = get_nodes(temp_dir)
 
-    sdcfy_path = os.path.abspath(os.path.join(temp_dir, "SD-CFY"))
-    node_dirs.remove(sdcfy_path)
-    node_dirs = [sdcfy_path] + node_dirs
+    comfyui_path = os.path.abspath(os.path.join(temp_dir, "ComfyUI"))
+    node_dirs.remove(comfyui_path)
+    node_dirs = [comfyui_path] + node_dirs
 
     data = {}
     for dirname in node_dirs:
@@ -256,7 +256,7 @@ def gen_json(node_info):
         
         nodes = set()
         for py in py_files:
-            nodes_in_file, metadata_in_file = scan_in_file(py, dirname == "SD-CFY")
+            nodes_in_file, metadata_in_file = scan_in_file(py, dirname == "ComfyUI")
             nodes.update(nodes_in_file)
             metadata.update(metadata_in_file)
         
@@ -326,7 +326,7 @@ def gen_json(node_info):
         json.dump(data, file, indent=4, sort_keys=True)
 
 
-print("### SD-CFY Manager Node Scanner ###")
+print("### ComfyUI Manager Node Scanner ###")
 
 print("\n# Updating extensions\n")
 updated_node_info = update_custom_nodes()

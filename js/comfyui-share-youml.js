@@ -4,7 +4,7 @@ import {ComfyDialog, $el} from "../../scripts/ui.js";
 
 const BASE_URL = "https://youml.com";
 //const BASE_URL = "http://localhost:3000";
-const DEFAULT_HOMEPAGE_URL = `${BASE_URL}/?from=sdcfy`;
+const DEFAULT_HOMEPAGE_URL = `${BASE_URL}/?from=comfyui`;
 const TOKEN_PAGE_URL = `${BASE_URL}/my-token`;
 const API_ENDPOINT = `${BASE_URL}/api`;
 
@@ -38,7 +38,7 @@ const style = `
    }
   .youml-share-dialog textarea {
     color: var(--input-text);
-    background-color: var(--sdcfy-input-bg);
+    background-color: var(--comfy-input-bg);
   } 
   .youml-share-dialog .workflow-description {
     min-height: 75px;
@@ -163,11 +163,11 @@ export class YouMLShareDialog extends ComfyDialog {
       parent: document.head,
     });
     this.element = $el(
-      "div.sdcfy-modal.youml-share-dialog",
+      "div.comfy-modal.youml-share-dialog",
       {
         parent: document.body,
       },
-      [$el("div.sdcfy-modal-content", {}, [...this.createLayout()])]
+      [$el("div.comfy-modal-content", {}, [...this.createLayout()])]
     );
     this.selectedOutputIndex = 0;
     this.selectedNodeId = null;
@@ -296,7 +296,7 @@ export class YouMLShareDialog extends ComfyDialog {
     fetchOptions.headers = {
       ...fetchOptions.headers,
       "Authorization": `Bearer ${this.apiTokenInput.value}`,
-      "User-Agent": "SD-CFY-Manager-Youml/1.0.0",
+      "User-Agent": "ComfyUI-Manager-Youml/1.0.0",
     }
 
     const response = await fetch(fullPath, fetchOptions);
@@ -322,7 +322,7 @@ export class YouMLShareDialog extends ComfyDialog {
     form.append("file", uploadFile, uploadFile.name);
     try {
       const res = await this.fetchYoumlApi(
-        `/v1/sdcfy/recipes/${recipeId}/thumbnail`,
+        `/v1/comfy/recipes/${recipeId}/thumbnail`,
         {
           method: "POST",
           body: form,
@@ -397,7 +397,7 @@ export class YouMLShareDialog extends ComfyDialog {
       }
 
       const response = await this.fetchYoumlApi(
-        "/v1/sdcfy/recipes",
+        "/v1/comfy/recipes",
         {
           method: "POST",
           headers: {"Content-Type": "application/json"},

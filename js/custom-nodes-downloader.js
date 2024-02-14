@@ -108,7 +108,7 @@ export class CustomNodesInstaller extends ComfyDialog {
 		super();
 		this.manager_dialog = manager_dialog;
 		this.search_keyword = '';
-		this.element = $el("div.sdcfy-modal", { parent: document.body }, []);
+		this.element = $el("div.comfy-modal", { parent: document.body }, []);
 	}
 
 	startInstall(target) {

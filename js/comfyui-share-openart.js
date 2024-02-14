@@ -48,14 +48,14 @@ export class OpenArtShareDialog extends ComfyDialog {
       parent: document.head,
     });
     this.element = $el(
-      "div.sdcfy-modal.openart-share-dialog",
+      "div.comfy-modal.openart-share-dialog",
       {
         parent: document.body,
         style: {
           "overflow-y": "auto",
         },
       },
-      [$el("div.sdcfy-modal-content", {}, [...this.createButtons()])]
+      [$el("div.comfy-modal-content", {}, [...this.createButtons()])]
     );
     this.selectedOutputIndex = 0;
     this.selectedNodeId = null;

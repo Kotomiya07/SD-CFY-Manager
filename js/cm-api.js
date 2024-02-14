@@ -3,7 +3,7 @@ import { app } from "../../scripts/app.js";
 import { sleep } from "./common.js";
 
 async function tryInstallCustomNode(event) {
-	let msg = '-= [SD-CFY Manager] extension installation request =-\n\n';
+	let msg = '-= [ComfyUI Manager] extension installation request =-\n\n';
 	msg += `The '${event.detail.sender}' extension requires the installation of the '${event.detail.title}' extension. `;
 
 	if(event.detail.target.installed == 'Disabled') {

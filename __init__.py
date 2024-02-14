@@ -26,15 +26,15 @@ except:
     sys.path.append(glob_path)
     import cm_global
 
-    print(f"[WARN] SD-CFY-Manager: Your SD-CFY version is outdated. Please update to the latest version.")
+    print(f"[WARN] ComfyUI-Manager: Your ComfyUI version is outdated. Please update to the latest version.")
 
 
 version = [2, 7, 2]
 version_str = f"V{version[0]}.{version[1]}" + (f'.{version[2]}' if len(version) > 2 else '')
-print(f"### Loading: SD-CFY-Manager ({version_str})")
+print(f"### Loading: ComfyUI-Manager ({version_str})")
 
 
-sdcfy_hash = "-"
+comfy_ui_hash = "-"
 
 cache_lock = threading.Lock()
 
@@ -56,7 +56,7 @@ def handle_stream(stream, prefix):
 
 def run_script(cmd, cwd='.'):
     if len(cmd) > 0 and cmd[0].startswith("#"):
-        print(f"[SD-CFY-Manager] Unexpected behavior: `{cmd}`")
+        print(f"[ComfyUI-Manager] Unexpected behavior: `{cmd}`")
         return 0
 
     process = subprocess.Popen(cmd, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, bufsize=1)
@@ -79,22 +79,22 @@ except:
     my_path = os.path.dirname(__file__)
     requirements_path = os.path.join(my_path, "requirements.txt")
 
-    print(f"## SD-CFY-Manager: installing dependencies")
+    print(f"## ComfyUI-Manager: installing dependencies")
 
     run_script([sys.executable, '-s', '-m', 'pip', 'install', '-r', requirements_path])
 
     try:
         import git
     except:
-        print(f"## [ERROR] SD-CFY-Manager: Attempting to reinstall dependencies using an alternative method.")
+        print(f"## [ERROR] ComfyUI-Manager: Attempting to reinstall dependencies using an alternative method.")
         run_script([sys.executable, '-s', '-m', 'pip', 'install', '--user', '-r', requirements_path])
 
         try:
             import git
         except:
-            print(f"## [ERROR] SD-CFY-Manager: Failed to install the GitPython package in the correct Python environment. Please install it manually in the appropriate environment. (You can seek help at https://app.element.io/#/room/%23sdcfy_space%3Amatrix.org)")
+            print(f"## [ERROR] ComfyUI-Manager: Failed to install the GitPython package in the correct Python environment. Please install it manually in the appropriate environment. (You can seek help at https://app.element.io/#/room/%23comfyui_space%3Amatrix.org)")
 
-    print(f"## SD-CFY-Manager: installing dependencies done.")
+    print(f"## ComfyUI-Manager: installing dependencies done.")
 
 
 from git.remote import RemoteProgress
@@ -103,34 +103,34 @@ sys.path.append('../..')
 
 from torchvision.datasets.utils import download_url
 
-sdcfy_required_revision = 1930
-sdcfy_required_commit_datetime = datetime(2024, 1, 24, 0, 0, 0)
+comfy_ui_required_revision = 1930
+comfy_ui_required_commit_datetime = datetime(2024, 1, 24, 0, 0, 0)
 
-sdcfy_revision = "Unknown"
-sdcfy_commit_datetime = datetime(1900, 1, 1, 0, 0, 0)
+comfy_ui_revision = "Unknown"
+comfy_ui_commit_datetime = datetime(1900, 1, 1, 0, 0, 0)
 
 comfy_path = os.path.dirname(folder_paths.__file__)
 custom_nodes_path = os.path.join(comfy_path, 'custom_nodes')
 js_path = os.path.join(comfy_path, "web", "extensions")
 
-sdcfy_manager_path = os.path.dirname(__file__)
-cache_dir = os.path.join(sdcfy_manager_path, '.cache')
-local_db_model = os.path.join(sdcfy_manager_path, "model-list.json")
-local_db_alter = os.path.join(sdcfy_manager_path, "alter-list.json")
-local_db_custom_node_list = os.path.join(sdcfy_manager_path, "custom-node-list.json")
-local_db_extension_node_mappings = os.path.join(sdcfy_manager_path, "extension-node-map.json")
+comfyui_manager_path = os.path.dirname(__file__)
+cache_dir = os.path.join(comfyui_manager_path, '.cache')
+local_db_model = os.path.join(comfyui_manager_path, "model-list.json")
+local_db_alter = os.path.join(comfyui_manager_path, "alter-list.json")
+local_db_custom_node_list = os.path.join(comfyui_manager_path, "custom-node-list.json")
+local_db_extension_node_mappings = os.path.join(comfyui_manager_path, "extension-node-map.json")
 git_script_path = os.path.join(os.path.dirname(__file__), "git_helper.py")
-components_path = os.path.join(sdcfy_manager_path, 'components')
+components_path = os.path.join(comfyui_manager_path, 'components')
 
-startup_script_path = os.path.join(sdcfy_manager_path, "startup-scripts")
+startup_script_path = os.path.join(comfyui_manager_path, "startup-scripts")
 config_path = os.path.join(os.path.dirname(__file__), "config.ini")
 cached_config = None
 
-channel_list_path = os.path.join(sdcfy_manager_path, 'channels.list')
+channel_list_path = os.path.join(comfyui_manager_path, 'channels.list')
 channel_dict = None
 channel_list = None
 
-from sdcfy.cli_args import args
+from comfy.cli_args import args
 import latent_preview
 
 
@@ -143,7 +143,7 @@ def get_channel_dict():
         if not os.path.exists(channel_list_path):
             shutil.copy(channel_list_path+'.template', channel_list_path)
 
-        with open(os.path.join(sdcfy_manager_path, 'channels.list'), 'r') as file:
+        with open(os.path.join(comfyui_manager_path, 'channels.list'), 'r') as file:
             channels = file.read()
             for x in channels.split('\n'):
                 channel_info = x.split("::")
@@ -193,7 +193,7 @@ def read_config():
                     'preview_method': default_conf['preview_method'] if 'preview_method' in default_conf else get_current_preview_method(),
                     'badge_mode': default_conf['badge_mode'] if 'badge_mode' in default_conf else 'none',
                     'git_exe': default_conf['git_exe'] if 'git_exe' in default_conf else '',
-                    'channel_url': default_conf['channel_url'] if 'channel_url' in default_conf else 'https://raw.githubusercontent.com/Kotomiya07/SD-CFY-Manager/main',
+                    'channel_url': default_conf['channel_url'] if 'channel_url' in default_conf else 'https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main',
                     'share_option': default_conf['share_option'] if 'share_option' in default_conf else 'all',
                     'bypass_ssl': default_conf['bypass_ssl'] if 'bypass_ssl' in default_conf else False,
                     'file_logging': default_conf['file_logging'] if 'file_logging' in default_conf else True,
@@ -208,7 +208,7 @@ def read_config():
             'preview_method': get_current_preview_method(),
             'badge_mode': 'none',
             'git_exe': '',
-            'channel_url': 'https://raw.githubusercontent.com/Kotomiya07/SD-CFY-Manager/main',
+            'channel_url': 'https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main',
             'share_option': 'all',
             'bypass_ssl': False,
             'file_logging': True,
@@ -272,7 +272,7 @@ def set_double_click_policy(mode):
 
 
 def try_install_script(url, repo_path, install_cmd):
-    if platform.system() == "Windows" and sdcfy_commit_datetime.date() >= sdcfy_required_commit_datetime.date():
+    if platform.system() == "Windows" and comfy_ui_commit_datetime.date() >= comfy_ui_required_commit_datetime.date():
         if not os.path.exists(startup_script_path):
             os.makedirs(startup_script_path)
 
@@ -283,15 +283,15 @@ def try_install_script(url, repo_path, install_cmd):
 
         return True
     else:
-        print(f"\n## SD-CFY-Manager: EXECUTE => {install_cmd}")
+        print(f"\n## ComfyUI-Manager: EXECUTE => {install_cmd}")
         code = run_script(install_cmd, cwd=repo_path)
 
         if platform.system() == "Windows":
             try:
-                if sdcfy_commit_datetime.date() < sdcfy_required_commit_datetime.date():
+                if comfy_ui_commit_datetime.date() < comfy_ui_required_commit_datetime.date():
                     print("\n\n###################################################################")
-                    print(f"[WARN] SD-CFY-Manager: Your SD-CFY version ({sdcfy_revision})[{sdcfy_commit_datetime.date()}] is too old. Please update to the latest version.")
-                    print(f"[WARN] The extension installation feature may not work properly in the current installed SD-CFY version on Windows environment.")
+                    print(f"[WARN] ComfyUI-Manager: Your ComfyUI version ({comfy_ui_revision})[{comfy_ui_commit_datetime.date()}] is too old. Please update to the latest version.")
+                    print(f"[WARN] The extension installation feature may not work properly in the current installed ComfyUI version on Windows environment.")
                     print("###################################################################\n\n")
             except:
                 pass
@@ -302,28 +302,28 @@ def try_install_script(url, repo_path, install_cmd):
             print(f"install script failed: {url}")
             return False
 
-def print_sdcfy_version():
-    global sdcfy_revision
-    global sdcfy_commit_datetime
-    global sdcfy_hash
+def print_comfyui_version():
+    global comfy_ui_revision
+    global comfy_ui_commit_datetime
+    global comfy_ui_hash
 
     is_detached = False
     try:
         repo = git.Repo(os.path.dirname(folder_paths.__file__))
-        sdcfy_revision = len(list(repo.iter_commits('HEAD')))
+        comfy_ui_revision = len(list(repo.iter_commits('HEAD')))
 
-        sdcfy_hash = repo.head.commit.hexsha
-        cm_global.variables['sdcfy.revision'] = sdcfy_revision
+        comfy_ui_hash = repo.head.commit.hexsha
+        cm_global.variables['comfyui.revision'] = comfy_ui_revision
 
-        sdcfy_commit_datetime = repo.head.commit.committed_datetime
-        cm_global.variables['sdcfy.commit_datetime'] = sdcfy_commit_datetime
+        comfy_ui_commit_datetime = repo.head.commit.committed_datetime
+        cm_global.variables['comfyui.commit_datetime'] = comfy_ui_commit_datetime
 
         is_detached = repo.head.is_detached
         current_branch = repo.active_branch.name
 
         try:
-            if sdcfy_commit_datetime.date() < sdcfy_required_commit_datetime.date():
-                print(f"\n\n## [WARN] SD-CFY-Manager: Your SD-CFY version ({sdcfy_revision})[{sdcfy_commit_datetime.date()}] is too old. Please update to the latest version. ##\n\n")
+            if comfy_ui_commit_datetime.date() < comfy_ui_required_commit_datetime.date():
+                print(f"\n\n## [WARN] ComfyUI-Manager: Your ComfyUI version ({comfy_ui_revision})[{comfy_ui_commit_datetime.date()}] is too old. Please update to the latest version. ##\n\n")
         except:
             pass
 
@@ -331,28 +331,28 @@ def print_sdcfy_version():
         if 'cm.on_revision_detected_handler' in cm_global.variables:
             for k, f in cm_global.variables['cm.on_revision_detected_handler']:
                 try:
-                    f(sdcfy_revision)
+                    f(comfy_ui_revision)
                 except Exception:
                     print(f"[ERROR] '{k}' on_revision_detected_handler")
                     traceback.print_exc()
 
             del cm_global.variables['cm.on_revision_detected_handler']
         else:
-            print(f"[SD-CFY-Manager] Some features are restricted due to your SD-CFY being outdated.")
+            print(f"[ComfyUI-Manager] Some features are restricted due to your ComfyUI being outdated.")
         # <--
 
         if current_branch == "master":
-            print(f"### SD-CFY Revision: {sdcfy_revision} [{sdcfy_hash[:8]}] | Released on '{sdcfy_commit_datetime.date()}'")
+            print(f"### ComfyUI Revision: {comfy_ui_revision} [{comfy_ui_hash[:8]}] | Released on '{comfy_ui_commit_datetime.date()}'")
         else:
-            print(f"### SD-CFY Revision: {sdcfy_revision} on '{current_branch}' [{sdcfy_hash[:8]}] | Released on '{sdcfy_commit_datetime.date()}'")
+            print(f"### ComfyUI Revision: {comfy_ui_revision} on '{current_branch}' [{comfy_ui_hash[:8]}] | Released on '{comfy_ui_commit_datetime.date()}'")
     except:
         if is_detached:
-            print(f"### SD-CFY Revision: {sdcfy_revision} [{sdcfy_hash[:8]}] *DETACHED | Released on '{sdcfy_commit_datetime.date()}'")
+            print(f"### ComfyUI Revision: {comfy_ui_revision} [{comfy_ui_hash[:8]}] *DETACHED | Released on '{comfy_ui_commit_datetime.date()}'")
         else:
-            print("### SD-CFY Revision: UNKNOWN (The currently installed SD-CFY is not a Git repository)")
+            print("### ComfyUI Revision: UNKNOWN (The currently installed ComfyUI is not a Git repository)")
 
 
-print_sdcfy_version()
+print_comfyui_version()
 
 
 # use subprocess to avoid file system lock by git (Windows)
@@ -372,7 +372,7 @@ def __win_check_git_update(path, do_fetch=False, do_update=False):
         # fix and try again
         safedir_path = path.replace('\\', '/')
         try:
-            print(f"[SD-CFY-Manager] Try fixing 'dubious repository' error on '{safedir_path}' repo")
+            print(f"[ComfyUI-Manager] Try fixing 'dubious repository' error on '{safedir_path}' repo")
             process = subprocess.Popen(['git', 'config', '--global', '--add', 'safe.directory', safedir_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             output, _ = process.communicate()
 
@@ -380,10 +380,10 @@ def __win_check_git_update(path, do_fetch=False, do_update=False):
             output, _ = process.communicate()
             output = output.decode('utf-8').strip()
         except Exception:
-            print(f'[SD-CFY-Manager] failed to fixing')
+            print(f'[ComfyUI-Manager] failed to fixing')
 
         if 'detected dubious' in output:
-            print(f'\n[SD-CFY-Manager] Failed to fixing repository setup. Please execute this command on cmd: \n'
+            print(f'\n[ComfyUI-Manager] Failed to fixing repository setup. Please execute this command on cmd: \n'
                   f'-----------------------------------------------------------------------------------------\n'
                   f'git config --global --add safe.directory "{safedir_path}"\n'
                   f'-----------------------------------------------------------------------------------------\n')
@@ -557,19 +557,19 @@ async def get_data(uri, silent=False):
 
 def setup_js():
     import nodes
-    js_dest_path = os.path.join(js_path, "sdcfy-manager")
+    js_dest_path = os.path.join(js_path, "comfyui-manager")
 
     if hasattr(nodes, "EXTENSION_WEB_DIRS"):
         if os.path.exists(js_dest_path):
             shutil.rmtree(js_dest_path)
     else:
-        print(f"[WARN] SD-CFY-Manager: Your SD-CFY version is outdated. Please update to the latest version.")
+        print(f"[WARN] ComfyUI-Manager: Your ComfyUI version is outdated. Please update to the latest version.")
         # setup js
         if not os.path.exists(js_dest_path):
             os.makedirs(js_dest_path)
-        js_src_path = os.path.join(sdcfy_manager_path, "js", "sdcfy-manager.js")
+        js_src_path = os.path.join(comfyui_manager_path, "js", "comfyui-manager.js")
 
-        print(f"### SD-CFY-Manager: Copy .js from '{js_src_path}' to '{js_dest_path}'")
+        print(f"### ComfyUI-Manager: Copy .js from '{js_src_path}' to '{js_dest_path}'")
         shutil.copy(js_src_path, js_dest_path)
 
 
@@ -618,7 +618,7 @@ def is_file_created_within_one_day(file_path):
 async def get_data_by_mode(mode, filename):
     try:
         if mode == "local":
-            uri = os.path.join(sdcfy_manager_path, filename)
+            uri = os.path.join(comfyui_manager_path, filename)
             json_obj = await get_data(uri)
         else:
             uri = get_config()['channel_url'] + '/' + filename
@@ -640,8 +640,8 @@ async def get_data_by_mode(mode, filename):
                     with open(cache_uri, "w", encoding='utf-8') as file:
                         json.dump(json_obj, file, indent=4, sort_keys=True)
     except Exception as e:
-        print(f"[SD-CFY-Manager] Due to a network error, switching to local mode.\n=> {filename}\n=> {e}")
-        uri = os.path.join(sdcfy_manager_path, filename)
+        print(f"[ComfyUI-Manager] Due to a network error, switching to local mode.\n=> {filename}\n=> {e}")
+        uri = os.path.join(comfyui_manager_path, filename)
         json_obj = await get_data(uri)
 
     return json_obj
@@ -1036,15 +1036,15 @@ async def remove_snapshot(request):
 
 
 def get_current_snapshot():
-    # Get SD-CFY hash
+    # Get ComfyUI hash
     repo_path = os.path.dirname(folder_paths.__file__)
 
     if not os.path.exists(os.path.join(repo_path, '.git')):
-        print(f"SD-CFY update fail: The installed SD-CFY does not have a Git repository.")
+        print(f"ComfyUI update fail: The installed ComfyUI does not have a Git repository.")
         return web.Response(status=400)
 
     repo = git.Repo(repo_path)
-    sdcfy_commit_hash = repo.head.commit.hexsha
+    comfyui_commit_hash = repo.head.commit.hexsha
 
     git_custom_nodes = {}
     file_custom_nodes = []
@@ -1084,7 +1084,7 @@ def get_current_snapshot():
             file_custom_nodes.append(item)
 
     return {
-        'sdcfy': sdcfy_commit_hash,
+        'comfyui': comfyui_commit_hash,
         'git_custom_nodes': git_custom_nodes,
         'file_custom_nodes': file_custom_nodes,
     }
@@ -1523,7 +1523,7 @@ async def install_custom_node(request):
             try_install_script(json_data['files'][0], ".", install_cmd)
 
     if res:
-        print(f"After restarting SD-CFY, please refresh the browser.")
+        print(f"After restarting ComfyUI, please refresh the browser.")
         return web.json_response({}, content_type='application/json')
 
     return web.Response(status=400)
@@ -1553,7 +1553,7 @@ async def fix_custom_node(request):
             try_install_script(json_data['files'][0], ".", install_cmd)
 
     if res:
-        print(f"After restarting SD-CFY, please refresh the browser.")
+        print(f"After restarting ComfyUI, please refresh the browser.")
         return web.json_response({}, content_type='application/json')
 
     return web.Response(status=400)
@@ -1567,7 +1567,7 @@ async def install_custom_node_git_url(request):
         res = gitclone_install([url])
 
     if res:
-        print(f"After restarting SD-CFY, please refresh the browser.")
+        print(f"After restarting ComfyUI, please refresh the browser.")
         return web.Response(status=200)
 
     return web.Response(status=400)
@@ -1601,7 +1601,7 @@ async def uninstall_custom_node(request):
         res = gitclone_uninstall(json_data['files'])
 
     if res:
-        print(f"After restarting SD-CFY, please refresh the browser.")
+        print(f"After restarting ComfyUI, please refresh the browser.")
         return web.json_response({}, content_type='application/json')
 
     return web.Response(status=400)
@@ -1621,21 +1621,21 @@ async def update_custom_node(request):
         res = gitclone_update(json_data['files'])
 
     if res:
-        print(f"After restarting SD-CFY, please refresh the browser.")
+        print(f"After restarting ComfyUI, please refresh the browser.")
         return web.json_response({}, content_type='application/json')
 
     return web.Response(status=400)
 
 
-@server.PromptServer.instance.routes.get("/sdcfy_manager/update_sdcfy")
-async def update_sdcfy(request):
-    print(f"Update SD-CFY")
+@server.PromptServer.instance.routes.get("/comfyui_manager/update_comfyui")
+async def update_comfyui(request):
+    print(f"Update ComfyUI")
 
     try:
         repo_path = os.path.dirname(folder_paths.__file__)
 
         if not os.path.exists(os.path.join(repo_path, '.git')):
-            print(f"SD-CFY update fail: The installed SD-CFY does not have a Git repository.")
+            print(f"ComfyUI update fail: The installed ComfyUI does not have a Git repository.")
             return web.Response(status=400)
 
         # version check
@@ -1654,13 +1654,13 @@ async def update_sdcfy(request):
             remote.fetch()
         except Exception as e:
             if 'detected dubious' in str(e):
-                print(f"[SD-CFY-Manager] Try fixing 'dubious repository' error on 'SD-CFY' repository")
+                print(f"[ComfyUI-Manager] Try fixing 'dubious repository' error on 'ComfyUI' repository")
                 safedir_path = comfy_path.replace('\\', '/')
                 subprocess.run(['git', 'config', '--global', '--add', 'safe.directory', safedir_path])
                 try:
                     remote.fetch()
                 except Exception:
-                    print(f"\n[SD-CFY-Manager] Failed to fixing repository setup. Please execute this command on cmd: \n"
+                    print(f"\n[ComfyUI-Manager] Failed to fixing repository setup. Please execute this command on cmd: \n"
                           f"-----------------------------------------------------------------------------------------\n"
                           f'git config --global --add safe.directory "{safedir_path}"\n'
                           f"-----------------------------------------------------------------------------------------\n")
@@ -1670,12 +1670,12 @@ async def update_sdcfy(request):
 
         if commit_hash != remote_commit_hash:
             git_pull(repo_path)
-            execute_install_script("SD-CFY", repo_path)
+            execute_install_script("ComfyUI", repo_path)
             return web.Response(status=201)
         else:
             return web.Response(status=200)
     except Exception as e:
-        print(f"SD-CFY update fail: {e}", file=sys.stderr)
+        print(f"ComfyUI update fail: {e}", file=sys.stderr)
         pass
 
     return web.Response(status=400)
@@ -1751,9 +1751,9 @@ manager_terminal_hook = ManagerTerminalHook()
 async def terminal_mode(request):
     if "mode" in request.rel_url.query:
         if request.rel_url.query['mode'] == 'true':
-            sys.__sdcfy_manager_terminal_hook.add_hook('cm', manager_terminal_hook)
+            sys.__comfyui_manager_terminal_hook.add_hook('cm', manager_terminal_hook)
         else:
-            sys.__sdcfy_manager_terminal_hook.remove_hook('cm')
+            sys.__comfyui_manager_terminal_hook.remove_hook('cm')
 
     return web.Response(status=200)
 
@@ -1853,13 +1853,13 @@ async def get_notice(request):
 
                 if match:
                     markdown_content = match.group(1)
-                    markdown_content += f"<HR>SD-CFY: {sdcfy_revision}[{sdcfy_hash[:6]}]({sdcfy_commit_datetime.date()})"
+                    markdown_content += f"<HR>ComfyUI: {comfy_ui_revision}[{comfy_ui_hash[:6]}]({comfy_ui_commit_datetime.date()})"
                     # markdown_content += f"<BR>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;()"
                     markdown_content += f"<BR>Manager: {version_str}"
 
                     try:
-                        if sdcfy_required_commit_datetime.date() > sdcfy_commit_datetime.date():
-                            markdown_content = f'<P style="text-align: center; color:red; background-color:white; font-weight:bold">Your SD-CFY is too OUTDATED!!!</P>' + markdown_content
+                        if comfy_ui_required_commit_datetime.date() > comfy_ui_commit_datetime.date():
+                            markdown_content = f'<P style="text-align: center; color:red; background-color:white; font-weight:bold">Your ComfyUI is too OUTDATED!!!</P>' + markdown_content
                     except:
                         pass
 
@@ -1930,11 +1930,11 @@ async def load_components(request):
                     # When there is a conflict between the .pack and the .json, the pack takes precedence and overrides.
                     components.update(json.load(file))
                 except json.JSONDecodeError as e:
-                    print(f"[SD-CFY-Manager] Error decoding component file in file {json_file}: {e}")
+                    print(f"[ComfyUI-Manager] Error decoding component file in file {json_file}: {e}")
 
         return web.json_response(components)
     except Exception as e:
-        print(f"[SD-CFY-Manager] failed to load components\n{e}")
+        print(f"[ComfyUI-Manager] failed to load components\n{e}")
         return web.Response(status=400)
 
 
@@ -1950,10 +1950,10 @@ async def share_option(request):
 
 
 def get_openart_auth():
-    if not os.path.exists(os.path.join(sdcfy_manager_path, ".openart_key")):
+    if not os.path.exists(os.path.join(comfyui_manager_path, ".openart_key")):
         return None
     try:
-        with open(os.path.join(sdcfy_manager_path, ".openart_key"), "r") as f:
+        with open(os.path.join(comfyui_manager_path, ".openart_key"), "r") as f:
             openart_key = f.read().strip()
         return openart_key if openart_key else None
     except:
@@ -1961,10 +1961,10 @@ def get_openart_auth():
 
 
 def get_matrix_auth():
-    if not os.path.exists(os.path.join(sdcfy_manager_path, "matrix_auth")):
+    if not os.path.exists(os.path.join(comfyui_manager_path, "matrix_auth")):
         return None
     try:
-        with open(os.path.join(sdcfy_manager_path, "matrix_auth"), "r") as f:
+        with open(os.path.join(comfyui_manager_path, "matrix_auth"), "r") as f:
             matrix_auth = f.read()
             homeserver, username, password = matrix_auth.strip().split("\n")
             if not homeserver or not username or not password:
@@ -1979,10 +1979,10 @@ def get_matrix_auth():
 
 
 def get_comfyworkflows_auth():
-    if not os.path.exists(os.path.join(sdcfy_manager_path, "comfyworkflows_sharekey")):
+    if not os.path.exists(os.path.join(comfyui_manager_path, "comfyworkflows_sharekey")):
         return None
     try:
-        with open(os.path.join(sdcfy_manager_path, "comfyworkflows_sharekey"), "r") as f:
+        with open(os.path.join(comfyui_manager_path, "comfyworkflows_sharekey"), "r") as f:
             share_key = f.read()
             if not share_key.strip():
                 return None
@@ -1992,10 +1992,10 @@ def get_comfyworkflows_auth():
 
 
 def get_youml_settings():
-    if not os.path.exists(os.path.join(sdcfy_manager_path, ".youml")):
+    if not os.path.exists(os.path.join(comfyui_manager_path, ".youml")):
         return None
     try:
-        with open(os.path.join(sdcfy_manager_path, ".youml"), "r") as f:
+        with open(os.path.join(comfyui_manager_path, ".youml"), "r") as f:
             youml_settings = f.read().strip()
         return youml_settings if youml_settings else None
     except:
@@ -2003,7 +2003,7 @@ def get_youml_settings():
 
 
 def set_youml_settings(settings):
-    with open(os.path.join(sdcfy_manager_path, ".youml"), "w") as f:
+    with open(os.path.join(comfyui_manager_path, ".youml"), "w") as f:
         f.write(settings)
 
 
@@ -2020,7 +2020,7 @@ async def api_get_openart_auth(request):
 async def api_set_openart_auth(request):
     json_data = await request.json()
     openart_key = json_data['openart_key']
-    with open(os.path.join(sdcfy_manager_path, ".openart_key"), "w") as f:
+    with open(os.path.join(comfyui_manager_path, ".openart_key"), "w") as f:
         f.write(openart_key)
     return web.Response(status=200)
 
@@ -2052,7 +2052,7 @@ async def api_set_youml_settings(request):
 @server.PromptServer.instance.routes.get("/manager/get_comfyworkflows_auth")
 async def api_get_comfyworkflows_auth(request):
     # Check if the user has provided Matrix credentials in a file called 'matrix_accesstoken'
-    # in the same directory as the SD-CFY base folder
+    # in the same directory as the ComfyUI base folder
     # print("Getting stored Comfyworkflows.com auth...")
     comfyworkflows_auth = get_comfyworkflows_auth()
     if not comfyworkflows_auth:
@@ -2064,12 +2064,12 @@ def set_matrix_auth(json_data):
     homeserver = json_data['homeserver']
     username = json_data['username']
     password = json_data['password']
-    with open(os.path.join(sdcfy_manager_path, "matrix_auth"), "w") as f:
+    with open(os.path.join(comfyui_manager_path, "matrix_auth"), "w") as f:
         f.write("\n".join([homeserver, username, password]))
 
 
 def set_comfyworkflows_auth(comfyworkflows_sharekey):
-    with open(os.path.join(sdcfy_manager_path, "comfyworkflows_sharekey"), "w") as f:
+    with open(os.path.join(comfyui_manager_path, "comfyworkflows_sharekey"), "w") as f:
         f.write(comfyworkflows_sharekey)
 
 
@@ -2218,7 +2218,7 @@ async def share_art(request):
             form = aiohttp.FormData()
             if comfyworkflows_sharekey:
                 form.add_field("shareKey", comfyworkflows_sharekey)
-            form.add_field("source", "sdcfy_manager")
+            form.add_field("source", "comfyui_manager")
             form.add_field("assetFileKey", assetFileKey)
             form.add_field("assetFileType", assetFileType)
             form.add_field("workflowJsonFileKey", workflowJsonFileKey)
@@ -2241,7 +2241,7 @@ async def share_art(request):
 
     # check if the user has provided Matrix credentials
     if "matrix" in share_destinations:
-        sdcfy_share_room_id = '!LGYSoacpJPhIfBqVfb:matrix.org'
+        comfyui_share_room_id = '!LGYSoacpJPhIfBqVfb:matrix.org'
         filename = os.path.basename(asset_filepath)
         content_type = assetFileType
 
@@ -2277,9 +2277,9 @@ async def share_art(request):
                 text_content += f"{description}\n"
             if credits:
                 text_content += f"\ncredits: {credits}\n"
-            response = matrix.send_message(sdcfy_share_room_id, text_content)
-            response = matrix.send_content(sdcfy_share_room_id, mxc_url, filename, 'm.image')
-            response = matrix.send_content(sdcfy_share_room_id, workflow_json_mxc_url, 'workflow.json', 'm.file')
+            response = matrix.send_message(comfyui_share_room_id, text_content)
+            response = matrix.send_content(comfyui_share_room_id, mxc_url, filename, 'm.image')
+            response = matrix.send_content(comfyui_share_room_id, workflow_json_mxc_url, 'workflow.json', 'm.file')
         except:
             import traceback
             traceback.print_exc()
@@ -2324,7 +2324,7 @@ async def _confirm_try_install(sender, custom_node_url, msg):
         server.PromptServer.instance.send_sync("cm-api-try-install-customnode",
                                                {"sender": sender, "target": target, "msg": msg})
     else:
-        print(f"[SD-CFY Manager API] Failed to try install - Unknown custom node url '{custom_node_url}'")
+        print(f"[ComfyUI Manager API] Failed to try install - Unknown custom node url '{custom_node_url}'")
 
 
 def confirm_try_install(sender, custom_node_url, msg):
@@ -2337,7 +2337,7 @@ cm_global.register_api('cm.try-install-custom-node', confirm_try_install)
 import asyncio
 async def default_cache_update():
     async def get_cache(filename):
-        uri = 'https://raw.githubusercontent.com/Kotomiya07/SD-CFY-Manager/main/' + filename
+        uri = 'https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/' + filename
         cache_uri = str(simple_hash(uri)) + '_' + filename
         cache_uri = os.path.join(cache_dir, cache_uri)
 
@@ -2346,7 +2346,7 @@ async def default_cache_update():
         with cache_lock:
             with open(cache_uri, "w", encoding='utf-8') as file:
                 json.dump(json_obj, file, indent=4, sort_keys=True)
-                print(f"[SD-CFY-Manager] default cache updated: {uri}")
+                print(f"[ComfyUI-Manager] default cache updated: {uri}")
 
     a = get_cache("custom-node-list.json")
     b = get_cache("extension-node-map.json")
@@ -2368,9 +2368,9 @@ WEB_DIRECTORY = "js"
 NODE_CLASS_MAPPINGS = {}
 __all__ = ['NODE_CLASS_MAPPINGS']
 
-cm_global.register_extension('SD-CFY-Manager',
+cm_global.register_extension('ComfyUI-Manager',
                              {'version': version,
-                              'name': 'SD-CFY Manager',
+                              'name': 'ComfyUI Manager',
                               'nodes': {'Terminal Log //CM'},
-                              'description': 'It provides the ability to manage custom nodes in SD-CFY.', })
+                              'description': 'It provides the ability to manage custom nodes in ComfyUI.', })
 

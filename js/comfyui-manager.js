@@ -9,8 +9,8 @@ import {
 	showOpenArtShareDialog,
 	showShareDialog,
 	showYouMLShareDialog
-} from "./sdcfy-share-common.js";
-import { OpenArtShareDialog } from "./sdcfy-share-openart.js";
+} from "./comfyui-share-common.js";
+import { OpenArtShareDialog } from "./comfyui-share-openart.js";
 import { CustomNodesInstaller } from "./custom-nodes-downloader.js";
 import { AlternativesInstaller } from "./a1111-alter-downloader.js";
 import { SnapshotManager } from "./snapshot.js";
@@ -187,13 +187,13 @@ docStyle.innerHTML = `
 
 document.head.appendChild(docStyle);
 
-var update_sdcfy_button = null;
+var update_comfyui_button = null;
 var fetch_updates_button = null;
 var update_all_button = null;
 var badge_mode = "none";
 let share_option = 'all';
 
-// copied style from https://github.com/pythongosssss/SD-CFY-Custom-Scripts
+// copied style from https://github.com/pythongosssss/ComfyUI-Custom-Scripts
 const style = `
 #workflowgallery-button {
 	width: 310px;
@@ -337,7 +337,7 @@ const style = `
  }
  .pysssss-workflow-arrow-2:hover {
 	filter: brightness(1.6);
-	background-color: var(--sdcfy-menu-bg);
+	background-color: var(--comfy-menu-bg);
  }
 .pysssss-workflow-popup-2 ~ .litecontextmenu {
 	transform: scale(1.3);
@@ -452,7 +452,7 @@ function drawBadge(node, orig, restArgs) {
 
 		let nick = node.getNickname();
 		if (nick) {
-			if (nick == 'SD-CFY') {
+			if (nick == 'ComfyUI') {
 				if(badge_mode.endsWith('hide')) {
 					nick = "";
 				}
@@ -500,41 +500,41 @@ function drawBadge(node, orig, restArgs) {
 }
 
 
-async function updateSD-CFY() {
-	let prev_text = update_sdcfy_button.innerText;
-	update_sdcfy_button.innerText = "Updating SD-CFY...";
-	update_sdcfy_button.disabled = true;
-	update_sdcfy_button.style.backgroundColor = "gray";
+async function updateComfyUI() {
+	let prev_text = update_comfyui_button.innerText;
+	update_comfyui_button.innerText = "Updating ComfyUI...";
+	update_comfyui_button.disabled = true;
+	update_comfyui_button.style.backgroundColor = "gray";
 
 	try {
-		const response = await api.fetchApi('/sdcfy_manager/update_sdcfy');
+		const response = await api.fetchApi('/comfyui_manager/update_comfyui');
 
 		if (response.status == 400) {
-			app.ui.dialog.show('Failed to update SD-CFY.');
+			app.ui.dialog.show('Failed to update ComfyUI.');
 			app.ui.dialog.element.style.zIndex = 10010;
 			return false;
 		}
 
 		if (response.status == 201) {
-			app.ui.dialog.show('SD-CFY has been successfully updated.');
+			app.ui.dialog.show('ComfyUI has been successfully updated.');
 			app.ui.dialog.element.style.zIndex = 10010;
 		}
 		else {
-			app.ui.dialog.show('SD-CFY is already up to date with the latest version.');
+			app.ui.dialog.show('ComfyUI is already up to date with the latest version.');
 			app.ui.dialog.element.style.zIndex = 10010;
 		}
 
 		return true;
 	}
 	catch (exception) {
-		app.ui.dialog.show(`Failed to update SD-CFY / ${exception}`);
+		app.ui.dialog.show(`Failed to update ComfyUI / ${exception}`);
 		app.ui.dialog.element.style.zIndex = 10010;
 		return false;
 	}
 	finally {
-		update_sdcfy_button.disabled = false;
-		update_sdcfy_button.innerText = prev_text;
-		update_sdcfy_button.style.backgroundColor = "";
+		update_comfyui_button.disabled = false;
+		update_comfyui_button.innerText = prev_text;
+		update_comfyui_button.style.backgroundColor = "";
 	}
 }
 
@@ -594,7 +594,7 @@ async function fetchUpdates(update_check_checkbox) {
 
 async function updateAll(update_check_checkbox, manager_dialog) {
 	let prev_text = update_all_button.innerText;
-	update_all_button.innerText = "Updating all...(SD-CFY)";
+	update_all_button.innerText = "Updating all...(ComfyUI)";
 	update_all_button.disabled = true;
 	update_all_button.style.backgroundColor = "gray";
 
@@ -602,11 +602,11 @@ async function updateAll(update_check_checkbox, manager_dialog) {
 		var mode = manager_instance.datasrc_combo.value;
 
 		update_all_button.innerText = "Updating all...";
-		const response1 = await api.fetchApi('/sdcfy_manager/update_sdcfy');
+		const response1 = await api.fetchApi('/comfyui_manager/update_comfyui');
 		const response2 = await api.fetchApi(`/customnode/update_all?mode=${mode}`);
 
 		if (response1.status != 200 && response2.status != 201) {
-			app.ui.dialog.show('Failed to update SD-CFY or several extensions.<BR><BR>See terminal log.<BR>');
+			app.ui.dialog.show('Failed to update ComfyUI or several extensions.<BR><BR>See terminal log.<BR>');
 			app.ui.dialog.element.style.zIndex = 10010;
 			return false;
 		}
@@ -624,7 +624,7 @@ async function updateAll(update_check_checkbox, manager_dialog) {
 			}
 
 			app.ui.dialog.show(
-				"SD-CFY and all extensions have been updated to the latest version.<BR>To apply the updated custom node, please <button class='cm-small-button' id='cm-reboot-button'>RESTART</button> SD-CFY. And refresh browser.<BR>"
+				"ComfyUI and all extensions have been updated to the latest version.<BR>To apply the updated custom node, please <button class='cm-small-button' id='cm-reboot-button'>RESTART</button> ComfyUI. And refresh browser.<BR>"
 				+failed_list
 				+updated_list
 				);
@@ -640,14 +640,14 @@ async function updateAll(update_check_checkbox, manager_dialog) {
 			app.ui.dialog.element.style.zIndex = 10010;
 		}
 		else {
-			app.ui.dialog.show('SD-CFY and all extensions are already up-to-date with the latest versions.');
+			app.ui.dialog.show('ComfyUI and all extensions are already up-to-date with the latest versions.');
 			app.ui.dialog.element.style.zIndex = 10010;
 		}
 
 		return true;
 	}
 	catch (exception) {
-		app.ui.dialog.show(`Failed to update SD-CFY or several extensions / ${exception}`);
+		app.ui.dialog.show(`Failed to update ComfyUI or several extensions / ${exception}`);
 		app.ui.dialog.element.style.zIndex = 10010;
 		return false;
 	}
@@ -683,12 +683,12 @@ class ManagerMenuDialog extends ComfyDialog {
 	createControlsMid() {
 		let self = this;
 
-		update_sdcfy_button =
+		update_comfyui_button =
 			$el("button.cm-button", {
 				type: "button",
-				textContent: "Update SD-CFY",
+				textContent: "Update ComfyUI",
 				onclick:
-					() => updateSD-CFY()
+					() => updateComfyUI()
 			});
 
 		fetch_updates_button =
@@ -756,7 +756,7 @@ class ManagerMenuDialog extends ComfyDialog {
 
 				$el("br", {}, []),
 				update_all_button,
-				update_sdcfy_button,
+				update_comfyui_button,
 				fetch_updates_button,
 
 				$el("br", {}, []),
@@ -1000,7 +1000,7 @@ class ManagerMenuDialog extends ComfyDialog {
 					id: 'cm-manual-button',
 					type: "button",
 					textContent: "Community Manual",
-					onclick: () => { window.open("https://blenderneko.github.io/SD-CFY-docs/", "sdcfy-community-manual"); }
+					onclick: () => { window.open("https://blenderneko.github.io/ComfyUI-docs/", "comfyui-community-manual"); }
 				}, [
 					$el("div.pysssss-workflow-arrow-2", {
 						id: `cm-manual-button-arrow`,
@@ -1013,15 +1013,15 @@ class ManagerMenuDialog extends ComfyDialog {
 								[
 									{
 										title: "Comfy Custom Node How To",
-										callback: () => { window.open("https://github.com/chrisgoringe/Comfy-Custom-Node-How-To/wiki/aaa_index", "sdcfy-community-manual1"); },
+										callback: () => { window.open("https://github.com/chrisgoringe/Comfy-Custom-Node-How-To/wiki/aaa_index", "comfyui-community-manual1"); },
 									},
 									{
-										title: "SD-CFY Guide To Making Custom Nodes",
-										callback: () => { window.open("https://github.com/Suzie1/SD-CFY_Guide_To_Making_Custom_Nodes/wiki", "sdcfy-community-manual2"); },
+										title: "ComfyUI Guide To Making Custom Nodes",
+										callback: () => { window.open("https://github.com/Suzie1/ComfyUI_Guide_To_Making_Custom_Nodes/wiki", "comfyui-community-manual2"); },
 									},
 									{
-										title: "SD-CFY Examples",
-										callback: () => { window.open("https://Kotomiya07.github.io/SD-CFY_examples", "sdcfy-community-manual3"); },
+										title: "ComfyUI Examples",
+										callback: () => { window.open("https://comfyanonymous.github.io/ComfyUI_examples", "comfyui-community-manual3"); },
 									},
 									{
 										title: "Close",
@@ -1036,7 +1036,7 @@ class ManagerMenuDialog extends ComfyDialog {
 								},
 								window
 							);
-							// set the id so that we can override the context menu's z-index to be above the sdcfy manager menu
+							// set the id so that we can override the context menu's z-index to be above the comfyui manager menu
 							menu.root.id = "cm-manual-button-menu";
 							menu.root.classList.add("pysssss-workflow-popup-2");
 						},
@@ -1090,7 +1090,7 @@ class ManagerMenuDialog extends ComfyDialog {
 					id: 'cm-nodeinfo-button',
 					type: "button",
 					textContent: "Nodes Info",
-					onclick: () => { window.open("https://ltdrdata.github.io/", "sdcfy-node-info"); }
+					onclick: () => { window.open("https://ltdrdata.github.io/", "comfyui-node-info"); }
 				}),
 				$el("br", {}, []),
 		];
@@ -1110,10 +1110,10 @@ class ManagerMenuDialog extends ComfyDialog {
 		const close_button = $el("button", { id: "cm-close-button", type: "button", textContent: "Close", onclick: () => this.close() });
 
 		const content =
-				$el("div.sdcfy-modal-content",
+				$el("div.comfy-modal-content",
 					[
 						$el("tr.cm-title", {}, [
-								$el("font", {size:6, color:"white"}, [`SD-CFY Manager Menu`])]
+								$el("font", {size:6, color:"white"}, [`ComfyUI Manager Menu`])]
 							),
 						$el("br", {}, []),
 						$el("div.cm-menu-container",
@@ -1131,7 +1131,7 @@ class ManagerMenuDialog extends ComfyDialog {
 		content.style.width = '100%';
 		content.style.height = '100%';
 
-		this.element = $el("div.sdcfy-modal", { id:'cm-manager-dialog', parent: document.body }, [ content ]);
+		this.element = $el("div.comfy-modal", { id:'cm-manager-dialog', parent: document.body }, [ content ]);
 	}
 
 	show() {
@@ -1186,7 +1186,7 @@ class ManagerMenuDialog extends ComfyDialog {
 				{
 					title: "Open 'youml.com'",
 					callback: () => {
-						const url = "https://youml.com/?from=sdcfy-share";
+						const url = "https://youml.com/?from=comfyui-share";
 						localStorage.setItem("wg_last_visited", url);
 						window.open(url, url);
 						modifyButtonStyle(url);
@@ -1223,7 +1223,7 @@ class ManagerMenuDialog extends ComfyDialog {
 			},
 			window
 		);
-		// set the id so that we can override the context menu's z-index to be above the sdcfy manager menu
+		// set the id so that we can override the context menu's z-index to be above the comfyui manager menu
 		menu.root.id = "workflowgallery-button-menu";
 		menu.root.classList.add("pysssss-workflow-popup-2");
 	}
@@ -1247,7 +1247,7 @@ app.registerExtension({
 
 		load_components();
 
-		const menu = document.querySelector(".sdcfy-menu");
+		const menu = document.querySelector(".comfy-menu");
 		const separator = document.createElement("hr");
 
 		separator.style.margin = "20px 0";

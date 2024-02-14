@@ -2,9 +2,9 @@ __pycache__/
 .idea/
 .vscode/
 .tmp
-.cache
+#.cache
 config.ini
-snapshots/**
+#snapshots/**
 startup-scripts/**
 .openart_key
 .youml

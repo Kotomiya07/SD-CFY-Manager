@@ -67,7 +67,7 @@ export async function install_checked_custom_node(grid_rows, target_i, caller, m
 		}
 
 		await caller.invalidateControl();
-		caller.updateMessage("<BR>To apply the installed/updated/disabled/enabled custom node, please <button id='cm-reboot-button' class='cm-small-button'>RESTART</button> SD-CFY. And refresh browser.", 'cm-reboot-button');
+		caller.updateMessage("<BR>To apply the installed/updated/disabled/enabled custom node, please <button id='cm-reboot-button' class='cm-small-button'>RESTART</button> ComfyUI. And refresh browser.", 'cm-reboot-button');
 	}
 };
 
@@ -92,7 +92,7 @@ export async function install_pip(packages) {
 	const res = await api.fetchApi(`/customnode/install/pip?packages=${packages}`);
 
 	if(res.status == 200) {
-		app.ui.dialog.show(`PIP package installation is processed.<br>To apply the pip packages, please click the <button id='cm-reboot-button'><font size='3px'>RESTART</font></button> button in SD-CFY.`);
+		app.ui.dialog.show(`PIP package installation is processed.<br>To apply the pip packages, please click the <button id='cm-reboot-button'><font size='3px'>RESTART</font></button> button in ComfyUI.`);
 
 		const rebootButton = document.getElementById('cm-reboot-button');
 		const self = this;
@@ -124,7 +124,7 @@ export async function install_via_git_url(url, manager_dialog) {
 	const res = await api.fetchApi(`/customnode/install/git_url?url=${url}`);
 
 	if(res.status == 200) {
-		app.ui.dialog.show(`'${url}' is installed<BR>To apply the installed custom node, please <button id='cm-reboot-button'><font size='3px'>RESTART</font></button> SD-CFY.`);
+		app.ui.dialog.show(`'${url}' is installed<BR>To apply the installed custom node, please <button id='cm-reboot-button'><font size='3px'>RESTART</font></button> ComfyUI.`);
 
 		const rebootButton = document.getElementById('cm-reboot-button');
 		const self = this;
@@ -155,7 +155,7 @@ export async function free_models() {
 		app.ui.dialog.show('Models have been unloaded.')
 	}
 	else {
-		app.ui.dialog.show('Unloading of models failed.<BR><BR>Installed SD-CFY may be an outdated version.')
+		app.ui.dialog.show('Unloading of models failed.<BR><BR>Installed ComfyUI may be an outdated version.')
 	}
 	app.ui.dialog.element.style.zIndex = 10010;
 }

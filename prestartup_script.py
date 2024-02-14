@@ -49,17 +49,17 @@ def check_file_logging():
 check_file_logging()
 
 
-sys.__sdcfy_manager_register_message_collapse = register_message_collapse
-sys.__sdcfy_manager_is_import_failed_extension = is_import_failed_extension
+sys.__comfyui_manager_register_message_collapse = register_message_collapse
+sys.__comfyui_manager_is_import_failed_extension = is_import_failed_extension
 cm_global.register_api('cm.register_message_collapse', register_message_collapse)
 cm_global.register_api('cm.is_import_failed_extension', is_import_failed_extension)
 
 
-sdcfy_manager_path = os.path.dirname(__file__)
-custom_nodes_path = os.path.abspath(os.path.join(sdcfy_manager_path, ".."))
-startup_script_path = os.path.join(sdcfy_manager_path, "startup-scripts")
+comfyui_manager_path = os.path.dirname(__file__)
+custom_nodes_path = os.path.abspath(os.path.join(comfyui_manager_path, ".."))
+startup_script_path = os.path.join(comfyui_manager_path, "startup-scripts")
 restore_snapshot_path = os.path.join(startup_script_path, "restore-snapshot.json")
-git_script_path = os.path.join(sdcfy_manager_path, "git_helper.py")
+git_script_path = os.path.join(comfyui_manager_path, "git_helper.py")
 
 std_log_lock = threading.Lock()
 
@@ -91,7 +91,7 @@ class TerminalHook:
 
 
 terminal_hook = TerminalHook()
-sys.__sdcfy_manager_terminal_hook = terminal_hook
+sys.__comfyui_manager_terminal_hook = terminal_hook
 
 
 def handle_stream(stream, prefix):
@@ -138,14 +138,14 @@ try:
 
     # Logger setup
     if enable_file_logging:
-        if os.path.exists(f"sdcfy{postfix}.log"):
-            if os.path.exists(f"sdcfy{postfix}.prev.log"):
-                if os.path.exists(f"sdcfy{postfix}.prev2.log"):
-                    os.remove(f"sdcfy{postfix}.prev2.log")
-                os.rename(f"sdcfy{postfix}.prev.log", f"sdcfy{postfix}.prev2.log")
-            os.rename(f"sdcfy{postfix}.log", f"sdcfy{postfix}.prev.log")
+        if os.path.exists(f"comfyui{postfix}.log"):
+            if os.path.exists(f"comfyui{postfix}.prev.log"):
+                if os.path.exists(f"comfyui{postfix}.prev2.log"):
+                    os.remove(f"comfyui{postfix}.prev2.log")
+                os.rename(f"comfyui{postfix}.prev.log", f"comfyui{postfix}.prev2.log")
+            os.rename(f"comfyui{postfix}.log", f"comfyui{postfix}.prev.log")
 
-        log_file = open(f"sdcfy{postfix}.log", "w", encoding="utf-8", errors="ignore")
+        log_file = open(f"comfyui{postfix}.log", "w", encoding="utf-8", errors="ignore")
 
     log_lock = threading.Lock()
 
@@ -172,7 +172,7 @@ try:
     is_start_mode = True
     is_import_fail_mode = False
 
-    class SD-CFYManagerLogger:
+    class ComfyUIManagerLogger:
         def __init__(self, is_stdout):
             self.is_stdout = is_stdout
             self.encoding = "utf-8"
@@ -274,24 +274,24 @@ try:
 
 
     if enable_file_logging:
-        sys.stdout = SD-CFYManagerLogger(True)
-        sys.stderr = SD-CFYManagerLogger(False)
+        sys.stdout = ComfyUIManagerLogger(True)
+        sys.stderr = ComfyUIManagerLogger(False)
 
         atexit.register(close_log)
     else:
         sys.stdout.close_log = lambda: None
 
 except Exception as e:
-    print(f"[SD-CFY-Manager] Logging failed: {e}")
+    print(f"[ComfyUI-Manager] Logging failed: {e}")
 
 
-print("** SD-CFY startup time:", datetime.datetime.now())
+print("** ComfyUI startup time:", datetime.datetime.now())
 print("** Platform:", platform.system())
 print("** Python version:", sys.version)
 print("** Python executable:", sys.executable)
 
 if enable_file_logging:
-    print("** Log path:", os.path.abspath('sdcfy.log'))
+    print("** Log path:", os.path.abspath('comfyui.log'))
 else:
     print("** Log path: file logging is disabled")
 
@@ -306,7 +306,7 @@ def check_bypass_ssl():
         default_conf = config['default']
 
         if 'bypass_ssl' in default_conf and default_conf['bypass_ssl'].lower() == 'true':
-            print(f"[SD-CFY-Manager] WARN: Unsafe - SSL verification bypass option is Enabled. (see SD-CFY-Manager/config.ini)")
+            print(f"[ComfyUI-Manager] WARN: Unsafe - SSL verification bypass option is Enabled. (see ComfyUI-Manager/config.ini)")
             ssl._create_default_https_context = ssl._create_unverified_context  # SSL certificate error fix.
     except Exception:
         pass
@@ -329,7 +329,7 @@ def get_installed_packages():
             result = subprocess.check_output([sys.executable, '-m', 'pip', 'list'], universal_newlines=True)
             pip_list = set([line.split()[0].lower() for line in result.split('\n') if line.strip()])
         except subprocess.CalledProcessError as e:
-            print(f"[SD-CFY-Manager] Failed to retrieve the information of installed pip packages.")
+            print(f"[ComfyUI-Manager] Failed to retrieve the information of installed pip packages.")
             return set()
     
     return pip_list
@@ -377,7 +377,7 @@ if os.path.exists(restore_snapshot_path):
                     else:
                         print(prefix, msg, end="")
 
-        print(f"[SD-CFY-Manager] Restore snapshot.")
+        print(f"[ComfyUI-Manager] Restore snapshot.")
         cmd_str = [sys.executable, git_script_path, '--apply-snapshot', restore_snapshot_path]
         exit_code = process_wrap(cmd_str, custom_nodes_path, handler=msg_capture)
 
@@ -409,20 +409,20 @@ if os.path.exists(restore_snapshot_path):
                         this_exit_code += process_wrap(install_cmd, repo_path)
 
                     if this_exit_code != 0:
-                        print(f"[SD-CFY-Manager] Restoring '{repository_name}' is failed.")
+                        print(f"[ComfyUI-Manager] Restoring '{repository_name}' is failed.")
 
                 except Exception as e:
                     print(e)
-                    print(f"[SD-CFY-Manager] Restoring '{repository_name}' is failed.")
+                    print(f"[ComfyUI-Manager] Restoring '{repository_name}' is failed.")
 
         if exit_code != 0:
-            print(f"[SD-CFY-Manager] Restore snapshot failed.")
+            print(f"[ComfyUI-Manager] Restore snapshot failed.")
         else:
-            print(f"[SD-CFY-Manager] Restore snapshot done.")
+            print(f"[ComfyUI-Manager] Restore snapshot done.")
 
     except Exception as e:
         print(e)
-        print(f"[SD-CFY-Manager] Restore snapshot failed.")
+        print(f"[ComfyUI-Manager] Restore snapshot failed.")
 
     os.remove(restore_snapshot_path)
 
@@ -452,7 +452,7 @@ def execute_lazy_install_script(repo_path, executable):
 # Check if script_list_path exists
 if os.path.exists(script_list_path):
     print("\n#######################################################################")
-    print("[SD-CFY-Manager] Starting dependency installation/(de)activation for the extension\n")
+    print("[ComfyUI-Manager] Starting dependency installation/(de)activation for the extension\n")
 
     executed = set()
     # Read each line from the file and convert it to a list using eval
@@ -477,7 +477,7 @@ if os.path.exists(script_list_path):
                         if 'pip' in script[1:] and 'install' in script[1:] and is_installed(script[-1]):
                             continue
 
-                    print(f"\n## SD-CFY-Manager: EXECUTE => {script[1:]}")
+                    print(f"\n## ComfyUI-Manager: EXECUTE => {script[1:]}")
                     print(f"\n## Execute install/(de)activation script for '{script[0]}'")
 
                     exit_code = process_wrap(script[1:], script[0])
@@ -485,7 +485,7 @@ if os.path.exists(script_list_path):
                     if exit_code != 0:
                         print(f"install/(de)activation script failed: {script[0]}")
                 else:
-                    print(f"\n## SD-CFY-Manager: CANCELED => {script[1:]}")
+                    print(f"\n## ComfyUI-Manager: CANCELED => {script[1:]}")
 
             except Exception as e:
                 print(f"[ERROR] Failed to execute install/(de)activation script: {line} / {e}")
@@ -494,7 +494,7 @@ if os.path.exists(script_list_path):
     if os.path.exists(script_list_path):
         os.remove(script_list_path)
         
-    print("\n[SD-CFY-Manager] Startup script completed.")
+    print("\n[ComfyUI-Manager] Startup script completed.")
     print("#######################################################################\n")
 
 del processed_install
@@ -514,9 +514,9 @@ def check_windows_event_loop_policy():
                 import asyncio
                 import asyncio.windows_events
                 asyncio.set_event_loop_policy(asyncio.windows_events.WindowsSelectorEventLoopPolicy())
-                print(f"[SD-CFY-Manager] Windows event loop policy mode enabled")
+                print(f"[ComfyUI-Manager] Windows event loop policy mode enabled")
             except Exception as e:
-                print(f"[SD-CFY-Manager] WARN: Windows initialization fail: {e}")
+                print(f"[ComfyUI-Manager] WARN: Windows initialization fail: {e}")
     except Exception:
         pass
 

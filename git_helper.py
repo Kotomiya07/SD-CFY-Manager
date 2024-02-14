@@ -131,18 +131,18 @@ def gitpull(path):
     repo.close()
 
 
-def checkout_sdcfy_hash(target_hash):
-    repo_path = os.path.join(working_directory, '..')  # SD-CFY dir
+def checkout_comfyui_hash(target_hash):
+    repo_path = os.path.join(working_directory, '..')  # ComfyUI dir
 
     repo = git.Repo(repo_path)
     commit_hash = repo.head.commit.hexsha
 
     if commit_hash != target_hash:
         try:
-            print(f"CHECKOUT: SD-CFY [{target_hash}]")
+            print(f"CHECKOUT: ComfyUI [{target_hash}]")
             repo.git.checkout(target_hash)
         except git.GitCommandError as e:
-            print(f"Error checking out the SD-CFY: {str(e)}")
+            print(f"Error checking out the ComfyUI: {str(e)}")
 
 
 def checkout_custom_node_hash(git_custom_node_infos):
@@ -157,7 +157,7 @@ def checkout_custom_node_hash(git_custom_node_infos):
         repo_name_to_url[repo_name] = url
 
     for path in os.listdir(working_directory):
-        if path.endswith("SD-CFY-Manager"):
+        if path.endswith("ComfyUI-Manager"):
             continue
 
         fullpath = os.path.join(working_directory, path)
@@ -272,11 +272,11 @@ def apply_snapshot(target):
             with open(path, 'r', encoding="UTF-8") as json_file:
                 info = json.load(json_file)
 
-                sdcfy_hash = info['sdcfy']
+                comfyui_hash = info['comfyui']
                 git_custom_node_infos = info['git_custom_nodes']
                 file_custom_node_infos = info['file_custom_nodes']
 
-                checkout_sdcfy_hash(sdcfy_hash)
+                checkout_comfyui_hash(comfyui_hash)
                 checkout_custom_node_hash(git_custom_node_infos)
                 invalidate_custom_node_file(file_custom_node_infos)
 

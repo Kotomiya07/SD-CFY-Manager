@@ -417,7 +417,7 @@ function handlePaste(e) {
 			data = data.getData("text/plain");
 			try {
 				let json_data = JSON.parse(data);
-				if(json_data.kind == 'SD-CFY Components' && last_paste_timestamp != json_data.timestamp) {
+				if(json_data.kind == 'ComfyUI Components' && last_paste_timestamp != json_data.timestamp) {
 					last_paste_timestamp = json_data.timestamp;
 					handle_import_components(json_data.components);
 
@@ -533,10 +533,10 @@ export class ComponentBuilderDialog extends ComfyDialog {
 		this.author_mode = author_mode[0];
 
 		const content =
-				$el("div.sdcfy-modal-content",
+				$el("div.comfy-modal-content",
 					[
 						$el("tr.cm-title", {}, [
-								$el("font", {size:6, color:"white"}, [`SD-CFY-Manager: Component Builder`])]
+								$el("font", {size:6, color:"white"}, [`ComfyUI-Manager: Component Builder`])]
 							),
 						$el("br", {}, []),
 						$el("div.cm-menu-container",
@@ -563,7 +563,7 @@ export class ComponentBuilderDialog extends ComfyDialog {
 		content.style.width = '100%';
 		content.style.height = '100%';
 
-		this.element = $el("div.sdcfy-modal", { id:'cm-manager-dialog', parent: document.body }, [ content ]);
+		this.element = $el("div.comfy-modal", { id:'cm-manager-dialog', parent: document.body }, [ content ]);
 	}
 
 	validateInput() {
