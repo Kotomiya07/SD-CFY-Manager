@@ -1021,7 +1021,7 @@ class ManagerMenuDialog extends ComfyDialog {
 									},
 									{
 										title: "SD-CFY Examples",
-										callback: () => { window.open("https://comfyanonymous.github.io/SD-CFY_examples", "sdcfy-community-manual3"); },
+										callback: () => { window.open("https://Kotomiya07.github.io/SD-CFY_examples", "sdcfy-community-manual3"); },
 									},
 									{
 										title: "Close",

@@ -161,7 +161,7 @@ def get_git_urls_from_json(json_file):
                 if files:
                     git_clone_files.append((files[0], node.get('title'), node.get('nodename_pattern')))
 
-    git_clone_files.append(("https://github.com/comfyanonymous/SD-CFY", "SD-CFY", None))
+    git_clone_files.append(("https://github.com/Kotomiya07/SD-CFY", "SD-CFY", None))
 
     return git_clone_files
 

@@ -4407,7 +4407,7 @@
             "title_aux": "sdcfy-nodes"
         }
     ],
-    "https://github.com/comfyanonymous/SD-CFY": [
+    "https://github.com/Kotomiya07/SD-CFY": [
         [
             "BasicScheduler",
             "CLIPLoader",
@@ -4555,7 +4555,7 @@
             "title_aux": "SD-CFY"
         }
     ],
-    "https://github.com/comfyanonymous/SD-CFY_experiments": [
+    "https://github.com/Kotomiya07/SD-CFY_experiments": [
         [
             "ModelMergeBlockNumber",
             "ModelMergeSDXL",

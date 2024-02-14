@@ -33,11 +33,11 @@
             "description": "This extension provides various nodes to support Lora Block Weight and the Impact Pack. Provides many easily applicable regional features and applications for Variation Seed."
         },
         {
-            "author": "comfyanonymous",
+            "author": "Kotomiya07",
             "title": "SD-CFY_experiments",
-            "reference": "https://github.com/comfyanonymous/SD-CFY_experiments",
+            "reference": "https://github.com/Kotomiya07/SD-CFY_experiments",
             "files": [
-                "https://github.com/comfyanonymous/SD-CFY_experiments"
+                "https://github.com/Kotomiya07/SD-CFY_experiments"
             ],
             "install_type": "git-clone",
             "description": "Nodes: ModelSamplerTonemapNoiseTest, TonemapNoiseWithRescaleCFG, ReferenceOnlySimple, RescaleClassifierFreeGuidanceTest, ModelMergeBlockNumber, ModelMergeSDXL, ModelMergeSDXLTransformers, ModelMergeSDXLDetailedTransformers.[w/NOTE: This is a consolidation of the previously separate custom nodes. Please delete the sampler_tonemap.py, sampler_rescalecfg.py, advanced_model_merging.py, sdxl_model_merging.py, and reference_only.py files installed in custom_nodes before.]"
@@ -720,7 +720,7 @@
                 "https://github.com/space-nuko/SD-CFY-OpenPose-Editor"
             ],
             "install_type": "git-clone",
-            "description": "A port of the openpose-editor extension for stable-diffusion-webui. NOTE: Requires [a/this SD-CFY patch](https://github.com/comfyanonymous/SD-CFY/pull/711) to work correctly"
+            "description": "A port of the openpose-editor extension for stable-diffusion-webui. NOTE: Requires [a/this SD-CFY patch](https://github.com/Kotomiya07/SD-CFY/pull/711) to work correctly"
         },
         {
             "author": "space-nuko",
@@ -3388,7 +3388,7 @@
                 "https://github.com/subtleGradient/TinkerBot-tech-for-SD-CFY-Touchpad"
             ],
             "install_type": "git-clone",
-            "description": "Two-finger scrolling (vertical and horizontal) to pan the canvas. Two-finger pinch to zoom in and out. Command-scroll up and down to zoom in and out. Fixes [comfyanonymous/SD-CFY#2059](https://github.com/comfyanonymous/SD-CFY/issues/2059)."
+            "description": "Two-finger scrolling (vertical and horizontal) to pan the canvas. Two-finger pinch to zoom in and out. Command-scroll up and down to zoom in and out. Fixes [Kotomiya07/SD-CFY#2059](https://github.com/Kotomiya07/SD-CFY/issues/2059)."
         },
         {
             "author": "zcfrank1st",

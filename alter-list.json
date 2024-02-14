@@ -6,7 +6,7 @@
        "description": "This extension provides preprocessor nodes for using controlnet."
      },
      {
-       "id":"https://github.com/comfyanonymous/SD-CFY_experiments",
+       "id":"https://github.com/Kotomiya07/SD-CFY_experiments",
        "tags":"Dynamic Thresholding, DT, CFG, controlnet, reference only",
        "description": "This experimental nodes contains a 'Reference Only' node and a 'ModelSamplerTonemapNoiseTest' node corresponding to the 'Dynamic Threshold'."
      },
