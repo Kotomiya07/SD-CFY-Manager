@@ -1,8 +1,8 @@
 import { app } from "../../scripts/app.js";
 import { api } from "../../scripts/api.js";
 import { ComfyDialog, $el } from "../../scripts/ui.js";
-import { OpenArtShareDialog } from "./comfyui-share-openart.js";
-import { YouMLShareDialog } from "./comfyui-share-youml.js";
+import { OpenArtShareDialog } from "./sdcfy-share-openart.js";
+import { YouMLShareDialog } from "./sdcfy-share-youml.js";
 
 export const SUPPORTED_OUTPUT_NODE_TYPES = [
 	"PreviewImage",
@@ -389,7 +389,7 @@ export class ShareDialogChooser extends ComfyDialog {
 			),
 
 			$el("div.cm-menu-container", {
-				id: "comfyui-share-container"
+				id: "sdcfy-share-container"
 			}, [
 				$el("div.cm-menu-column", [
 					createShareButtonsWithDescriptions(),
@@ -397,7 +397,7 @@ export class ShareDialogChooser extends ComfyDialog {
 				]),
 			]),
 			$el("div.cm-menu-container", {
-				id: "comfyui-share-container"
+				id: "sdcfy-share-container"
 			}, [
 				$el("button", {
 					type: "button",
@@ -503,7 +503,7 @@ export class ShareDialog extends ComfyDialog {
 		}, []);
 
 		this.share_finalmessage_container = $el("div.cm-menu-container", {
-			id: "comfyui-share-finalmessage-container",
+			id: "sdcfy-share-finalmessage-container",
 			style: {
 				display: "none",
 			}
@@ -539,7 +539,7 @@ export class ShareDialog extends ComfyDialog {
 			])
 		]);
 		this.share_container = $el("div.cm-menu-container", {
-			id: "comfyui-share-container"
+			id: "sdcfy-share-container"
 		}, [
 			$el("div.cm-menu-column", [
 				$el("details", {
@@ -852,7 +852,7 @@ export class ShareDialog extends ComfyDialog {
 
 			this.final_message.style.color = "green";
 
-			// hide #comfyui-share-container and show #comfyui-share-finalmessage-container
+			// hide #sdcfy-share-container and show #sdcfy-share-finalmessage-container
 			this.share_container.style.display = "none";
 			this.share_finalmessage_container.style.display = "block";
 

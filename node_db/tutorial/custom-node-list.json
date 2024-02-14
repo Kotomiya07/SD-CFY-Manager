@@ -42,10 +42,10 @@
         },
         {
             "author": "foxtrot-roger",
-            "title": "comfyui-custom-nodes",
-            "reference": "https://github.com/foxtrot-roger/comfyui-custom-nodes",
+            "title": "sdcfy-custom-nodes",
+            "reference": "https://github.com/foxtrot-roger/sdcfy-custom-nodes",
             "files": [
-                "https://github.com/foxtrot-roger/comfyui-custom-nodes"
+                "https://github.com/foxtrot-roger/sdcfy-custom-nodes"
             ],
             "install_type": "git-clone",
             "description": "Tutorial nodes"
@@ -73,9 +73,9 @@
         {
             "author": "bmz55",
             "title": "bmz nodes",
-            "reference": "https://github.com/bmz55/comfyui-bmz-nodes",
+            "reference": "https://github.com/bmz55/sdcfy-bmz-nodes",
             "files": [
-                "https://github.com/bmz55/comfyui-bmz-nodes"
+                "https://github.com/bmz55/sdcfy-bmz-nodes"
             ],
             "install_type": "git-clone",
             "description": "Nodes:Load Images From Dir With Name (Inspire - BMZ), Count Images In Dir (BMZ), Get Level Text (BMZ), Get Level Float (BMZ)"
@@ -102,10 +102,10 @@
         },
         {
             "author": "IvanRybakov",
-            "title": "comfyui-node-int-to-string-convertor",
-            "reference": "https://github.com/IvanRybakov/comfyui-node-int-to-string-convertor",
+            "title": "sdcfy-node-int-to-string-convertor",
+            "reference": "https://github.com/IvanRybakov/sdcfy-node-int-to-string-convertor",
             "files": [
-                "https://github.com/IvanRybakov/comfyui-node-int-to-string-convertor"
+                "https://github.com/IvanRybakov/sdcfy-node-int-to-string-convertor"
             ],
             "install_type": "git-clone",
             "description": "Nodes:Int To String Convertor"

@@ -146,7 +146,7 @@
             "title_aux": "SD-CFY_Fooocus"
         }
     ],
-    "https://github.com/BadCafeCode/execution-inversion-demo-comfyui": [
+    "https://github.com/BadCafeCode/execution-inversion-demo-sdcfy": [
         [
             "AccumulateNode",
             "AccumulationGetItemNode",
@@ -180,7 +180,7 @@
             "WhileLoopOpen"
         ],
         {
-            "title_aux": "execution-inversion-demo-comfyui"
+            "title_aux": "execution-inversion-demo-sdcfy"
         }
     ],
     "https://github.com/BlueDangerX/SD-CFY-BDXNodes": [
@@ -221,20 +221,20 @@
             "title_aux": "SD-CFY_bd_customNodes"
         }
     ],
-    "https://github.com/IvanZhd/comfyui-codeformer": [
+    "https://github.com/IvanZhd/sdcfy-codeformer": [
         [
             "RedBeanie_CustomImageInverter"
         ],
         {
-            "title_aux": "comfyui-codeformer [WIP]"
+            "title_aux": "sdcfy-codeformer [WIP]"
         }
     ],
-    "https://github.com/Jaxkr/comfyui-terminal-command": [
+    "https://github.com/Jaxkr/sdcfy-terminal-command": [
         [
             "Terminal"
         ],
         {
-            "title_aux": "comfyui-terminal-command [UNSAFE]"
+            "title_aux": "sdcfy-terminal-command [UNSAFE]"
         }
     ],
     "https://github.com/Jordach/sdcfy-consistency-vae": [
@@ -295,7 +295,7 @@
             "description": "This module enables StableSR in Comgfyui. Ported work of sd-webui-stablesr. Original work for Auotmaatic1111 version of this module and StableSR credit to LIightChaser and Jianyi Wang.",
             "nickname": "StableSR",
             "title": "StableSR",
-            "title_aux": "pre-comfyui-stablsr"
+            "title_aux": "pre-sdcfy-stablsr"
         }
     ],
     "https://github.com/ZHO-ZHO-ZHO/SD-CFY-AnyText": [
@@ -306,7 +306,7 @@
             "title_aux": "SD-CFY-AnyText\uff08WIP\uff09"
         }
     ],
-    "https://github.com/alt-key-project/comfyui-dream-video-batches": [
+    "https://github.com/alt-key-project/sdcfy-dream-video-batches": [
         [
             "Blended Transition [DVB]",
             "Calculation [DVB]",
@@ -579,20 +579,20 @@
             "title_aux": "SD-CFY-audio"
         }
     ],
-    "https://github.com/flowtyone/comfyui-flowty-lcm": [
+    "https://github.com/flowtyone/sdcfy-flowty-lcm": [
         [
             "LCMSampler"
         ],
         {
-            "title_aux": "comfyui-flowty-lcm"
+            "title_aux": "sdcfy-flowty-lcm"
         }
     ],
-    "https://github.com/foglerek/comfyui-cem-tools": [
+    "https://github.com/foglerek/sdcfy-cem-tools": [
         [
             "ProcessImageBatch"
         ],
         {
-            "title_aux": "comfyui-cem-tools"
+            "title_aux": "sdcfy-cem-tools"
         }
     ],
     "https://github.com/gameltb/SD-CFY_stable_fast": [
@@ -761,12 +761,12 @@
             "title_aux": "SD-CFY_Prompt_Template_CustomNodes"
         }
     ],
-    "https://github.com/laksjdjf/ssd-1b-comfyui": [
+    "https://github.com/laksjdjf/ssd-1b-sdcfy": [
         [
             "SSD-1B-Loader"
         ],
         {
-            "title_aux": "ssd-1b-comfyui"
+            "title_aux": "ssd-1b-sdcfy"
         }
     ],
     "https://github.com/ltdrdata/SD-CFY-Workflow-Component": [
@@ -860,7 +860,7 @@
             "title_aux": "NudeNet-Detector-Provider [WIP]"
         }
     ],
-    "https://github.com/prismwastaken/comfyui-tools": [
+    "https://github.com/prismwastaken/sdcfy-tools": [
         [
             "Prism-RandomNormal"
         ],
@@ -877,14 +877,14 @@
             "title_aux": "SD-CFY-clip-interrogator [WIP]"
         }
     ],
-    "https://github.com/wormley/comfyui-wormley-nodes": [
+    "https://github.com/wormley/sdcfy-wormley-nodes": [
         [
             "CheckpointVAELoaderSimpleText",
             "CheckpointVAESelectorText",
             "LoRA_Tag_To_Stack"
         ],
         {
-            "title_aux": "comfyui-wormley-nodes"
+            "title_aux": "sdcfy-wormley-nodes"
         }
     ]
 }

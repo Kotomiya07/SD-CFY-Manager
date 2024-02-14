@@ -38,7 +38,7 @@
             "words_generatee"
         ],
         {
-            "title_aux": "Hayo comfyui nodes"
+            "title_aux": "Hayo sdcfy nodes"
         }
     ],
     "https://github.com/42lux/SD-CFY-safety-checker": [
@@ -170,7 +170,7 @@
             "title_aux": "SD-CFY_BadgerTools"
         }
     ],
-    "https://github.com/Acly/comfyui-inpaint-nodes": [
+    "https://github.com/Acly/sdcfy-inpaint-nodes": [
         [
             "INPAINT_ApplyFooocusInpaint",
             "INPAINT_InpaintWithModel",
@@ -184,7 +184,7 @@
             "title_aux": "SD-CFY Inpaint Nodes"
         }
     ],
-    "https://github.com/Acly/comfyui-tooling-nodes": [
+    "https://github.com/Acly/sdcfy-tooling-nodes": [
         [
             "ETN_ApplyMaskToImage",
             "ETN_CropImage",
@@ -224,7 +224,7 @@
             "title_aux": "Character Face Swap"
         }
     ],
-    "https://github.com/ArtVentureX/comfyui-animatediff": [
+    "https://github.com/ArtVentureX/sdcfy-animatediff": [
         [
             "AnimateDiffCombine",
             "AnimateDiffLoraLoader",
@@ -250,7 +250,7 @@
             "title_aux": "SpliceTools"
         }
     ],
-    "https://github.com/BadCafeCode/masquerade-nodes-comfyui": [
+    "https://github.com/BadCafeCode/masquerade-nodes-sdcfy": [
         [
             "Blur",
             "Change Channel Count",
@@ -305,7 +305,7 @@
             "title_aux": "bsz-cui-extras"
         }
     ],
-    "https://github.com/BennyKok/comfyui-deploy": [
+    "https://github.com/BennyKok/sdcfy-deploy": [
         [
             "SD-CFYDeployExternalCheckpoint",
             "SD-CFYDeployExternalImage",
@@ -319,7 +319,7 @@
             "author": "BennyKok",
             "description": "",
             "nickname": "Comfy Deploy",
-            "title": "comfyui-deploy",
+            "title": "sdcfy-deploy",
             "title_aux": "SD-CFY Deploy"
         }
     ],
@@ -965,7 +965,7 @@
             "title_aux": "SD-CFY-GTSuya-Nodes"
         }
     ],
-    "https://github.com/Gourieff/comfyui-reactor-node": [
+    "https://github.com/Gourieff/sdcfy-reactor-node": [
         [
             "ReActorFaceSwap",
             "ReActorLoadFaceModel",
@@ -1003,7 +1003,7 @@
             "title_aux": "SD-CFY-Hangover-Nodes"
         }
     ],
-    "https://github.com/Haoming02/comfyui-diffusion-cg": [
+    "https://github.com/Haoming02/sdcfy-diffusion-cg": [
         [
             "Hook Recenter",
             "Hook Recenter XL",
@@ -1016,7 +1016,7 @@
             "title_aux": "SD-CFY Diffusion Color Grading"
         }
     ],
-    "https://github.com/Haoming02/comfyui-floodgate": [
+    "https://github.com/Haoming02/sdcfy-floodgate": [
         [
             "FloodGate"
         ],
@@ -1032,12 +1032,12 @@
             "title_aux": "SD-CFY Better Strings"
         }
     ],
-    "https://github.com/HebelHuber/comfyui-enhanced-save-node": [
+    "https://github.com/HebelHuber/sdcfy-enhanced-save-node": [
         [
             "EnhancedSaveNode"
         ],
         {
-            "title_aux": "comfyui-enhanced-save-node"
+            "title_aux": "sdcfy-enhanced-save-node"
         }
     ],
     "https://github.com/Hiero207/SD-CFY-Hiero-Nodes": [
@@ -1075,7 +1075,7 @@
             "title_aux": "IG Interpolation Nodes"
         }
     ],
-    "https://github.com/Inzaniak/comfyui-ranbooru": [
+    "https://github.com/Inzaniak/sdcfy-ranbooru": [
         [
             "PromptBackground",
             "PromptLimit",
@@ -1209,7 +1209,7 @@
             "title_aux": "SD-CFY_GLM4Node"
         }
     ],
-    "https://github.com/Jcd1230/rembg-comfyui-node": [
+    "https://github.com/Jcd1230/rembg-sdcfy-node": [
         [
             "Image Remove Background (rembg)"
         ],
@@ -1415,7 +1415,7 @@
             "title_aux": "Lora-Training-in-Comfy"
         }
     ],
-    "https://github.com/Layer-norm/comfyui-lama-remover": [
+    "https://github.com/Layer-norm/sdcfy-lama-remover": [
         [
             "LamaRemover",
             "LamaRemoverIMG"
@@ -1465,7 +1465,7 @@
             "title_aux": "SD-CFY-Diffusers"
         }
     ],
-    "https://github.com/Loewen-Hob/rembg-comfyui-node-better": [
+    "https://github.com/Loewen-Hob/rembg-sdcfy-node-better": [
         [
             "Image Remove Background (rembg)"
         ],
@@ -1493,12 +1493,12 @@
             "title_aux": "SD-CFY-RawSaver"
         }
     ],
-    "https://github.com/LyazS/comfyui-anime-seg": [
+    "https://github.com/LyazS/sdcfy-anime-seg": [
         [
             "Anime Character Seg"
         ],
         {
-            "title_aux": "Anime Character Segmentation node for comfyui"
+            "title_aux": "Anime Character Segmentation node for sdcfy"
         }
     ],
     "https://github.com/M1kep/ComfyLiterals": [
@@ -1653,20 +1653,20 @@
             "title_aux": "SD-CFY_TravelSuite"
         }
     ],
-    "https://github.com/NimaNzrii/comfyui-photoshop": [
+    "https://github.com/NimaNzrii/sdcfy-photoshop": [
         [
             "PhotoshopToSD-CFY"
         ],
         {
-            "title_aux": "comfyui-photoshop"
+            "title_aux": "sdcfy-photoshop"
         }
     ],
-    "https://github.com/NimaNzrii/comfyui-popup_preview": [
+    "https://github.com/NimaNzrii/sdcfy-popup_preview": [
         [
             "PreviewPopup"
         ],
         {
-            "title_aux": "comfyui-popup_preview"
+            "title_aux": "sdcfy-popup_preview"
         }
     ],
     "https://github.com/Niutonian/ComfyUi-NoodleWebcam": [
@@ -1886,7 +1886,7 @@
             "title_aux": "SD-CFY-Malefish-Custom-Scripts"
         }
     ],
-    "https://github.com/Pfaeff/pfaeff-comfyui": [
+    "https://github.com/Pfaeff/pfaeff-sdcfy": [
         [
             "AstropulsePixelDetector",
             "BackgroundRemover",
@@ -1895,7 +1895,7 @@
             "InpaintingPipelineLoader"
         ],
         {
-            "title_aux": "pfaeff-comfyui"
+            "title_aux": "pfaeff-sdcfy"
         }
     ],
     "https://github.com/QaisMalkawi/SD-CFY-QaisHelper": [
@@ -2510,7 +2510,7 @@
             "title_aux": "SD-CFY-Portrait-Maker"
         }
     ],
-    "https://github.com/TRI3D-LC/tri3d-comfyui-nodes": [
+    "https://github.com/TRI3D-LC/tri3d-sdcfy-nodes": [
         [
             "tri3d-adjust-neck",
             "tri3d-atr-parse",
@@ -2539,10 +2539,10 @@
             "tri3d-swap-pixels"
         ],
         {
-            "title_aux": "tri3d-comfyui-nodes"
+            "title_aux": "tri3d-sdcfy-nodes"
         }
     ],
-    "https://github.com/Taremin/comfyui-prompt-extranetworks": [
+    "https://github.com/Taremin/sdcfy-prompt-extranetworks": [
         [
             "PromptExtraNetworks"
         ],
@@ -2550,7 +2550,7 @@
             "title_aux": "SD-CFY Prompt ExtraNetworks"
         }
     ],
-    "https://github.com/Taremin/comfyui-string-tools": [
+    "https://github.com/Taremin/sdcfy-string-tools": [
         [
             "StringToolsConcat",
             "StringToolsRandomChoice",
@@ -2784,7 +2784,7 @@
             "title_aux": "WAS_Extras"
         }
     ],
-    "https://github.com/WASasquatch/was-node-suite-comfyui": [
+    "https://github.com/WASasquatch/was-node-suite-sdcfy": [
         [
             "BLIP Analyze Image",
             "BLIP Model Loader",
@@ -3012,7 +3012,7 @@
             "title_aux": "WebDev9000-Nodes"
         }
     ],
-    "https://github.com/YMC-GitHub/ymc-node-suite-comfyui": [
+    "https://github.com/YMC-GitHub/ymc-node-suite-sdcfy": [
         [
             "canvas-util-cal-size",
             "conditioning-util-input-switch",
@@ -3051,7 +3051,7 @@
             "xyz-util-txt-to-int"
         ],
         {
-            "title_aux": "ymc-node-suite-comfyui"
+            "title_aux": "ymc-node-suite-sdcfy"
         }
     ],
     "https://github.com/YOUR-WORST-TACO/SD-CFY-TacoNodes": [
@@ -3185,12 +3185,12 @@
             "title_aux": "SD-CFY-Text_Image-Composite [WIP]"
         }
     ],
-    "https://github.com/ZHO-ZHO-ZHO/comfyui-portrait-master-zh-cn": [
+    "https://github.com/ZHO-ZHO-ZHO/sdcfy-portrait-master-zh-cn": [
         [
             "PortraitMaster_\u4e2d\u6587\u7248"
         ],
         {
-            "title_aux": "comfyui-portrait-master-zh-cn"
+            "title_aux": "sdcfy-portrait-master-zh-cn"
         }
     ],
     "https://github.com/ZaneA/SD-CFY-ImageReward": [
@@ -3292,7 +3292,7 @@
             "title_aux": "SD-CFY-TrashNodes-DownloadHuggingface"
         }
     ],
-    "https://github.com/adieyal/comfyui-dynamicprompts": [
+    "https://github.com/adieyal/sdcfy-dynamicprompts": [
         [
             "DPCombinatorialGenerator",
             "DPFeelingLucky",
@@ -3347,7 +3347,7 @@
             "title_aux": "AegisFlow Utility Nodes"
         }
     ],
-    "https://github.com/aegis72/comfyui-styles-all": [
+    "https://github.com/aegis72/sdcfy-styles-all": [
         [
             "menus"
         ],
@@ -3388,7 +3388,7 @@
             "title_aux": "SD-CFY Image Saver"
         }
     ],
-    "https://github.com/alpertunga-bile/prompt-generator-comfyui": [
+    "https://github.com/alpertunga-bile/prompt-generator-sdcfy": [
         [
             "Prompt Generator"
         ],
@@ -3396,15 +3396,15 @@
             "title_aux": "prompt-generator"
         }
     ],
-    "https://github.com/alsritter/asymmetric-tiling-comfyui": [
+    "https://github.com/alsritter/asymmetric-tiling-sdcfy": [
         [
             "Asymmetric_Tiling_KSampler"
         ],
         {
-            "title_aux": "asymmetric-tiling-comfyui"
+            "title_aux": "asymmetric-tiling-sdcfy"
         }
     ],
-    "https://github.com/alt-key-project/comfyui-dream-project": [
+    "https://github.com/alt-key-project/sdcfy-dream-project": [
         [
             "Analyze Palette [Dream]",
             "Beat Curve [Dream]",
@@ -3468,7 +3468,7 @@
             "title_aux": "Dream Project Animation Nodes"
         }
     ],
-    "https://github.com/alt-key-project/comfyui-dream-video-batches": [
+    "https://github.com/alt-key-project/sdcfy-dream-video-batches": [
         [
             "Blended Transition [DVB]",
             "Calculation [DVB]",
@@ -3522,7 +3522,7 @@
             "title_aux": "SD-CFY_RErouter_CustomNodes"
         }
     ],
-    "https://github.com/andersxa/comfyui-PromptAttention": [
+    "https://github.com/andersxa/sdcfy-PromptAttention": [
         [
             "CLIPAttentionMaskEncode"
         ],
@@ -3550,7 +3550,7 @@
             "title_aux": "SD-CFY-CADS"
         }
     ],
-    "https://github.com/asagi4/comfyui-prompt-control": [
+    "https://github.com/asagi4/sdcfy-prompt-control": [
         [
             "EditableCLIPEncode",
             "FilterSchedule",
@@ -3567,14 +3567,14 @@
             "title_aux": "SD-CFY prompt control"
         }
     ],
-    "https://github.com/asagi4/comfyui-utility-nodes": [
+    "https://github.com/asagi4/sdcfy-utility-nodes": [
         [
             "MUForceCacheClear",
             "MUJinjaRender",
             "MUSimpleWildcard"
         ],
         {
-            "title_aux": "asagi4/comfyui-utility-nodes"
+            "title_aux": "asagi4/sdcfy-utility-nodes"
         }
     ],
     "https://github.com/aszc-dev/SD-CFY-CoreMLSuite": [
@@ -3591,7 +3591,7 @@
             "title_aux": "Core ML Suite for SD-CFY"
         }
     ],
-    "https://github.com/avatechai/avatar-graph-comfyui": [
+    "https://github.com/avatechai/avatar-graph-sdcfy": [
         [
             "ApplyMeshTransformAsShapeKey",
             "B_ENUM",
@@ -3615,7 +3615,7 @@
             "description": "Include nodes for sam + bpy operation, that allows workflow creations for generative 2d character rig.",
             "nickname": "Avatar Graph",
             "title": "Avatar Graph",
-            "title_aux": "avatar-graph-comfyui"
+            "title_aux": "avatar-graph-sdcfy"
         }
     ],
     "https://github.com/azure-dragon-ai/SD-CFY-ClipScore-Nodes": [
@@ -3910,7 +3910,7 @@
             "title_aux": "ResolutionSelector for SD-CFY"
         }
     ],
-    "https://github.com/braintacles/braintacles-comfyui-nodes": [
+    "https://github.com/braintacles/braintacles-sdcfy-nodes": [
         [
             "CLIPTextEncodeSDXL-Multi-IO",
             "CLIPTextEncodeSDXL-Pipe",
@@ -3935,7 +3935,7 @@
             "title_aux": "StyleAligned for SD-CFY"
         }
     ],
-    "https://github.com/bronkula/comfyui-fitsize": [
+    "https://github.com/bronkula/sdcfy-fitsize": [
         [
             "FS: Crop Image Into Even Pieces",
             "FS: Fit Image And Resize",
@@ -3948,7 +3948,7 @@
             "FS: Pick Image From List"
         ],
         {
-            "title_aux": "comfyui-fitsize"
+            "title_aux": "sdcfy-fitsize"
         }
     ],
     "https://github.com/bruefire/SD-CFY-SeqImageLoader": [
@@ -4004,7 +4004,7 @@
             "title_aux": "SD-CFY_PerpWeight"
         }
     ],
-    "https://github.com/catscandrive/comfyui-imagesubfolders/raw/main/loadImageWithSubfolders.py": [
+    "https://github.com/catscandrive/sdcfy-imagesubfolders/raw/main/loadImageWithSubfolders.py": [
         [
             "LoadImagewithSubfolders"
         ],
@@ -4764,17 +4764,17 @@
             "title_aux": "DZ-FaceDetailer"
         }
     ],
-    "https://github.com/deroberon/StableZero123-comfyui": [
+    "https://github.com/deroberon/StableZero123-sdcfy": [
         [
             "SDZero ImageSplit",
             "Stablezero123",
             "Stablezero123WithDepth"
         ],
         {
-            "title_aux": "StableZero123-comfyui"
+            "title_aux": "StableZero123-sdcfy"
         }
     ],
-    "https://github.com/deroberon/demofusion-comfyui": [
+    "https://github.com/deroberon/demofusion-sdcfy": [
         [
             "Batch Unsampler",
             "Demofusion",
@@ -4782,10 +4782,10 @@
             "Iterative Mixing KSampler"
         ],
         {
-            "title_aux": "demofusion-comfyui"
+            "title_aux": "demofusion-sdcfy"
         }
     ],
-    "https://github.com/dfl/comfyui-clip-with-break": [
+    "https://github.com/dfl/sdcfy-clip-with-break": [
         [
             "AdvancedCLIPTextEncodeWithBreak",
             "CLIPTextEncodeWithBreak"
@@ -4795,10 +4795,10 @@
             "description": "CLIP text encoder that does BREAK prompting like A1111",
             "nickname": "CLIP with BREAK",
             "title": "CLIP with BREAK syntax",
-            "title_aux": "comfyui-clip-with-break"
+            "title_aux": "sdcfy-clip-with-break"
         }
     ],
-    "https://github.com/digitaljohn/comfyui-propost": [
+    "https://github.com/digitaljohn/sdcfy-propost": [
         [
             "ProPostApplyLUT",
             "ProPostDepthMapBlur",
@@ -4976,7 +4976,7 @@
     ],
     "https://github.com/ealkanat/comfyui_easy_padding": [
         [
-            "comfyui-easy-padding"
+            "sdcfy-easy-padding"
         ],
         {
             "title_aux": "SD-CFY Easy Padding"
@@ -5074,7 +5074,7 @@
             "title_aux": "Fearnworks Custom Nodes"
         }
     ],
-    "https://github.com/fexli/fexli-util-node-comfyui": [
+    "https://github.com/fexli/fexli-util-node-sdcfy": [
         [
             "FEBCPrompt",
             "FEBatchGenStringBCDocker",
@@ -5105,7 +5105,7 @@
             "FETextInput"
         ],
         {
-            "title_aux": "fexli-util-node-comfyui"
+            "title_aux": "fexli-util-node-sdcfy"
         }
     ],
     "https://github.com/filipemeneses/comfy_pixelization": [
@@ -5136,15 +5136,15 @@
             "title_aux": "fcSuite"
         }
     ],
-    "https://github.com/florestefano1975/comfyui-portrait-master": [
+    "https://github.com/florestefano1975/sdcfy-portrait-master": [
         [
             "PortraitMaster"
         ],
         {
-            "title_aux": "comfyui-portrait-master"
+            "title_aux": "sdcfy-portrait-master"
         }
     ],
-    "https://github.com/florestefano1975/comfyui-prompt-composer": [
+    "https://github.com/florestefano1975/sdcfy-prompt-composer": [
         [
             "PromptComposerCustomLists",
             "PromptComposerEffect",
@@ -5155,7 +5155,7 @@
             "promptComposerTextMultiple"
         ],
         {
-            "title_aux": "comfyui-prompt-composer"
+            "title_aux": "sdcfy-prompt-composer"
         }
     ],
     "https://github.com/flowtyone/SD-CFY-Flowty-LDSR": [
@@ -5196,7 +5196,7 @@
             "title_aux": "As_SD-CFY_CustomNodes"
         }
     ],
-    "https://github.com/foxtrot-roger/comfyui-rf-nodes": [
+    "https://github.com/foxtrot-roger/sdcfy-rf-nodes": [
         [
             "LogBool",
             "LogFloat",
@@ -5276,7 +5276,7 @@
             "title_aux": "SD-CFY-GlifNodes"
         }
     ],
-    "https://github.com/glowcone/comfyui-base64-to-image": [
+    "https://github.com/glowcone/sdcfy-base64-to-image": [
         [
             "LoadImageFromBase64"
         ],
@@ -5315,7 +5315,7 @@
             "title_aux": "VLM_nodes"
         }
     ],
-    "https://github.com/guoyk93/yk-node-suite-comfyui": [
+    "https://github.com/guoyk93/yk-node-suite-sdcfy": [
         [
             "YKImagePadForOutpaint",
             "YKMaskToImage"
@@ -5484,7 +5484,7 @@
             "title_aux": "SD-CFY_Jags_VectorMagic"
         }
     ],
-    "https://github.com/jags111/efficiency-nodes-comfyui": [
+    "https://github.com/jags111/efficiency-nodes-sdcfy": [
         [
             "AnimateDiff Script",
             "Apply ControlNet Stack",
@@ -5538,7 +5538,7 @@
             "title_aux": "SD-CFY_rotate_image"
         }
     ],
-    "https://github.com/jamesWalker55/comfyui-various": [
+    "https://github.com/jamesWalker55/sdcfy-various": [
         [],
         {
             "nodename_pattern": "^JW",
@@ -5594,7 +5594,7 @@
             "title_aux": "SD-CFY-JaRue"
         }
     ],
-    "https://github.com/ka-puna/comfyui-yanc": [
+    "https://github.com/ka-puna/sdcfy-yanc": [
         [
             "YANC.ConcatStrings",
             "YANC.FormatDatetimeString",
@@ -5604,7 +5604,7 @@
             "YANC.TruncateString"
         ],
         {
-            "title_aux": "comfyui-yanc"
+            "title_aux": "sdcfy-yanc"
         }
     ],
     "https://github.com/kadirnar/SD-CFY-Transformers": [
@@ -5618,7 +5618,7 @@
             "title_aux": "SD-CFY-Transformers"
         }
     ],
-    "https://github.com/kenjiqq/qq-nodes-comfyui": [
+    "https://github.com/kenjiqq/qq-nodes-sdcfy": [
         [
             "Any List",
             "Axis Pack",
@@ -5631,7 +5631,7 @@
             "XY Grid Helper"
         ],
         {
-            "title_aux": "qq-nodes-comfyui"
+            "title_aux": "qq-nodes-sdcfy"
         }
     ],
     "https://github.com/kft334/Knodes": [
@@ -5824,7 +5824,7 @@
             "title_aux": "SD-CFY_SDXL_DreamBooth_LoRA_CustomNodes"
         }
     ],
-    "https://github.com/komojini/komojini-comfyui-nodes": [
+    "https://github.com/komojini/komojini-sdcfy-nodes": [
         [
             "BatchCreativeInterpolationNodeDynamicSettings",
             "CachedGetter",
@@ -5849,15 +5849,15 @@
             "YouTubeVideoLoader"
         ],
         {
-            "title_aux": "komojini-comfyui-nodes"
+            "title_aux": "komojini-sdcfy-nodes"
         }
     ],
-    "https://github.com/kwaroran/abg-comfyui": [
+    "https://github.com/kwaroran/abg-sdcfy": [
         [
             "Remove Image Background (abg)"
         ],
         {
-            "title_aux": "abg-comfyui"
+            "title_aux": "abg-sdcfy"
         }
     ],
     "https://github.com/laksjdjf/LCMSampler-SD-CFY": [
@@ -5918,7 +5918,7 @@
             "title_aux": "simple wildcard for SD-CFY"
         }
     ],
-    "https://github.com/lldacing/comfyui-easyapi-nodes": [
+    "https://github.com/lldacing/sdcfy-easyapi-nodes": [
         [
             "Base64ToImage",
             "Base64ToMask",
@@ -5933,17 +5933,17 @@
             "SamAutoMaskSEGS"
         ],
         {
-            "title_aux": "comfyui-easyapi-nodes"
+            "title_aux": "sdcfy-easyapi-nodes"
         }
     ],
-    "https://github.com/longgui0318/comfyui-mask-util": [
+    "https://github.com/longgui0318/sdcfy-mask-util": [
         [
             "Mask Region Info",
             "Mask Selection Of Masks",
             "Split Masks"
         ],
         {
-            "title_aux": "comfyui-mask-util"
+            "title_aux": "sdcfy-mask-util"
         }
     ],
     "https://github.com/lordgasmic/SD-CFY-Wildcards/raw/master/wildcards.py": [
@@ -6278,13 +6278,13 @@
             "title_aux": "Recommended Resolution Calculator"
         }
     ],
-    "https://github.com/martijnat/comfyui-previewlatent": [
+    "https://github.com/martijnat/sdcfy-previewlatent": [
         [
             "PreviewLatent",
             "PreviewLatentAdvanced"
         ],
         {
-            "title_aux": "comfyui-previewlatent"
+            "title_aux": "sdcfy-previewlatent"
         }
     ],
     "https://github.com/massao000/SD-CFY_aspect_ratios": [
@@ -6443,7 +6443,7 @@
             "title_aux": "SD-CFY - Text Overlay Plugin"
         }
     ],
-    "https://github.com/mikkel/comfyui-mask-boundingbox": [
+    "https://github.com/mikkel/sdcfy-mask-boundingbox": [
         [
             "Mask Bounding Box"
         ],
@@ -6518,13 +6518,13 @@
             "title_aux": "comfyUI_Nodes_nicolai256"
         }
     ],
-    "https://github.com/ningxiaoxiao/comfyui-NDI": [
+    "https://github.com/ningxiaoxiao/sdcfy-NDI": [
         [
             "NDI_LoadImage",
             "NDI_SendImage"
         ],
         {
-            "title_aux": "comfyui-NDI"
+            "title_aux": "sdcfy-NDI"
         }
     ],
     "https://github.com/nkchocoai/SD-CFY-PromptUtilities": [
@@ -6586,7 +6586,7 @@
             "title_aux": "noEmbryo nodes"
         }
     ],
-    "https://github.com/nosiu/comfyui-instantId-faceswap": [
+    "https://github.com/nosiu/sdcfy-instantId-faceswap": [
         [
             "FaceEmbed",
             "FaceSwapGenerationInpaint",
@@ -6620,12 +6620,12 @@
             "title_aux": "SD-CFY - Apply LoRA Stacker with DARE"
         }
     ],
-    "https://github.com/ntdviet/comfyui-ext/raw/main/custom_nodes/gcLatentTunnel/gcLatentTunnel.py": [
+    "https://github.com/ntdviet/sdcfy-ext/raw/main/custom_nodes/gcLatentTunnel/gcLatentTunnel.py": [
         [
             "gcLatentTunnel"
         ],
         {
-            "title_aux": "ntdviet/comfyui-ext"
+            "title_aux": "ntdviet/sdcfy-ext"
         }
     ],
     "https://github.com/omar92/SD-CFY-QualityOfLifeSuit_Omar92": [
@@ -6719,7 +6719,7 @@
             "title_aux": "SD-CFY-TrollSuite"
         }
     ],
-    "https://github.com/palant/extended-saveimage-comfyui": [
+    "https://github.com/palant/extended-saveimage-sdcfy": [
         [
             "SaveImageExtended"
         ],
@@ -6727,7 +6727,7 @@
             "title_aux": "Extended Save Image for SD-CFY"
         }
     ],
-    "https://github.com/palant/image-resize-comfyui": [
+    "https://github.com/palant/image-resize-sdcfy": [
         [
             "ImageResize"
         ],
@@ -6826,7 +6826,7 @@
             "title_aux": "A8R8 SD-CFY Nodes"
         }
     ],
-    "https://github.com/rcfcu2000/zhihuige-nodes-comfyui": [
+    "https://github.com/rcfcu2000/zhihuige-nodes-sdcfy": [
         [
             "Combine ZHGMasks",
             "Cover ZHGMasks",
@@ -6845,20 +6845,20 @@
             "ZHG UltimateSDUpscale"
         ],
         {
-            "title_aux": "zhihuige-nodes-comfyui"
+            "title_aux": "zhihuige-nodes-sdcfy"
         }
     ],
-    "https://github.com/rcsaquino/comfyui-custom-nodes": [
+    "https://github.com/rcsaquino/sdcfy-custom-nodes": [
         [
             "BackgroundRemover | rcsaquino",
             "VAELoader | rcsaquino",
             "VAEProcessor | rcsaquino"
         ],
         {
-            "title_aux": "rcsaquino/comfyui-custom-nodes"
+            "title_aux": "rcsaquino/sdcfy-custom-nodes"
         }
     ],
-    "https://github.com/receyuki/comfyui-prompt-reader-node": [
+    "https://github.com/receyuki/sdcfy-prompt-reader-node": [
         [
             "SDBatchLoader",
             "SDLoraLoader",
@@ -6875,7 +6875,7 @@
             "description": "SD-CFY node version of the SD Prompt Reader",
             "nickname": "SD Prompt Reader",
             "title": "SD Prompt Reader",
-            "title_aux": "comfyui-prompt-reader-node"
+            "title_aux": "sdcfy-prompt-reader-node"
         }
     ],
     "https://github.com/redhottensors/SD-CFY-Prediction": [
@@ -6909,7 +6909,7 @@
             "title_aux": "Comfy-LFO"
         }
     ],
-    "https://github.com/ricklove/comfyui-ricklove": [
+    "https://github.com/ricklove/sdcfy-ricklove": [
         [
             "RL_Crop_Resize",
             "RL_Crop_Resize_Batch",
@@ -6930,7 +6930,7 @@
             "RL_Zoe_Depth_Map_Preprocessor_Raw_Process"
         ],
         {
-            "title_aux": "comfyui-ricklove"
+            "title_aux": "sdcfy-ricklove"
         }
     ],
     "https://github.com/rklaffehn/rk-sdcfy-nodes": [
@@ -6968,7 +6968,7 @@
             "title_aux": "comfy_meh"
         }
     ],
-    "https://github.com/seanlynch/comfyui-optical-flow": [
+    "https://github.com/seanlynch/sdcfy-optical-flow": [
         [
             "Apply optical flow",
             "Compute optical flow",
@@ -6998,7 +6998,7 @@
             "title_aux": "SD-CFY_Nimbus-Pack"
         }
     ],
-    "https://github.com/shadowcz007/comfyui-consistency-decoder": [
+    "https://github.com/shadowcz007/sdcfy-consistency-decoder": [
         [
             "VAEDecodeConsistencyDecoder",
             "VAELoaderConsistencyDecoder"
@@ -7007,7 +7007,7 @@
             "title_aux": "Consistency Decoder"
         }
     ],
-    "https://github.com/shadowcz007/comfyui-mixlab-nodes": [
+    "https://github.com/shadowcz007/sdcfy-mixlab-nodes": [
         [
             "3DImage",
             "AppInfo",
@@ -7072,15 +7072,15 @@
             "VAELoaderConsistencyDecoder"
         ],
         {
-            "title_aux": "comfyui-mixlab-nodes"
+            "title_aux": "sdcfy-mixlab-nodes"
         }
     ],
-    "https://github.com/shadowcz007/comfyui-ultralytics-yolo": [
+    "https://github.com/shadowcz007/sdcfy-ultralytics-yolo": [
         [
             "DetectByLabel"
         ],
         {
-            "title_aux": "comfyui-ultralytics-yolo"
+            "title_aux": "sdcfy-ultralytics-yolo"
         }
     ],
     "https://github.com/shiimizu/SD-CFY-PhotoMaker-Plus": [
@@ -7178,7 +7178,7 @@
             "title_aux": "OneDiff Nodes"
         }
     ],
-    "https://github.com/sipherxyz/comfyui-art-venture": [
+    "https://github.com/sipherxyz/sdcfy-art-venture": [
         [
             "AV_CheckpointMerge",
             "AV_CheckpointModelsToParametersPipe",
@@ -7245,7 +7245,7 @@
             "StringToNumber"
         ],
         {
-            "title_aux": "comfyui-art-venture"
+            "title_aux": "sdcfy-art-venture"
         }
     ],
     "https://github.com/skfoo/SD-CFY-Coziness": [
@@ -7257,12 +7257,12 @@
             "title_aux": "SD-CFY-Coziness"
         }
     ],
-    "https://github.com/smagnetize/kb-comfyui-nodes": [
+    "https://github.com/smagnetize/kb-sdcfy-nodes": [
         [
             "SingleImageDataUrlLoader"
         ],
         {
-            "title_aux": "kb-comfyui-nodes"
+            "title_aux": "kb-sdcfy-nodes"
         }
     ],
     "https://github.com/space-nuko/SD-CFY-Disco-Diffusion": [
@@ -7369,7 +7369,7 @@
             "title_aux": "Seamless tiling Node for SD-CFY"
         }
     ],
-    "https://github.com/spro/comfyui-mirror": [
+    "https://github.com/spro/sdcfy-mirror": [
         [
             "LatentMirror"
         ],
@@ -7456,7 +7456,7 @@
             "title_aux": "SD-CFY-sudo-latent-upscale"
         }
     ],
-    "https://github.com/syllebra/bilbox-comfyui": [
+    "https://github.com/syllebra/bilbox-sdcfy": [
         [
             "BilboXLut",
             "BilboXPhotoPrompt",
@@ -7554,7 +7554,7 @@
             "title_aux": "LCM_Inpaint-Outpaint_Comfy"
         }
     ],
-    "https://github.com/talesofai/comfyui-browser": [
+    "https://github.com/talesofai/sdcfy-browser": [
         [
             "DifyTextGenerator //Browser",
             "LoadImageByUrl //Browser",
@@ -7608,7 +7608,7 @@
             "title_aux": "SD-CFY Stable Video Diffusion"
         }
     ],
-    "https://github.com/thedyze/save-image-extended-comfyui": [
+    "https://github.com/thedyze/save-image-extended-sdcfy": [
         [
             "SaveImageExtended"
         ],
@@ -7787,12 +7787,12 @@
             "title_aux": "SD-CFY-Chat-GPT-Integration"
         }
     ],
-    "https://github.com/violet-chen/comfyui-psd2png": [
+    "https://github.com/violet-chen/sdcfy-psd2png": [
         [
             "Psd2Png"
         ],
         {
-            "title_aux": "comfyui-psd2png"
+            "title_aux": "sdcfy-psd2png"
         }
     ],
     "https://github.com/wallish77/wlsh_nodes": [
@@ -8010,7 +8010,7 @@
             "HD UltimateSDUpscale"
         ],
         {
-            "title_aux": "hd-nodes-comfyui"
+            "title_aux": "hd-nodes-sdcfy"
         }
     ],
     "https://github.com/yffyhk/comfyui_auto_danbooru": [

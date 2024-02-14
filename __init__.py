@@ -313,10 +313,10 @@ def print_comfyui_version():
         comfy_ui_revision = len(list(repo.iter_commits('HEAD')))
 
         comfy_ui_hash = repo.head.commit.hexsha
-        cm_global.variables['comfyui.revision'] = comfy_ui_revision
+        cm_global.variables['sdcfy.revision'] = comfy_ui_revision
 
         comfy_ui_commit_datetime = repo.head.commit.committed_datetime
-        cm_global.variables['comfyui.commit_datetime'] = comfy_ui_commit_datetime
+        cm_global.variables['sdcfy.commit_datetime'] = comfy_ui_commit_datetime
 
         is_detached = repo.head.is_detached
         current_branch = repo.active_branch.name
@@ -557,7 +557,7 @@ async def get_data(uri, silent=False):
 
 def setup_js():
     import nodes
-    js_dest_path = os.path.join(js_path, "comfyui-manager")
+    js_dest_path = os.path.join(js_path, "sdcfy-manager")
 
     if hasattr(nodes, "EXTENSION_WEB_DIRS"):
         if os.path.exists(js_dest_path):
@@ -567,7 +567,7 @@ def setup_js():
         # setup js
         if not os.path.exists(js_dest_path):
             os.makedirs(js_dest_path)
-        js_src_path = os.path.join(comfyui_manager_path, "js", "comfyui-manager.js")
+        js_src_path = os.path.join(comfyui_manager_path, "js", "sdcfy-manager.js")
 
         print(f"### SD-CFY-Manager: Copy .js from '{js_src_path}' to '{js_dest_path}'")
         shutil.copy(js_src_path, js_dest_path)
@@ -1084,7 +1084,7 @@ def get_current_snapshot():
             file_custom_nodes.append(item)
 
     return {
-        'comfyui': comfyui_commit_hash,
+        'sdcfy': comfyui_commit_hash,
         'git_custom_nodes': git_custom_nodes,
         'file_custom_nodes': file_custom_nodes,
     }

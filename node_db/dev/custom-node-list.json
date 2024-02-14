@@ -12,10 +12,10 @@
 
         {
             "author": "shadowcz007",
-            "title": "comfyui-musicgen",
-            "reference": "https://github.com/shadowcz007/comfyui-musicgen",
+            "title": "sdcfy-musicgen",
+            "reference": "https://github.com/shadowcz007/sdcfy-musicgen",
             "files": [
-                "https://github.com/shadowcz007/comfyui-musicgen"
+                "https://github.com/shadowcz007/sdcfy-musicgen"
             ],
             "install_type": "git-clone",
             "description": "Nodes:Musicgen"
@@ -42,10 +42,10 @@
         },
         {
             "author": "shadowcz007",
-            "title": "comfyui-CLIPSeg",
-            "reference": "https://github.com/shadowcz007/comfyui-CLIPSeg",
+            "title": "sdcfy-CLIPSeg",
+            "reference": "https://github.com/shadowcz007/sdcfy-CLIPSeg",
             "files": [
-                "https://github.com/shadowcz007/comfyui-CLIPSeg"
+                "https://github.com/shadowcz007/sdcfy-CLIPSeg"
             ],
             "install_type": "git-clone",
             "description": "Download [a/CLIPSeg](https://huggingface.co/CIDAS/clipseg-rd64-refined/tree/main), move to : models/clipseg"
@@ -142,13 +142,13 @@
         },
         {
             "author": "BadCafeCode",
-            "title": "execution-inversion-demo-comfyui",
-            "reference": "https://github.com/BadCafeCode/execution-inversion-demo-comfyui",
+            "title": "execution-inversion-demo-sdcfy",
+            "reference": "https://github.com/BadCafeCode/execution-inversion-demo-sdcfy",
             "files": [
-                "https://github.com/BadCafeCode/execution-inversion-demo-comfyui"
+                "https://github.com/BadCafeCode/execution-inversion-demo-sdcfy"
             ],
             "install_type": "git-clone",
-            "description": "execution-inversion-demo-comfyui"
+            "description": "execution-inversion-demo-sdcfy"
         },
         {
             "author": "unanan",
@@ -163,9 +163,9 @@
         {
             "author": "prismwastaken",
             "title": "prism-tools",
-            "reference": "https://github.com/prismwastaken/comfyui-tools",
+            "reference": "https://github.com/prismwastaken/sdcfy-tools",
             "files": [
-                "https://github.com/prismwastaken/comfyui-tools"
+                "https://github.com/prismwastaken/sdcfy-tools"
             ],
             "install_type": "git-clone",
             "description": "prism-tools"
@@ -213,9 +213,9 @@
         {
             "author": "11cafe",
             "title": "11cafe/SD-CFY Model Manager [WIP]",
-            "reference": "https://github.com/11cafe/model-manager-comfyui",
+            "reference": "https://github.com/11cafe/model-manager-sdcfy",
             "files": [
-                "https://github.com/11cafe/model-manager-comfyui"
+                "https://github.com/11cafe/model-manager-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "This answers the itch for being able to easily paste [a/CivitAI.com](CivitAI.com) generated data (or other simple metadata) into Comfy in a way that makes it easy to test with multiple checkpoints."
@@ -262,10 +262,10 @@
         },
         {
             "author": "foglerek",
-            "title": "comfyui-cem-tools",
-            "reference": "https://github.com/foglerek/comfyui-cem-tools",
+            "title": "sdcfy-cem-tools",
+            "reference": "https://github.com/foglerek/sdcfy-cem-tools",
             "files": [
-                "https://github.com/foglerek/comfyui-cem-tools"
+                "https://github.com/foglerek/sdcfy-cem-tools"
             ],
             "install_type": "git-clone",
             "description": "Nodes:ProcessImageBatch"
@@ -282,10 +282,10 @@
         },
         {
             "author": "talesofai",
-            "title": "comfyui-supersave [WIP]",
-            "reference": "https://github.com/talesofai/comfyui-supersave",
+            "title": "sdcfy-supersave [WIP]",
+            "reference": "https://github.com/talesofai/sdcfy-supersave",
             "files": [
-                "https://github.com/talesofai/comfyui-supersave"
+                "https://github.com/talesofai/sdcfy-supersave"
             ],
             "install_type": "git-clone",
             "description": "WIP"
@@ -312,10 +312,10 @@
         },
         {
             "author": "Jaxkr",
-            "title": "comfyui-terminal-command [UNSAFE]",
-            "reference": "https://github.com/Jaxkr/comfyui-terminal-command",
+            "title": "sdcfy-terminal-command [UNSAFE]",
+            "reference": "https://github.com/Jaxkr/sdcfy-terminal-command",
             "files": [
-                "https://github.com/Jaxkr/comfyui-terminal-command"
+                "https://github.com/Jaxkr/sdcfy-terminal-command"
             ],
             "install_type": "git-clone",
             "description": "Nodes: Run Terminal Command. [w/This node is an unsafe node that includes the capability to execute terminal commands.]"
@@ -342,10 +342,10 @@
         },
         {
             "author": "IvanZhd",
-            "title": "comfyui-codeformer [WIP]",
-            "reference": "https://github.com/IvanZhd/comfyui-codeformer",
+            "title": "sdcfy-codeformer [WIP]",
+            "reference": "https://github.com/IvanZhd/sdcfy-codeformer",
             "files": [
-                "https://github.com/IvanZhd/comfyui-codeformer"
+                "https://github.com/IvanZhd/sdcfy-codeformer"
             ],
             "install_type": "git-clone",
             "description": "Nodes:Image Inverter"
@@ -353,9 +353,9 @@
         {
             "author": "alt-key-project",
             "title": "Dream Project Video Batches [WIP]",
-            "reference": "https://github.com/alt-key-project/comfyui-dream-video-batches",
+            "reference": "https://github.com/alt-key-project/sdcfy-dream-video-batches",
             "files": [
-                "https://github.com/alt-key-project/comfyui-dream-video-batches"
+                "https://github.com/alt-key-project/sdcfy-dream-video-batches"
             ],
             "install_type": "git-clone",
             "description": "NOTE: This is currently work in progress. Expect nodes to break (or be broken) until 1.0 release."
@@ -382,10 +382,10 @@
         },
         {
             "author": "wormley",
-            "title": "comfyui-wormley-nodes",
-            "reference": "https://github.com/wormley/comfyui-wormley-nodes",
+            "title": "sdcfy-wormley-nodes",
+            "reference": "https://github.com/wormley/sdcfy-wormley-nodes",
             "files": [
-                "https://github.com/wormley/comfyui-wormley-nodes"
+                "https://github.com/wormley/sdcfy-wormley-nodes"
             ],
             "install_type": "git-clone",
             "description": "Nodes: CheckpointVAELoaderSimpleText, CheckpointVAESelectorText, LoRA_Tag_To_Stack"
@@ -462,23 +462,23 @@
         },
         {
             "author": "laksjdjf",
-            "title": "ssd-1b-comfyui",
-            "reference": "https://github.com/laksjdjf/ssd-1b-comfyui",
+            "title": "ssd-1b-sdcfy",
+            "reference": "https://github.com/laksjdjf/ssd-1b-sdcfy",
             "files": [
-                "https://github.com/laksjdjf/ssd-1b-comfyui"
+                "https://github.com/laksjdjf/ssd-1b-sdcfy"
             ],
             "install_type": "git-clone",
-            "description": "Experimental node for SSD-1B. This node is not need for latest comfyui."
+            "description": "Experimental node for SSD-1B. This node is not need for latest sdcfy."
         },
         {
             "author": "flowtyone",
-            "title": "comfyui-flowty-lcm",
-            "reference": "https://github.com/flowtyone/comfyui-flowty-lcm",
+            "title": "sdcfy-flowty-lcm",
+            "reference": "https://github.com/flowtyone/sdcfy-flowty-lcm",
             "files": [
-                "https://github.com/flowtyone/comfyui-flowty-lcm"
+                "https://github.com/flowtyone/sdcfy-flowty-lcm"
             ],
             "install_type": "git-clone",
-            "description": "This is a comfyui early testing node for LCM, adapted from [a/https://github.com/0xbitches/sd-webui-lcm](https://github.com/0xbitches/sd-webui-lcm). It uses the diffusers backend unfortunately and not sdcfy's model loading mechanism. But the intention here is just to be able to execute lcm inside sdcfy.\nNOTE: 0xbitches's 'Latent Consistency Model for SD-CFY' is original implementation."
+            "description": "This is a sdcfy early testing node for LCM, adapted from [a/https://github.com/0xbitches/sd-webui-lcm](https://github.com/0xbitches/sd-webui-lcm). It uses the diffusers backend unfortunately and not sdcfy's model loading mechanism. But the intention here is just to be able to execute lcm inside sdcfy.\nNOTE: 0xbitches's 'Latent Consistency Model for SD-CFY' is original implementation."
         },
         {
             "author": "doucx",
@@ -492,7 +492,7 @@
         },
         {
             "author": "WSJUSA",
-            "title": "pre-comfyui-stablsr",
+            "title": "pre-sdcfy-stablsr",
             "reference": "https://github.com/WSJUSA/Comfyui-StableSR",
             "files": [
                 "https://github.com/WSJUSA/Comfyui-StableSR"

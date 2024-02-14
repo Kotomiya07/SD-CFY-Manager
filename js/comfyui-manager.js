@@ -9,8 +9,8 @@ import {
 	showOpenArtShareDialog,
 	showShareDialog,
 	showYouMLShareDialog
-} from "./comfyui-share-common.js";
-import { OpenArtShareDialog } from "./comfyui-share-openart.js";
+} from "./sdcfy-share-common.js";
+import { OpenArtShareDialog } from "./sdcfy-share-openart.js";
 import { CustomNodesInstaller } from "./custom-nodes-downloader.js";
 import { AlternativesInstaller } from "./a1111-alter-downloader.js";
 import { SnapshotManager } from "./snapshot.js";
@@ -1000,7 +1000,7 @@ class ManagerMenuDialog extends ComfyDialog {
 					id: 'cm-manual-button',
 					type: "button",
 					textContent: "Community Manual",
-					onclick: () => { window.open("https://blenderneko.github.io/SD-CFY-docs/", "comfyui-community-manual"); }
+					onclick: () => { window.open("https://blenderneko.github.io/SD-CFY-docs/", "sdcfy-community-manual"); }
 				}, [
 					$el("div.pysssss-workflow-arrow-2", {
 						id: `cm-manual-button-arrow`,
@@ -1013,15 +1013,15 @@ class ManagerMenuDialog extends ComfyDialog {
 								[
 									{
 										title: "Comfy Custom Node How To",
-										callback: () => { window.open("https://github.com/chrisgoringe/Comfy-Custom-Node-How-To/wiki/aaa_index", "comfyui-community-manual1"); },
+										callback: () => { window.open("https://github.com/chrisgoringe/Comfy-Custom-Node-How-To/wiki/aaa_index", "sdcfy-community-manual1"); },
 									},
 									{
 										title: "SD-CFY Guide To Making Custom Nodes",
-										callback: () => { window.open("https://github.com/Suzie1/SD-CFY_Guide_To_Making_Custom_Nodes/wiki", "comfyui-community-manual2"); },
+										callback: () => { window.open("https://github.com/Suzie1/SD-CFY_Guide_To_Making_Custom_Nodes/wiki", "sdcfy-community-manual2"); },
 									},
 									{
 										title: "SD-CFY Examples",
-										callback: () => { window.open("https://comfyanonymous.github.io/SD-CFY_examples", "comfyui-community-manual3"); },
+										callback: () => { window.open("https://comfyanonymous.github.io/SD-CFY_examples", "sdcfy-community-manual3"); },
 									},
 									{
 										title: "Close",
@@ -1036,7 +1036,7 @@ class ManagerMenuDialog extends ComfyDialog {
 								},
 								window
 							);
-							// set the id so that we can override the context menu's z-index to be above the comfyui manager menu
+							// set the id so that we can override the context menu's z-index to be above the sdcfy manager menu
 							menu.root.id = "cm-manual-button-menu";
 							menu.root.classList.add("pysssss-workflow-popup-2");
 						},
@@ -1090,7 +1090,7 @@ class ManagerMenuDialog extends ComfyDialog {
 					id: 'cm-nodeinfo-button',
 					type: "button",
 					textContent: "Nodes Info",
-					onclick: () => { window.open("https://ltdrdata.github.io/", "comfyui-node-info"); }
+					onclick: () => { window.open("https://ltdrdata.github.io/", "sdcfy-node-info"); }
 				}),
 				$el("br", {}, []),
 		];
@@ -1186,7 +1186,7 @@ class ManagerMenuDialog extends ComfyDialog {
 				{
 					title: "Open 'youml.com'",
 					callback: () => {
-						const url = "https://youml.com/?from=comfyui-share";
+						const url = "https://youml.com/?from=sdcfy-share";
 						localStorage.setItem("wg_last_visited", url);
 						window.open(url, url);
 						modifyButtonStyle(url);
@@ -1223,7 +1223,7 @@ class ManagerMenuDialog extends ComfyDialog {
 			},
 			window
 		);
-		// set the id so that we can override the context menu's z-index to be above the comfyui manager menu
+		// set the id so that we can override the context menu's z-index to be above the sdcfy manager menu
 		menu.root.id = "workflowgallery-button-menu";
 		menu.root.classList.add("pysssss-workflow-popup-2");
 	}

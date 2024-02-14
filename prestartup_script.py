@@ -138,14 +138,14 @@ try:
 
     # Logger setup
     if enable_file_logging:
-        if os.path.exists(f"comfyui{postfix}.log"):
-            if os.path.exists(f"comfyui{postfix}.prev.log"):
-                if os.path.exists(f"comfyui{postfix}.prev2.log"):
-                    os.remove(f"comfyui{postfix}.prev2.log")
-                os.rename(f"comfyui{postfix}.prev.log", f"comfyui{postfix}.prev2.log")
-            os.rename(f"comfyui{postfix}.log", f"comfyui{postfix}.prev.log")
+        if os.path.exists(f"sdcfy{postfix}.log"):
+            if os.path.exists(f"sdcfy{postfix}.prev.log"):
+                if os.path.exists(f"sdcfy{postfix}.prev2.log"):
+                    os.remove(f"sdcfy{postfix}.prev2.log")
+                os.rename(f"sdcfy{postfix}.prev.log", f"sdcfy{postfix}.prev2.log")
+            os.rename(f"sdcfy{postfix}.log", f"sdcfy{postfix}.prev.log")
 
-        log_file = open(f"comfyui{postfix}.log", "w", encoding="utf-8", errors="ignore")
+        log_file = open(f"sdcfy{postfix}.log", "w", encoding="utf-8", errors="ignore")
 
     log_lock = threading.Lock()
 
@@ -291,7 +291,7 @@ print("** Python version:", sys.version)
 print("** Python executable:", sys.executable)
 
 if enable_file_logging:
-    print("** Log path:", os.path.abspath('comfyui.log'))
+    print("** Log path:", os.path.abspath('sdcfy.log'))
 else:
     print("** Log path: file logging is disabled")
 

@@ -165,12 +165,12 @@
         {
             "author": "jags111",
             "title": "Efficiency Nodes for SD-CFY Version 2.0+",
-            "reference": "https://github.com/jags111/efficiency-nodes-comfyui",
+            "reference": "https://github.com/jags111/efficiency-nodes-sdcfy",
             "files": [
-                "https://github.com/jags111/efficiency-nodes-comfyui"
+                "https://github.com/jags111/efficiency-nodes-sdcfy"
             ],
             "install_type": "git-clone",
-            "description": "A collection of SD-CFY custom nodes to help streamline workflows and reduce total node count.[w/NOTE: This node is originally created by LucianoCirino, but the [a/original repository](https://github.com/LucianoCirino/efficiency-nodes-comfyui) is no longer maintained and has been forked by a new maintainer. To use the forked version, you should uninstall the original version and **REINSTALL** this one.]"
+            "description": "A collection of SD-CFY custom nodes to help streamline workflows and reduce total node count.[w/NOTE: This node is originally created by LucianoCirino, but the [a/original repository](https://github.com/LucianoCirino/efficiency-nodes-sdcfy) is no longer maintained and has been forked by a new maintainer. To use the forked version, you should uninstall the original version and **REINSTALL** this one.]"
         },
         {
             "author": "jags111",
@@ -229,10 +229,10 @@
         {
             "author": "WASasquatch",
             "title": "WAS Node Suite",
-            "reference": "https://github.com/WASasquatch/was-node-suite-comfyui",
+            "reference": "https://github.com/WASasquatch/was-node-suite-sdcfy",
             "pip": ["numba"],
             "files": [
-                "https://github.com/WASasquatch/was-node-suite-comfyui"
+                "https://github.com/WASasquatch/was-node-suite-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "A node suite for SD-CFY with many new nodes, such as image processing, text processing, and more."
@@ -370,9 +370,9 @@
         {
             "author": "BadCafeCode",
             "title": "Masquerade Nodes",
-            "reference": "https://github.com/BadCafeCode/masquerade-nodes-comfyui",
+            "reference": "https://github.com/BadCafeCode/masquerade-nodes-sdcfy",
             "files": [
-                "https://github.com/BadCafeCode/masquerade-nodes-comfyui"
+                "https://github.com/BadCafeCode/masquerade-nodes-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "This is a node pack for SD-CFY, primarily dealing with masks."
@@ -380,9 +380,9 @@
         {
             "author": "guoyk93",
             "title": "y.k.'s SD-CFY node suite",
-            "reference": "https://github.com/guoyk93/yk-node-suite-comfyui",
+            "reference": "https://github.com/guoyk93/yk-node-suite-sdcfy",
             "files": [
-                "https://github.com/guoyk93/yk-node-suite-comfyui"
+                "https://github.com/guoyk93/yk-node-suite-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Nodes: YKImagePadForOutpaint, YKMaskToImage"
@@ -390,9 +390,9 @@
         {
             "author": "Jcd1230",
             "title": "Rembg Background Removal Node for SD-CFY",
-            "reference": "https://github.com/Jcd1230/rembg-comfyui-node",
+            "reference": "https://github.com/Jcd1230/rembg-sdcfy-node",
             "files": [
-                "https://github.com/Jcd1230/rembg-comfyui-node"
+                "https://github.com/Jcd1230/rembg-sdcfy-node"
             ],
             "install_type": "git-clone",
             "description": "Nodes: Image Remove Background (rembg)"
@@ -996,10 +996,10 @@
         },
         {
             "author": "sipherxyz",
-            "title": "comfyui-art-venture",
-            "reference": "https://github.com/sipherxyz/comfyui-art-venture",
+            "title": "sdcfy-art-venture",
+            "reference": "https://github.com/sipherxyz/sdcfy-art-venture",
             "files": [
-                "https://github.com/sipherxyz/comfyui-art-venture"
+                "https://github.com/sipherxyz/sdcfy-art-venture"
             ],
             "install_type": "git-clone",
             "description": "Nodes: ImagesConcat, LoadImageFromUrl, AV_UploadImage"
@@ -1047,9 +1047,9 @@
         {
             "author": "andersxa",
             "title": "CLIP Directional Prompt Attention",
-            "reference": "https://github.com/andersxa/comfyui-PromptAttention",
+            "reference": "https://github.com/andersxa/sdcfy-PromptAttention",
             "files": [
-                "https://github.com/andersxa/comfyui-PromptAttention"
+                "https://github.com/andersxa/sdcfy-PromptAttention"
             ],
             "pip": ["scikit-learn", "matplotlib"],
             "install_type": "git-clone",
@@ -1058,13 +1058,13 @@
         {
             "author": "ArtVentureX",
             "title": "AnimateDiff",
-            "reference": "https://github.com/ArtVentureX/comfyui-animatediff",
+            "reference": "https://github.com/ArtVentureX/sdcfy-animatediff",
             "pip": ["flash_attn"],
             "files": [
-                "https://github.com/ArtVentureX/comfyui-animatediff"
+                "https://github.com/ArtVentureX/sdcfy-animatediff"
             ],
             "install_type": "git-clone",
-            "description": "AnimateDiff integration for SD-CFY, adapts from sd-webui-animatediff.\n[w/You only need to download one of [a/mm_sd_v14.ckpt](https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt) | [a/mm_sd_v15.ckpt](https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt). Put the model weights under %%SD-CFY/custom_nodes/comfyui-animatediff/models%%. DO NOT change model filename.]"
+            "description": "AnimateDiff integration for SD-CFY, adapts from sd-webui-animatediff.\n[w/You only need to download one of [a/mm_sd_v14.ckpt](https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt) | [a/mm_sd_v15.ckpt](https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15.ckpt). Put the model weights under %%SD-CFY/custom_nodes/sdcfy-animatediff/models%%. DO NOT change model filename.]"
         },
         {
             "author": "twri",
@@ -1109,9 +1109,9 @@
         {
             "author": "asagi4",
             "title": "SD-CFY prompt control",
-            "reference": "https://github.com/asagi4/comfyui-prompt-control",
+            "reference": "https://github.com/asagi4/sdcfy-prompt-control",
             "files": [
-                "https://github.com/asagi4/comfyui-prompt-control"
+                "https://github.com/asagi4/sdcfy-prompt-control"
             ],
             "install_type": "git-clone",
             "description": "Nodes for convenient prompt editing. The aim is to make basic generations in SD-CFY completely prompt-controllable."
@@ -1128,10 +1128,10 @@
         },
         {
             "author": "asagi4",
-            "title": "asagi4/comfyui-utility-nodes",
-            "reference": "https://github.com/asagi4/comfyui-utility-nodes",
+            "title": "asagi4/sdcfy-utility-nodes",
+            "reference": "https://github.com/asagi4/sdcfy-utility-nodes",
             "files": [
-                "https://github.com/asagi4/comfyui-utility-nodes"
+                "https://github.com/asagi4/sdcfy-utility-nodes"
             ],
             "install_type": "git-clone",
             "description": "Nodes:MUJinjaRender, MUSimpleWildcard"
@@ -1139,19 +1139,19 @@
         {
             "author": "jamesWalker55",
             "title": "SD-CFY - P2LDGAN Node",
-            "reference": "https://github.com/jamesWalker55/comfyui-p2ldgan",
+            "reference": "https://github.com/jamesWalker55/sdcfy-p2ldgan",
             "files": [
-                "https://github.com/jamesWalker55/comfyui-p2ldgan"
+                "https://github.com/jamesWalker55/sdcfy-p2ldgan"
             ],
             "install_type": "git-clone",
-            "description": "Nodes: P2LDGAN. This integrates P2LDGAN into SD-CFY. P2LDGAN extracts lineart from input images.\n[w/To use this extension, you need to download the [a/p2ldgan model](https://drive.google.com/file/d/1To4V_Btc3QhCLBWZ0PdSNgC1cbm3isHP) and save it in the %%SD-CFY/custom_nodes/comfyui-p2ldgan/checkpoints%% directory.]"
+            "description": "Nodes: P2LDGAN. This integrates P2LDGAN into SD-CFY. P2LDGAN extracts lineart from input images.\n[w/To use this extension, you need to download the [a/p2ldgan model](https://drive.google.com/file/d/1To4V_Btc3QhCLBWZ0PdSNgC1cbm3isHP) and save it in the %%SD-CFY/custom_nodes/sdcfy-p2ldgan/checkpoints%% directory.]"
         },
         {
             "author": "jamesWalker55",
             "title": "Various SD-CFY Nodes by Type",
-            "reference": "https://github.com/jamesWalker55/comfyui-various",
+            "reference": "https://github.com/jamesWalker55/sdcfy-various",
             "files": [
-                "https://github.com/jamesWalker55/comfyui-various"
+                "https://github.com/jamesWalker55/sdcfy-various"
             ],
             "nodename_pattern": "^JW",
             "install_type": "git-clone",
@@ -1160,9 +1160,9 @@
         {
             "author": "adieyal",
             "title": "DynamicPrompts Custom Nodes",
-            "reference": "https://github.com/adieyal/comfyui-dynamicprompts",
+            "reference": "https://github.com/adieyal/sdcfy-dynamicprompts",
             "files": [
-                "https://github.com/adieyal/comfyui-dynamicprompts"
+                "https://github.com/adieyal/sdcfy-dynamicprompts"
             ],
             "install_type": "git-clone",
             "description": "Nodes: Random Prompts, Combinatorial Prompts, I'm Feeling Lucky, Magic Prompt, Jinja2 Templates. SD-CFY-DynamicPrompts is a custom nodes library that integrates into your existing SD-CFY Library. It provides nodes that enable the use of Dynamic Prompts in your SD-CFY."
@@ -1179,13 +1179,13 @@
         },
         {
             "author": "kwaroran",
-            "title": "abg-comfyui",
-            "reference": "https://github.com/kwaroran/abg-comfyui",
+            "title": "abg-sdcfy",
+            "reference": "https://github.com/kwaroran/abg-sdcfy",
             "files": [
-                "https://github.com/kwaroran/abg-comfyui"
+                "https://github.com/kwaroran/abg-sdcfy"
             ],
             "install_type": "git-clone",
-            "description": "Nodes: Remove Image Background (abg). A Anime Background Remover node for comfyui, based on this hf space, works same as AGB extention in automatic1111."
+            "description": "Nodes: Remove Image Background (abg). A Anime Background Remover node for sdcfy, based on this hf space, works same as AGB extention in automatic1111."
         },
         {
             "author": "bash-j",
@@ -1199,20 +1199,20 @@
         },
         {
             "author": "failfa.st",
-            "title": "failfast-comfyui-extensions",
-            "reference": "https://github.com/failfa-st/failfast-comfyui-extensions",
+            "title": "failfast-sdcfy-extensions",
+            "reference": "https://github.com/failfa-st/failfast-sdcfy-extensions",
             "files": [
-                "https://github.com/failfa-st/failfast-comfyui-extensions"
+                "https://github.com/failfa-st/failfast-sdcfy-extensions"
             ],
             "install_type": "git-clone",
             "description": "node color customization, custom colors, dot reroutes, link rendering options, straight lines, group freezing, node pinning, automated arrangement of nodes, copy image"
         },
         {
             "author": "Pfaeff",
-            "title": "pfaeff-comfyui",
-            "reference": "https://github.com/Pfaeff/pfaeff-comfyui",
+            "title": "pfaeff-sdcfy",
+            "reference": "https://github.com/Pfaeff/pfaeff-sdcfy",
             "files": [
-                "https://github.com/Pfaeff/pfaeff-comfyui"
+                "https://github.com/Pfaeff/pfaeff-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Nodes: AstropulsePixelDetector, BackgroundRemover, ImagePadForBetterOutpaint, InpaintingPipelineLoader, Inpainting, ..."
@@ -1245,7 +1245,7 @@
                 "https://github.com/Kosinkadink/SD-CFY-AnimateDiff-Evolved"
             ],
             "install_type": "git-clone",
-            "description": "A forked repository that actively maintains [a/AnimateDiff](https://github.com/ArtVentureX/comfyui-animatediff), created by ArtVentureX.\n\nImproved AnimateDiff integration for SD-CFY, adapts from sd-webui-animatediff.\n[w/Download one or more motion models from [a/Original Models](https://huggingface.co/guoyww/animatediff/tree/main) | [a/Finetuned Models](https://huggingface.co/manshoety/AD_Stabilized_Motion/tree/main). See README for additional model links and usage. Put the model weights under %%SD-CFY/custom_nodes/SD-CFY-AnimateDiff-Evolved/models%%. You are free to rename the models, but keeping original names will ease use when sharing your workflow.]"
+            "description": "A forked repository that actively maintains [a/AnimateDiff](https://github.com/ArtVentureX/sdcfy-animatediff), created by ArtVentureX.\n\nImproved AnimateDiff integration for SD-CFY, adapts from sd-webui-animatediff.\n[w/Download one or more motion models from [a/Original Models](https://huggingface.co/guoyww/animatediff/tree/main) | [a/Finetuned Models](https://huggingface.co/manshoety/AD_Stabilized_Motion/tree/main). See README for additional model links and usage. Put the model weights under %%SD-CFY/custom_nodes/SD-CFY-AnimateDiff-Evolved/models%%. You are free to rename the models, but keeping original names will ease use when sharing your workflow.]"
         },
         {
             "author": "Kosinkadink",
@@ -1260,9 +1260,9 @@
         {
             "author": "Gourieff",
             "title": "ReActor Node for SD-CFY",
-            "reference": "https://github.com/Gourieff/comfyui-reactor-node",
+            "reference": "https://github.com/Gourieff/sdcfy-reactor-node",
             "files": [
-                "https://github.com/Gourieff/comfyui-reactor-node"
+                "https://github.com/Gourieff/sdcfy-reactor-node"
             ],
             "install_type": "git-clone",
             "description": "The Fast and Simple 'roop-like' Face Swap Extension Node for SD-CFY, based on ReActor (ex Roop-GE) SD-WebUI Face Swap Extension"
@@ -1581,9 +1581,9 @@
         {
             "author": "syllebra",
             "title": "BilboX's SD-CFY Custom Nodes",
-            "reference": "https://github.com/syllebra/bilbox-comfyui",
+            "reference": "https://github.com/syllebra/bilbox-sdcfy",
             "files": [
-                "https://github.com/syllebra/bilbox-comfyui"
+                "https://github.com/syllebra/bilbox-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Nodes: BilboX's PromptGeek Photo Prompt. This provides a convenient way to compose photorealistic prompts into SD-CFY."
@@ -1670,10 +1670,10 @@
         },
         {
             "author": "alsritter",
-            "title": "asymmetric-tiling-comfyui",
-            "reference": "https://github.com/alsritter/asymmetric-tiling-comfyui",
+            "title": "asymmetric-tiling-sdcfy",
+            "reference": "https://github.com/alsritter/asymmetric-tiling-sdcfy",
             "files": [
-                "https://github.com/alsritter/asymmetric-tiling-comfyui"
+                "https://github.com/alsritter/asymmetric-tiling-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Nodes:Asymmetric_Tiling_KSampler. "
@@ -1816,7 +1816,7 @@
                 "https://github.com/youyegit/tdxh_node_comfyui"
             ],
             "install_type": "git-clone",
-            "description": "Nodes:TdxhImageToSize, TdxhImageToSizeAdvanced, TdxhLoraLoader, TdxhIntInput, TdxhFloatInput, TdxhStringInput. Some nodes for stable diffusion comfyui. Sometimes it helps conveniently to use less nodes for doing the same things."
+            "description": "Nodes:TdxhImageToSize, TdxhImageToSizeAdvanced, TdxhLoraLoader, TdxhIntInput, TdxhFloatInput, TdxhStringInput. Some nodes for stable diffusion sdcfy. Sometimes it helps conveniently to use less nodes for doing the same things."
         },
         {
             "author": "Sxela",
@@ -1871,9 +1871,9 @@
         {
             "author": "spro",
             "title": "Latent Mirror node for SD-CFY",
-            "reference": "https://github.com/spro/comfyui-mirror",
+            "reference": "https://github.com/spro/sdcfy-mirror",
             "files": [
-                "https://github.com/spro/comfyui-mirror"
+                "https://github.com/spro/sdcfy-mirror"
             ],
             "install_type": "git-clone",
             "description": "Nodes: Latent Mirror. Node to mirror a latent along the Y (vertical / left to right) or X (horizontal / top to bottom) axis."
@@ -1891,22 +1891,22 @@
         {
             "author": "Acly",
             "title": "SD-CFY Nodes for External Tooling",
-            "reference": "https://github.com/Acly/comfyui-tooling-nodes",
+            "reference": "https://github.com/Acly/sdcfy-tooling-nodes",
             "files": [
-                "https://github.com/Acly/comfyui-tooling-nodes"
+                "https://github.com/Acly/sdcfy-tooling-nodes"
             ],
             "install_type": "git-clone",
-            "description": "Nodes: Load Image (Base64), Load Mask (Base64), Send Image (WebSocket), Crop Image, Apply Mask to Image. Provides nodes geared towards using SD-CFY as a backend for external tools.\nNOTE: This extension is necessary when using an external tool like [comfyui-capture-inference](https://github.com/minux302/comfyui-capture-inference)."
+            "description": "Nodes: Load Image (Base64), Load Mask (Base64), Send Image (WebSocket), Crop Image, Apply Mask to Image. Provides nodes geared towards using SD-CFY as a backend for external tools.\nNOTE: This extension is necessary when using an external tool like [sdcfy-capture-inference](https://github.com/minux302/sdcfy-capture-inference)."
         },
         {
             "author": "Acly",
             "title": "SD-CFY Inpaint Nodes",
-            "reference": "https://github.com/Acly/comfyui-inpaint-nodes",
+            "reference": "https://github.com/Acly/sdcfy-inpaint-nodes",
             "files": [
-                "https://github.com/Acly/comfyui-inpaint-nodes"
+                "https://github.com/Acly/sdcfy-inpaint-nodes"
             ],
             "install_type": "git-clone",
-            "description": "Experimental nodes for better inpainting with SD-CFY. Adds two nodes which allow using [a/Fooocus](https://github.com/Acly/comfyui-inpaint-nodes) inpaint model. It's a small and flexible patch which can be applied to any SDXL checkpoint and will transform it into an inpaint model. This model can then be used like other inpaint models, and provides the same benefits. [a/Read more](https://github.com/lllyasviel/Fooocus/discussions/414)"
+            "description": "Experimental nodes for better inpainting with SD-CFY. Adds two nodes which allow using [a/Fooocus](https://github.com/Acly/sdcfy-inpaint-nodes) inpaint model. It's a small and flexible patch which can be applied to any SDXL checkpoint and will transform it into an inpaint model. This model can then be used like other inpaint models, and provides the same benefits. [a/Read more](https://github.com/lllyasviel/Fooocus/discussions/414)"
         },
         {
             "author": "picturesonpictures",
@@ -1919,9 +1919,9 @@
         {
             "author": "Dream Project",
             "title": "Dream Project Animation Nodes",
-            "reference": "https://github.com/alt-key-project/comfyui-dream-project",
+            "reference": "https://github.com/alt-key-project/sdcfy-dream-project",
             "files": [
-                "https://github.com/alt-key-project/comfyui-dream-project"
+                "https://github.com/alt-key-project/sdcfy-dream-project"
             ],
             "install_type": "git-clone",
             "description": "This extension offers various nodes that are useful for Deforum-like animations in SD-CFY."
@@ -1929,9 +1929,9 @@
         {
             "author": "Dream Project",
             "title": "Dream Video Batches",
-            "reference": "https://github.com/alt-key-project/comfyui-dream-video-batches",
+            "reference": "https://github.com/alt-key-project/sdcfy-dream-video-batches",
             "files": [
-                "https://github.com/alt-key-project/comfyui-dream-video-batches"
+                "https://github.com/alt-key-project/sdcfy-dream-video-batches"
             ],
             "install_type": "git-clone",
             "description": "Provide utilities for batch based video generation workflows (s.a. AnimateDiff and Stable Video Diffusion)."
@@ -1939,9 +1939,9 @@
         {
             "author": "seanlynch",
             "title": "SD-CFY Optical Flow",
-            "reference": "https://github.com/seanlynch/comfyui-optical-flow",
+            "reference": "https://github.com/seanlynch/sdcfy-optical-flow",
             "files": [
-                "https://github.com/seanlynch/comfyui-optical-flow"
+                "https://github.com/seanlynch/sdcfy-optical-flow"
             ],
             "install_type": "git-clone",
             "description": "This package contains three nodes to help you compute optical flow between pairs of images, usually adjacent frames in a video, visualize the flow, and apply the flow to another image of the same dimensions. Most of the code is from Deforum, so this is released under the same license (MIT)."
@@ -1974,14 +1974,14 @@
                 "https://github.com/mav-rik/facerestore_cf"
             ],
             "install_type": "git-clone",
-            "description": "This is a copy of [a/facerestore custom node](https://civitai.com/models/24690/comfyui-facerestore-node) with a bit of a change to support CodeFormer Fidelity parameter. These SD-CFY nodes can be used to restore faces in images similar to the face restore option in AUTOMATIC1111 webui.\nNOTE: To use this node, you need to download the face restoration model and face detection model from the 'Install models' menu."
+            "description": "This is a copy of [a/facerestore custom node](https://civitai.com/models/24690/sdcfy-facerestore-node) with a bit of a change to support CodeFormer Fidelity parameter. These SD-CFY nodes can be used to restore faces in images similar to the face restore option in AUTOMATIC1111 webui.\nNOTE: To use this node, you need to download the face restoration model and face detection model from the 'Install models' menu."
         },
         {
             "author": "braintacles",
             "title": "braintacles-nodes",
-            "reference": "https://github.com/braintacles/braintacles-comfyui-nodes",
+            "reference": "https://github.com/braintacles/braintacles-sdcfy-nodes",
             "files": [
-                "https://github.com/braintacles/braintacles-comfyui-nodes"
+                "https://github.com/braintacles/braintacles-sdcfy-nodes"
             ],
             "install_type": "git-clone",
             "description": "Nodes: CLIPTextEncodeSDXL-Multi-IO, CLIPTextEncodeSDXL-Pipe, Empty Latent Image from Aspect-Ratio, Random Find and Replace."
@@ -2008,10 +2008,10 @@
         },
         {
             "author": "ali1234",
-            "title": "comfyui-job-iterator",
-            "reference": "https://github.com/ali1234/comfyui-job-iterator",
+            "title": "sdcfy-job-iterator",
+            "reference": "https://github.com/ali1234/sdcfy-job-iterator",
             "files": [
-                "https://github.com/ali1234/comfyui-job-iterator"
+                "https://github.com/ali1234/sdcfy-job-iterator"
             ],
             "install_type": "git-clone",
             "description": "Implements iteration over sequences within a single workflow run. [w/NOTE: This node replaces the execution of SD-CFY for iterative processing functionality.]"
@@ -2099,19 +2099,19 @@
         {
             "author": "PTA",
             "title": "auto nodes layout",
-            "reference": "https://github.com/phineas-pta/comfyui-auto-nodes-layout",
+            "reference": "https://github.com/phineas-pta/sdcfy-auto-nodes-layout",
             "files": [
-                "https://github.com/phineas-pta/comfyui-auto-nodes-layout"
+                "https://github.com/phineas-pta/sdcfy-auto-nodes-layout"
             ],
             "install_type": "git-clone",
             "description": "A SD-CFY extension to apply better nodes layout algorithm to SD-CFY workflow (mostly for visualization purpose)"
         },
         {
             "author": "receyuki",
-            "title": "comfyui-prompt-reader-node",
-            "reference": "https://github.com/receyuki/comfyui-prompt-reader-node",
+            "title": "sdcfy-prompt-reader-node",
+            "reference": "https://github.com/receyuki/sdcfy-prompt-reader-node",
             "files": [
-                "https://github.com/receyuki/comfyui-prompt-reader-node"
+                "https://github.com/receyuki/sdcfy-prompt-reader-node"
             ],
             "install_type": "git-clone",
             "description": "SD-CFY node version of the SD Prompt Reader."
@@ -2240,9 +2240,9 @@
         {
             "author": "alpertunga-bile",
             "title": "prompt-generator",
-            "reference": "https://github.com/alpertunga-bile/prompt-generator-comfyui",
+            "reference": "https://github.com/alpertunga-bile/prompt-generator-sdcfy",
             "files": [
-                "https://github.com/alpertunga-bile/prompt-generator-comfyui"
+                "https://github.com/alpertunga-bile/prompt-generator-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Custom AI prompt generator node for SD-CFY."
@@ -2320,9 +2320,9 @@
         {
             "author": "thedyze",
             "title": "Save Image Extended for SD-CFY",
-            "reference": "https://github.com/thedyze/save-image-extended-comfyui",
+            "reference": "https://github.com/thedyze/save-image-extended-sdcfy",
             "files": [
-                "https://github.com/thedyze/save-image-extended-comfyui"
+                "https://github.com/thedyze/save-image-extended-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Customize the information saved in file- and folder names. Use the values of sampler parameters as part of file or folder names. Save your positive & negative prompt as entries in a JSON (text) file, in each folder."
@@ -2349,20 +2349,20 @@
         },
         {
             "author": "avatechai",
-            "title": "avatar-graph-comfyui",
-            "reference": "https://github.com/avatechai/avatar-graph-comfyui",
+            "title": "avatar-graph-sdcfy",
+            "reference": "https://github.com/avatechai/avatar-graph-sdcfy",
             "files": [
-                "https://github.com/avatechai/avatar-graph-comfyui"
+                "https://github.com/avatechai/avatar-graph-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Include nodes for sam + bpy operation, that allows workflow creations for generative 2d character rig."
         },
         {
             "author": "TRI3D-LC",
-            "title": "tri3d-comfyui-nodes",
-            "reference": "https://github.com/TRI3D-LC/tri3d-comfyui-nodes",
+            "title": "tri3d-sdcfy-nodes",
+            "reference": "https://github.com/TRI3D-LC/tri3d-sdcfy-nodes",
             "files": [
-                "https://github.com/TRI3D-LC/tri3d-comfyui-nodes"
+                "https://github.com/TRI3D-LC/tri3d-sdcfy-nodes"
             ],
             "install_type": "git-clone",
             "description": "Nodes: tri3d-extract-hand, tri3d-fuzzification, tri3d-position-hands, tri3d-atr-parse."
@@ -2375,7 +2375,7 @@
                 "https://github.com/storyicon/comfyui_segment_anything"
             ],
             "install_type": "git-clone",
-            "description": "Based on GroundingDino and SAM, use semantic strings to segment any element in an image. The comfyui version of sd-webui-segment-anything."
+            "description": "Based on GroundingDino and SAM, use semantic strings to segment any element in an image. The sdcfy version of sd-webui-segment-anything."
         },
         {
             "author": "a1lazydog",
@@ -2419,13 +2419,13 @@
         },
         {
             "author": "YMC",
-            "title": "ymc-node-suite-comfyui",
-            "reference": "https://github.com/YMC-GitHub/ymc-node-suite-comfyui",
+            "title": "ymc-node-suite-sdcfy",
+            "reference": "https://github.com/YMC-GitHub/ymc-node-suite-sdcfy",
             "files": [
-                "https://github.com/YMC-GitHub/ymc-node-suite-comfyui"
+                "https://github.com/YMC-GitHub/ymc-node-suite-sdcfy"
             ],
             "install_type": "git-clone",
-            "description": "ymc 's nodes for comfyui. This extension is composed of nodes that provide various utility features such as text, region, and I/O."
+            "description": "ymc 's nodes for sdcfy. This extension is composed of nodes that provide various utility features such as text, region, and I/O."
         },
         {
             "author": "chibiace",
@@ -2509,20 +2509,20 @@
         },
         {
             "author": "shadowcz007",
-            "title": "comfyui-mixlab-nodes",
-            "reference": "https://github.com/shadowcz007/comfyui-mixlab-nodes",
+            "title": "sdcfy-mixlab-nodes",
+            "reference": "https://github.com/shadowcz007/sdcfy-mixlab-nodes",
             "files": [
-                "https://github.com/shadowcz007/comfyui-mixlab-nodes"
+                "https://github.com/shadowcz007/sdcfy-mixlab-nodes"
             ],
             "install_type": "git-clone",
             "description": "3D, ScreenShareNode & FloatingVideoNode, SpeechRecognition & SpeechSynthesis, GPT, LoadImagesFromLocal, Layers, Other Nodes, ..."
         },
         {
             "author": "shadowcz007",
-            "title": "comfyui-ultralytics-yolo",
-            "reference": "https://github.com/shadowcz007/comfyui-ultralytics-yolo",
+            "title": "sdcfy-ultralytics-yolo",
+            "reference": "https://github.com/shadowcz007/sdcfy-ultralytics-yolo",
             "files": [
-                "https://github.com/shadowcz007/comfyui-ultralytics-yolo"
+                "https://github.com/shadowcz007/sdcfy-ultralytics-yolo"
             ],
             "install_type": "git-clone",
             "description": "Nodes:Detect By Label."
@@ -2530,9 +2530,9 @@
         {
             "author": "shadowcz007",
             "title": "Consistency Decoder",
-            "reference": "https://github.com/shadowcz007/comfyui-consistency-decoder",
+            "reference": "https://github.com/shadowcz007/sdcfy-consistency-decoder",
             "files": [
-                "https://github.com/shadowcz007/comfyui-consistency-decoder"
+                "https://github.com/shadowcz007/sdcfy-consistency-decoder"
             ],
             "install_type": "git-clone",
             "description": "[a/openai Consistency Decoder](https://github.com/openai/consistencydecoder). After downloading the [a/OpenAI VAE model](https://openaipublic.azureedge.net/diff-vae/c9cebd3132dd9c42936d803e33424145a748843c8f716c0814838bdc8a2fe7cb/decoder.pt), place it in the `model/vae` directory for use."
@@ -2691,9 +2691,9 @@
         {
             "author": "mikkel",
             "title": "SD-CFY - Mask Bounding Box",
-            "reference": "https://github.com/mikkel/comfyui-mask-boundingbox",
+            "reference": "https://github.com/mikkel/sdcfy-mask-boundingbox",
             "files": [
-                "https://github.com/mikkel/comfyui-mask-boundingbox"
+                "https://github.com/mikkel/sdcfy-mask-boundingbox"
             ],
             "install_type": "git-clone",
             "description": "The SD-CFY Mask Bounding Box Plugin provides functionalities for selecting a specific size mask from an image. Can be combined with ClipSEG to replace any aspect of an SDXL image with an SD1.5 output."
@@ -2740,10 +2740,10 @@
         },
         {
             "author": "fexli",
-            "title": "fexli-util-node-comfyui",
-            "reference": "https://github.com/fexli/fexli-util-node-comfyui",
+            "title": "fexli-util-node-sdcfy",
+            "reference": "https://github.com/fexli/fexli-util-node-sdcfy",
             "files": [
-                "https://github.com/fexli/fexli-util-node-comfyui"
+                "https://github.com/fexli/fexli-util-node-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Nodes:FEImagePadForOutpaint, FEColorOut, FEColor2Image, FERandomizedColor2Image"
@@ -2761,9 +2761,9 @@
         {
             "author": "palant",
             "title": "Image Resize for SD-CFY",
-            "reference": "https://github.com/palant/image-resize-comfyui",
+            "reference": "https://github.com/palant/image-resize-sdcfy",
             "files": [
-                "https://github.com/palant/image-resize-comfyui"
+                "https://github.com/palant/image-resize-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "This custom node provides various tools for resizing images. The goal is resizing without distorting proportions, yet without having to perform any calculations with the size of the original image. If a mask is present, it is resized and modified along with the image."
@@ -2771,9 +2771,9 @@
         {
             "author": "palant",
             "title": "Integrated Nodes for SD-CFY",
-            "reference": "https://github.com/palant/integrated-nodes-comfyui",
+            "reference": "https://github.com/palant/integrated-nodes-sdcfy",
             "files": [
-                "https://github.com/palant/integrated-nodes-comfyui"
+                "https://github.com/palant/integrated-nodes-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "This tool will turn entire workflows or parts of them into single integrated nodes. In a way, it is similar to the Node Templates functionality but hides the inner structure. This is useful if all you want is to reuse and quickly configure a bunch of nodes without caring how they are interconnected."
@@ -2781,9 +2781,9 @@
         {
             "author": "palant",
             "title": "Extended Save Image for SD-CFY",
-            "reference": "https://github.com/palant/extended-saveimage-comfyui",
+            "reference": "https://github.com/palant/extended-saveimage-sdcfy",
             "files": [
-                "https://github.com/palant/extended-saveimage-comfyui"
+                "https://github.com/palant/extended-saveimage-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "This custom node is largely identical to the usual Save Image but allows saving images also in JPEG and WEBP formats, the latter with both lossless and lossy compression. Metadata is embedded in the images as usual, and the resulting images can be used to load a workflow."
@@ -2800,10 +2800,10 @@
         },
         {
             "author": "martijnat",
-            "title": "comfyui-previewlatent",
-            "reference": "https://github.com/martijnat/comfyui-previewlatent",
+            "title": "sdcfy-previewlatent",
+            "reference": "https://github.com/martijnat/sdcfy-previewlatent",
             "files": [
-                "https://github.com/martijnat/comfyui-previewlatent"
+                "https://github.com/martijnat/sdcfy-previewlatent"
             ],
             "install_type": "git-clone",
             "description": "a SD-CFY plugin for previewing latents without vae decoding. Useful for showing intermediate results and can be used a faster 'preview image' if you don't wan't to use vae decode."
@@ -2860,10 +2860,10 @@
         },
         {
             "author": "ka-puna",
-            "title": "comfyui-yanc",
-            "reference": "https://github.com/ka-puna/comfyui-yanc",
+            "title": "sdcfy-yanc",
+            "reference": "https://github.com/ka-puna/sdcfy-yanc",
             "files": [
-                "https://github.com/ka-puna/comfyui-yanc"
+                "https://github.com/ka-puna/sdcfy-yanc"
             ],
             "install_type": "git-clone",
             "description": "NOTE: Concatenate Strings, Format Datetime String, Integer Caster, Multiline String, Truncate String. Yet Another Node Collection, a repository of simple nodes for SD-CFY. This repository eases the addition or removal of custom nodes to itself."
@@ -2982,20 +2982,20 @@
         },
         {
             "author": "ansonkao",
-            "title": "comfyui-geometry",
-            "reference": "https://github.com/ansonkao/comfyui-geometry",
+            "title": "sdcfy-geometry",
+            "reference": "https://github.com/ansonkao/sdcfy-geometry",
             "files": [
-                "https://github.com/ansonkao/comfyui-geometry"
+                "https://github.com/ansonkao/sdcfy-geometry"
             ],
             "install_type": "git-clone",
             "description": "Nodes: Mask to Centroid, Mask to Eigenvector. A small collection of custom nodes for use with SD-CFY, for geometry calculations"
         },
         {
             "author": "bronkula",
-            "title": "comfyui-fitsize",
-            "reference": "https://github.com/bronkula/comfyui-fitsize",
+            "title": "sdcfy-fitsize",
+            "reference": "https://github.com/bronkula/sdcfy-fitsize",
             "files": [
-                "https://github.com/bronkula/comfyui-fitsize"
+                "https://github.com/bronkula/sdcfy-fitsize"
             ],
             "install_type": "git-clone",
             "description": "Nodes:Fit Size From Int/Image/Resize, Load Image And Resize To Fit, Pick Image From Batch/List, Crop Image Into Even Pieces, Image Region To Mask... A simple set of nodes for making an image fit within a bounding box"
@@ -3062,10 +3062,10 @@
         },
         {
             "author": "komojini",
-            "title": "komojini-comfyui-nodes",
-            "reference": "https://github.com/komojini/komojini-comfyui-nodes",
+            "title": "komojini-sdcfy-nodes",
+            "reference": "https://github.com/komojini/komojini-sdcfy-nodes",
             "files": [
-                "https://github.com/komojini/komojini-comfyui-nodes"
+                "https://github.com/komojini/komojini-sdcfy-nodes"
             ],
             "install_type": "git-clone",
             "description": "Nodes:YouTube Video Loader. Custom SD-CFY Nodes for video generation"
@@ -3092,10 +3092,10 @@
         },
         {
             "author": "ZHO-ZHO-ZHO",
-            "title": "comfyui-portrait-master-zh-cn",
-            "reference": "https://github.com/ZHO-ZHO-ZHO/comfyui-portrait-master-zh-cn",
+            "title": "sdcfy-portrait-master-zh-cn",
+            "reference": "https://github.com/ZHO-ZHO-ZHO/sdcfy-portrait-master-zh-cn",
             "files": [
-                "https://github.com/ZHO-ZHO-ZHO/comfyui-portrait-master-zh-cn"
+                "https://github.com/ZHO-ZHO-ZHO/sdcfy-portrait-master-zh-cn"
             ],
             "install_type": "git-clone",
             "description": "SD-CFY Portrait Master 简体中文版."
@@ -3162,10 +3162,10 @@
         },
         {
             "author": "kenjiqq",
-            "title": "qq-nodes-comfyui",
-            "reference": "https://github.com/kenjiqq/qq-nodes-comfyui",
+            "title": "qq-nodes-sdcfy",
+            "reference": "https://github.com/kenjiqq/qq-nodes-sdcfy",
             "files": [
-                "https://github.com/kenjiqq/qq-nodes-comfyui"
+                "https://github.com/kenjiqq/qq-nodes-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Nodes:Any List, Image Accumulator Start, Image Accumulator End, Load Lines From Text File, XY Grid Helper, Slice List, Axis To String/Int/Float/Model, ..."
@@ -3203,9 +3203,9 @@
         {
             "author": "discopixel-studio",
             "title": "SD-CFY Discopixel Nodes",
-            "reference": "https://github.com/discopixel-studio/comfyui-discopixel",
+            "reference": "https://github.com/discopixel-studio/sdcfy-discopixel",
             "files": [
-                "https://github.com/discopixel-studio/comfyui-discopixel"
+                "https://github.com/discopixel-studio/sdcfy-discopixel"
             ],
             "install_type": "git-clone",
             "description": "Nodes:TransformTemplateOntoFaceMask, ... A small collection of custom nodes for use with SD-CFY, by Discopixel"
@@ -3218,7 +3218,7 @@
                 "https://github.com/zcfrank1st/Comfyui-Yolov8"
             ],
             "install_type": "git-clone",
-            "description": "Nodes: Yolov8Detection, Yolov8Segmentation. Deadly simple yolov8 comfyui plugin"
+            "description": "Nodes: Yolov8Detection, Yolov8Segmentation. Deadly simple yolov8 sdcfy plugin"
         },
         {
             "author": "SoftMeng",
@@ -3292,19 +3292,19 @@
         {
             "author": "Haoming02",
             "title": "SD-CFY Diffusion Color Grading",
-            "reference": "https://github.com/Haoming02/comfyui-diffusion-cg",
+            "reference": "https://github.com/Haoming02/sdcfy-diffusion-cg",
             "files": [
-                "https://github.com/Haoming02/comfyui-diffusion-cg"
+                "https://github.com/Haoming02/sdcfy-diffusion-cg"
             ],
             "install_type": "git-clone",
             "description": "This is the SD-CFY port of the joint research between me and TimothyAlexisVass. For more information, check out the original [a/Extension](https://github.com/Haoming02/sd-webui-diffusion-cg) for Automatic1111."
         },
         {
             "author": "Haoming02",
-            "title": "comfyui-prompt-format",
-            "reference": "https://github.com/Haoming02/comfyui-prompt-format",
+            "title": "sdcfy-prompt-format",
+            "reference": "https://github.com/Haoming02/sdcfy-prompt-format",
             "files": [
-                "https://github.com/Haoming02/comfyui-prompt-format"
+                "https://github.com/Haoming02/sdcfy-prompt-format"
             ],
             "install_type": "git-clone",
             "description": "This is an Extension for SD-CFY, which helps formatting texts."
@@ -3312,9 +3312,9 @@
         {
             "author": "Haoming02",
             "title": "SD-CFY Clear Screen",
-            "reference": "https://github.com/Haoming02/comfyui-clear-screen",
+            "reference": "https://github.com/Haoming02/sdcfy-clear-screen",
             "files": [
-                "https://github.com/Haoming02/comfyui-clear-screen"
+                "https://github.com/Haoming02/sdcfy-clear-screen"
             ],
             "install_type": "git-clone",
             "description": "This is an Extension for SD-CFY, which adds a button, CLS, to clear the console window."
@@ -3322,9 +3322,9 @@
         {
             "author": "Haoming02",
             "title": "SD-CFY Menu Anchor",
-            "reference": "https://github.com/Haoming02/comfyui-menu-anchor",
+            "reference": "https://github.com/Haoming02/sdcfy-menu-anchor",
             "files": [
-                "https://github.com/Haoming02/comfyui-menu-anchor"
+                "https://github.com/Haoming02/sdcfy-menu-anchor"
             ],
             "install_type": "git-clone",
             "description": "This is an Extension for SD-CFY, which moves the menu to the specified corner on startup."
@@ -3332,9 +3332,9 @@
         {
             "author": "Haoming02",
             "title": "SD-CFY Tab Handler",
-            "reference": "https://github.com/Haoming02/comfyui-tab-handler",
+            "reference": "https://github.com/Haoming02/sdcfy-tab-handler",
             "files": [
-                "https://github.com/Haoming02/comfyui-tab-handler"
+                "https://github.com/Haoming02/sdcfy-tab-handler"
             ],
             "install_type": "git-clone",
             "description": "This is an Extension for SD-CFY, which moves the menu to the specified corner on startup."
@@ -3342,9 +3342,9 @@
         {
             "author": "Haoming02",
             "title": "SD-CFY Floodgate",
-            "reference": "https://github.com/Haoming02/comfyui-floodgate",
+            "reference": "https://github.com/Haoming02/sdcfy-floodgate",
             "files": [
-                "https://github.com/Haoming02/comfyui-floodgate"
+                "https://github.com/Haoming02/sdcfy-floodgate"
             ],
             "install_type": "git-clone",
             "description": "This is an Extension for SD-CFY, which allows you to control the logic flow with just one click!"
@@ -3371,10 +3371,10 @@
         },
         {
             "author": "ningxiaoxiao",
-            "title": "comfyui-NDI",
-            "reference": "https://github.com/ningxiaoxiao/comfyui-NDI",
+            "title": "sdcfy-NDI",
+            "reference": "https://github.com/ningxiaoxiao/sdcfy-NDI",
             "files": [
-                "https://github.com/ningxiaoxiao/comfyui-NDI"
+                "https://github.com/ningxiaoxiao/sdcfy-NDI"
             ],
             "pip": ["ndi-python"],
             "install_type": "git-clone",
@@ -3423,9 +3423,9 @@
         {
             "author": "11cafe",
             "title": "SD-CFY Workspace Manager - Comfyspace",
-            "reference": "https://github.com/11cafe/comfyui-workspace-manager",
+            "reference": "https://github.com/11cafe/sdcfy-workspace-manager",
             "files": [
-                "https://github.com/11cafe/comfyui-workspace-manager"
+                "https://github.com/11cafe/sdcfy-workspace-manager"
             ],
             "install_type": "git-clone",
             "description": "A SD-CFY custom node for project management to centralize the management of all your workflows in one place. Seamlessly switch between workflows, create and update them within a single workspace, like Google Docs."
@@ -3494,9 +3494,9 @@
         {
             "author": "talesofai",
             "title": "SD-CFY Browser",
-            "reference": "https://github.com/talesofai/comfyui-browser",
+            "reference": "https://github.com/talesofai/sdcfy-browser",
             "files": [
-                "https://github.com/talesofai/comfyui-browser"
+                "https://github.com/talesofai/sdcfy-browser"
             ],
             "install_type": "git-clone",
             "description": "This is an image/video/workflow browser and manager for SD-CFY. You could add image/video/workflow to collections and load it to SD-CFY. You will be able to use your collections everywhere."
@@ -3573,20 +3573,20 @@
         },
         {
             "author": "deroberon",
-            "title": "demofusion-comfyui",
-            "reference": "https://github.com/deroberon/demofusion-comfyui",
+            "title": "demofusion-sdcfy",
+            "reference": "https://github.com/deroberon/demofusion-sdcfy",
             "files": [
-                "https://github.com/deroberon/demofusion-comfyui"
+                "https://github.com/deroberon/demofusion-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "The Demofusion Custom Node is a wrapper that adapts the work and implementation of the [a/DemoFusion](https://ruoyidu.github.io/demofusion/demofusion.html) technique created and implemented by Ruoyi Du to the Comfyui environment."
         },
         {
             "author": "deroberon",
-            "title": "StableZero123-comfyui",
-            "reference": "https://github.com/deroberon/StableZero123-comfyui",
+            "title": "StableZero123-sdcfy",
+            "reference": "https://github.com/deroberon/StableZero123-sdcfy",
             "files": [
-                "https://github.com/deroberon/StableZero123-comfyui"
+                "https://github.com/deroberon/StableZero123-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "StableZero123 is a node wrapper that uses the model and technique provided [here](https://github.com/SUDO-AI-3D/zero123plus/). It uses the Zero123plus model to generate 3D views using just one image."
@@ -3619,14 +3619,14 @@
                 "https://github.com/aegis72/aegisflow_utility_nodes"
             ],
             "install_type": "git-clone",
-            "description": "These nodes will be placed in comfyui/custom_nodes/aegisflow and contains the image passer (accepts an image as either wired or wirelessly, input and passes it through. Latent passer does the same for latents, and the Preprocessor chooser allows a passthrough image and 10 controlnets to be passed in AegisFlow Shima. The inputs on the Preprocessor  chooser should not be renamed if you intend to accept image inputs wirelessly through UE nodes. It can be done, but the send node input regex for each controlnet preprocessor column must also be changed."
+            "description": "These nodes will be placed in sdcfy/custom_nodes/aegisflow and contains the image passer (accepts an image as either wired or wirelessly, input and passes it through. Latent passer does the same for latents, and the Preprocessor chooser allows a passthrough image and 10 controlnets to be passed in AegisFlow Shima. The inputs on the Preprocessor  chooser should not be renamed if you intend to accept image inputs wirelessly through UE nodes. It can be done, but the send node input regex for each controlnet preprocessor column must also be changed."
         },
         {
             "author": "Aegis72",
             "title": "SD-CFY-styles-all",
-            "reference": "https://github.com/aegis72/comfyui-styles-all",
+            "reference": "https://github.com/aegis72/sdcfy-styles-all",
             "files": [
-                "https://github.com/aegis72/comfyui-styles-all"
+                "https://github.com/aegis72/sdcfy-styles-all"
             ],
             "install_type": "git-clone",
             "description": "This is a straight clone of Azazeal04's all-in-one styler menu, which was removed from gh on Jan 21, 2024. I have made no changes to the files at all."
@@ -3684,20 +3684,20 @@
         },
         {
             "author": "NimaNzrii",
-            "title": "comfyui-popup_preview",
-            "reference": "https://github.com/NimaNzrii/comfyui-popup_preview",
+            "title": "sdcfy-popup_preview",
+            "reference": "https://github.com/NimaNzrii/sdcfy-popup_preview",
             "files": [
-                "https://github.com/NimaNzrii/comfyui-popup_preview"
+                "https://github.com/NimaNzrii/sdcfy-popup_preview"
             ],
             "install_type": "git-clone",
-            "description": "popup preview for comfyui"
+            "description": "popup preview for sdcfy"
         },
         {
             "author": "NimaNzrii",
-            "title": "comfyui-photoshop",
-            "reference": "https://github.com/NimaNzrii/comfyui-photoshop",
+            "title": "sdcfy-photoshop",
+            "reference": "https://github.com/NimaNzrii/sdcfy-photoshop",
             "files": [
-                "https://github.com/NimaNzrii/comfyui-photoshop"
+                "https://github.com/NimaNzrii/sdcfy-photoshop"
             ],
             "install_type": "git-clone",
             "description": "Photoshop node inside of ComfyUi, send and get data from Photoshop"
@@ -3720,7 +3720,7 @@
                 "https://github.com/dmarx/SD-CFY-Keyframed"
             ],
             "install_type": "git-clone",
-            "description": "SD-CFY nodes to facilitate parameter/prompt keyframing using comfyui nodes for defining and manipulating parameter curves. Essentially provides a SD-CFY interface to the [a/keyframed](https://github.com/dmarx/keyframed) library."
+            "description": "SD-CFY nodes to facilitate parameter/prompt keyframing using sdcfy nodes for defining and manipulating parameter curves. Essentially provides a SD-CFY interface to the [a/keyframed](https://github.com/dmarx/keyframed) library."
         },
         {
             "author": "dmarx",
@@ -3730,7 +3730,7 @@
                 "https://github.com/dmarx/SD-CFY-AudioReactive"
             ],
             "install_type": "git-clone",
-            "description": "porting audioreactivity pipeline from vktrs to comfyui."
+            "description": "porting audioreactivity pipeline from vktrs to sdcfy."
         },
         {
             "author": "TripleHeadedMonkey",
@@ -3745,29 +3745,29 @@
         {
             "author": "BennyKok",
             "title": "SD-CFY Deploy",
-            "reference": "https://github.com/BennyKok/comfyui-deploy",
+            "reference": "https://github.com/BennyKok/sdcfy-deploy",
             "files": [
-                "https://github.com/BennyKok/comfyui-deploy"
+                "https://github.com/BennyKok/sdcfy-deploy"
             ],
             "install_type": "git-clone",
-            "description": "Open source comfyui deployment platform, a vercel for generative workflow infra."
+            "description": "Open source sdcfy deployment platform, a vercel for generative workflow infra."
         },
         {
             "author": "florestefano1975",
-            "title": "comfyui-portrait-master",
-            "reference": "https://github.com/florestefano1975/comfyui-portrait-master",
+            "title": "sdcfy-portrait-master",
+            "reference": "https://github.com/florestefano1975/sdcfy-portrait-master",
             "files": [
-                "https://github.com/florestefano1975/comfyui-portrait-master"
+                "https://github.com/florestefano1975/sdcfy-portrait-master"
             ],
             "install_type": "git-clone",
             "description": "SD-CFY Portrait Master. A node designed to help AI image creators to generate prompts for human portraits."
         },
         {
             "author": "florestefano1975",
-            "title": "comfyui-prompt-composer",
-            "reference": "https://github.com/florestefano1975/comfyui-prompt-composer",
+            "title": "sdcfy-prompt-composer",
+            "reference": "https://github.com/florestefano1975/sdcfy-prompt-composer",
             "files": [
-                "https://github.com/florestefano1975/comfyui-prompt-composer"
+                "https://github.com/florestefano1975/sdcfy-prompt-composer"
             ],
             "install_type": "git-clone",
             "description": "A suite of tools for prompt management. Combining nodes helps the user sequence strings for prompts, also creating logical groupings if necessary. Individual nodes can be chained together in any order."
@@ -3784,20 +3784,20 @@
         },
         {
             "author": "rcsaquino",
-            "title": "rcsaquino/comfyui-custom-nodes",
-            "reference": "https://github.com/rcsaquino/comfyui-custom-nodes",
+            "title": "rcsaquino/sdcfy-custom-nodes",
+            "reference": "https://github.com/rcsaquino/sdcfy-custom-nodes",
             "files": [
-                "https://github.com/rcsaquino/comfyui-custom-nodes"
+                "https://github.com/rcsaquino/sdcfy-custom-nodes"
             ],
             "install_type": "git-clone",
             "description": "Nodes: VAE Processor, VAE Loader, Background Remover"
         },
         {
             "author": "rcfcu2000",
-            "title": "zhihuige-nodes-comfyui",
-            "reference": "https://github.com/rcfcu2000/zhihuige-nodes-comfyui",
+            "title": "zhihuige-nodes-sdcfy",
+            "reference": "https://github.com/rcfcu2000/zhihuige-nodes-sdcfy",
             "files": [
-                "https://github.com/rcfcu2000/zhihuige-nodes-comfyui"
+                "https://github.com/rcfcu2000/zhihuige-nodes-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Nodes: Combine ZHGMasks, Cover ZHGMasks, ZHG FaceIndex, ZHG SaveImage, ZHG SmoothEdge, ZHG GetMaskArea, ..."
@@ -3814,20 +3814,20 @@
         },
         {
             "author": "violet-chen",
-            "title": "comfyui-psd2png",
-            "reference": "https://github.com/violet-chen/comfyui-psd2png",
+            "title": "sdcfy-psd2png",
+            "reference": "https://github.com/violet-chen/sdcfy-psd2png",
             "files": [
-                "https://github.com/violet-chen/comfyui-psd2png"
+                "https://github.com/violet-chen/sdcfy-psd2png"
             ],
             "install_type": "git-clone",
             "description": "Nodes: Psd2Png."
         },
         {
             "author": "lldacing",
-            "title": "comfyui-easyapi-nodes",
-            "reference": "https://github.com/lldacing/comfyui-easyapi-nodes",
+            "title": "sdcfy-easyapi-nodes",
+            "reference": "https://github.com/lldacing/sdcfy-easyapi-nodes",
             "files": [
-                "https://github.com/lldacing/comfyui-easyapi-nodes"
+                "https://github.com/lldacing/sdcfy-easyapi-nodes"
             ],
             "install_type": "git-clone",
             "description": "Nodes: Base64 To Image, Image To Base64, Load Image To Base64."
@@ -4387,9 +4387,9 @@
         {
             "author": "tzwm",
             "title": "SD-CFY Profiler",
-            "reference": "https://github.com/tzwm/comfyui-profiler",
+            "reference": "https://github.com/tzwm/sdcfy-profiler",
             "files": [
-                "https://github.com/tzwm/comfyui-profiler"
+                "https://github.com/tzwm/sdcfy-profiler"
             ],
             "install_type": "git-clone",
             "description": "Calculate the execution time of all nodes."
@@ -4426,10 +4426,10 @@
         },
         {
             "author": "smagnetize",
-            "title": "kb-comfyui-nodes",
-            "reference": "https://github.com/smagnetize/kb-comfyui-nodes",
+            "title": "kb-sdcfy-nodes",
+            "reference": "https://github.com/smagnetize/kb-sdcfy-nodes",
             "files": [
-                "https://github.com/smagnetize/kb-comfyui-nodes"
+                "https://github.com/smagnetize/kb-sdcfy-nodes"
             ],
             "install_type": "git-clone",
             "description": "Nodes:SingleImageDataUrlLoader"
@@ -4447,9 +4447,9 @@
         {
             "author": "glowcone",
             "title": "Load Image From Base64 URI",
-            "reference": "https://github.com/glowcone/comfyui-base64-to-image",
+            "reference": "https://github.com/glowcone/sdcfy-base64-to-image",
             "files": [
-                "https://github.com/glowcone/comfyui-base64-to-image"
+                "https://github.com/glowcone/sdcfy-base64-to-image"
             ],
             "install_type": "git-clone",
             "description": "Nodes: LoadImageFromBase64. Loads an image and its transparency mask from a base64-encoded data URI for easy API connection."
@@ -4462,14 +4462,14 @@
                 "https://github.com/AInseven/SD-CFY-fastblend"
             ],
             "install_type": "git-clone",
-            "description": "fastblend for comfyui, and other nodes that I write for video2video. rebatch image, my openpose"
+            "description": "fastblend for sdcfy, and other nodes that I write for video2video. rebatch image, my openpose"
         },
         {
             "author": "HebelHuber",
-            "title": "comfyui-enhanced-save-node",
-            "reference": "https://github.com/HebelHuber/comfyui-enhanced-save-node",
+            "title": "sdcfy-enhanced-save-node",
+            "reference": "https://github.com/HebelHuber/sdcfy-enhanced-save-node",
             "files": [
-                "https://github.com/HebelHuber/comfyui-enhanced-save-node"
+                "https://github.com/HebelHuber/sdcfy-enhanced-save-node"
             ],
             "install_type": "git-clone",
             "description": "Nodes:Enhanced Save Node"
@@ -4497,9 +4497,9 @@
         {
             "author": "Layer-norm",
             "title": "Comfyui lama remover",
-            "reference": "https://github.com/Layer-norm/comfyui-lama-remover",
+            "reference": "https://github.com/Layer-norm/sdcfy-lama-remover",
             "files": [
-                "https://github.com/Layer-norm/comfyui-lama-remover"
+                "https://github.com/Layer-norm/sdcfy-lama-remover"
             ],
             "install_type": "git-clone",
             "description": "A very simple SD-CFY node to remove item with mask."
@@ -4507,9 +4507,9 @@
         {
             "author": "Taremin",
             "title": "SD-CFY Prompt ExtraNetworks",
-            "reference": "https://github.com/Taremin/comfyui-prompt-extranetworks",
+            "reference": "https://github.com/Taremin/sdcfy-prompt-extranetworks",
             "files": [
-                "https://github.com/Taremin/comfyui-prompt-extranetworks"
+                "https://github.com/Taremin/sdcfy-prompt-extranetworks"
             ],
             "install_type": "git-clone",
             "description": "Instead of LoraLoader or HypernetworkLoader, it receives a prompt and loads and applies LoRA or HN based on the specifications within the prompt. The main purpose of this custom node is to allow changes without reconnecting the LoraLoader node when the prompt is randomly altered, etc."
@@ -4517,9 +4517,9 @@
         {
             "author": "Taremin",
             "title": "SD-CFY String Tools",
-            "reference": "https://github.com/Taremin/comfyui-string-tools",
+            "reference": "https://github.com/Taremin/sdcfy-string-tools",
             "files": [
-                "https://github.com/Taremin/comfyui-string-tools"
+                "https://github.com/Taremin/sdcfy-string-tools"
             ],
             "install_type": "git-clone",
             "description": " This extension provides the StringToolsConcat node, which concatenates multiple texts, and the StringToolsRandomChoice node, which selects one randomly from multiple texts."
@@ -4537,9 +4537,9 @@
         {
             "author": "foxtrot-roger",
             "title": "RF Nodes",
-            "reference": "https://github.com/foxtrot-roger/comfyui-rf-nodes",
+            "reference": "https://github.com/foxtrot-roger/sdcfy-rf-nodes",
             "files": [
-                "https://github.com/foxtrot-roger/comfyui-rf-nodes"
+                "https://github.com/foxtrot-roger/sdcfy-rf-nodes"
             ],
             "install_type": "git-clone",
             "description": "A bunch of nodes that can be useful to manipulate primitive types (numbers, text, ...) Also some helpers to generate text and timestamps."
@@ -4607,9 +4607,9 @@
         {
             "author": "prozacgod",
             "title": "SD-CFY Multi-Workspace",
-            "reference": "https://github.com/prozacgod/comfyui-pzc-multiworkspace",
+            "reference": "https://github.com/prozacgod/sdcfy-pzc-multiworkspace",
             "files": [
-                "https://github.com/prozacgod/comfyui-pzc-multiworkspace"
+                "https://github.com/prozacgod/sdcfy-pzc-multiworkspace"
             ],
             "install_type": "git-clone",
             "description": "A simple, quick, and dirty implementation of multiple workspaces within SD-CFY."
@@ -4647,9 +4647,9 @@
         {
             "author": "Inzaniak",
             "title": "Ranbooru for SD-CFY",
-            "reference": "https://github.com/Inzaniak/comfyui-ranbooru",
+            "reference": "https://github.com/Inzaniak/sdcfy-ranbooru",
             "files": [
-                "https://github.com/Inzaniak/comfyui-ranbooru"
+                "https://github.com/Inzaniak/sdcfy-ranbooru"
             ],
             "install_type": "git-clone",
             "description": "Ranbooru is an extension for the comfyUI. The purpose of this extension is to add a node that gets a random set of tags from boorus pictures. This is mostly being used to help me test my checkpoints on a large variety of"
@@ -4706,10 +4706,10 @@
         },
         {
             "author": "longgui0318",
-            "title": "comfyui-mask-util",
-            "reference": "https://github.com/longgui0318/comfyui-mask-util",
+            "title": "sdcfy-mask-util",
+            "reference": "https://github.com/longgui0318/sdcfy-mask-util",
             "files": [
-                "https://github.com/longgui0318/comfyui-mask-util"
+                "https://github.com/longgui0318/sdcfy-mask-util"
             ],
             "install_type": "git-clone",
             "description": "Nodes:Split Masks"
@@ -4862,7 +4862,7 @@
                 "https://github.com/mape/SD-CFY-mape-Helpers"
             ],
             "install_type": "git-clone",
-            "description": "Multi-monitor image preview, Variable Assigment/Wireless Nodes, Prompt Tweaking, Command Palette, Pinned favourite nodes, Node navigation, Fuzzy search, Node time tracking, Organizing and Error management. For more info visit: [a/https://comfyui.ma.pe/](https://comfyui.ma.pe/)"
+            "description": "Multi-monitor image preview, Variable Assigment/Wireless Nodes, Prompt Tweaking, Command Palette, Pinned favourite nodes, Node navigation, Fuzzy search, Node time tracking, Organizing and Error management. For more info visit: [a/https://sdcfy.ma.pe/](https://sdcfy.ma.pe/)"
         },
         {
             "author": "zhongpei",
@@ -4887,12 +4887,12 @@
         {
             "author": "Loewen-Hob",
             "title": "Rembg Background Removal Node for SD-CFY",
-            "reference": "https://github.com/Loewen-Hob/rembg-comfyui-node-better",
+            "reference": "https://github.com/Loewen-Hob/rembg-sdcfy-node-better",
             "files": [
-                "https://github.com/Loewen-Hob/rembg-comfyui-node-better"
+                "https://github.com/Loewen-Hob/rembg-sdcfy-node-better"
             ],
             "install_type": "git-clone",
-            "description": "This custom node is based on the [a/rembg-comfyui-node](https://github.com/Jcd1230/rembg-comfyui-node) but provides additional functionality to select ONNX models."
+            "description": "This custom node is based on the [a/rembg-sdcfy-node](https://github.com/Jcd1230/rembg-sdcfy-node) but provides additional functionality to select ONNX models."
         },
         {
             "author": "HaydenReeve",
@@ -4916,10 +4916,10 @@
         },
         {
             "author": "ricklove",
-            "title": "comfyui-ricklove",
-            "reference": "https://github.com/ricklove/comfyui-ricklove",
+            "title": "sdcfy-ricklove",
+            "reference": "https://github.com/ricklove/sdcfy-ricklove",
             "files": [
-                "https://github.com/ricklove/comfyui-ricklove"
+                "https://github.com/ricklove/sdcfy-ricklove"
             ],
             "install_type": "git-clone",
             "description": "Nodes: Image Crop and Resize by Mask, Image Uncrop, Image Shadow, Optical Flow (Dip), Warp Image with Flow, Image Threshold (Channels), Finetune Variable, Finetune Analyze, Finetune Analyze Batch, ... Misc SD-CFY nodes by Rick Love"
@@ -4927,9 +4927,9 @@
         {
             "author": "nosiu",
             "title": "SD-CFY InstantID Faceswapper",
-            "reference": "https://github.com/nosiu/comfyui-instantId-faceswap",
+            "reference": "https://github.com/nosiu/sdcfy-instantId-faceswap",
             "files": [
-                "https://github.com/nosiu/comfyui-instantId-faceswap"
+                "https://github.com/nosiu/sdcfy-instantId-faceswap"
             ],
             "install_type": "git-clone",
             "description": "Implementation of [a/faceswap](https://github.com/nosiu/InstantID-faceswap/tree/main) based on [a/InstantID](https://github.com/InstantID/InstantID) for SD-CFY. Allows usage of [a/LCM Lora](https://huggingface.co/latent-consistency/lcm-lora-sdxl) which can produce good results in only a few generation steps.\nNOTE:Works ONLY with SDXL checkpoints."
@@ -4946,13 +4946,13 @@
         },
         {
             "author": "LyazS",
-            "title": "Anime Character Segmentation node for comfyui",
-            "reference": "https://github.com/LyazS/comfyui-anime-seg",
+            "title": "Anime Character Segmentation node for sdcfy",
+            "reference": "https://github.com/LyazS/sdcfy-anime-seg",
             "files": [
-                "https://github.com/LyazS/comfyui-anime-seg"
+                "https://github.com/LyazS/sdcfy-anime-seg"
             ],
             "install_type": "git-clone",
-            "description": "A Anime Character Segmentation node for comfyui, based on [this hf space](https://huggingface.co/spaces/skytnt/anime-remove-background)."
+            "description": "A Anime Character Segmentation node for sdcfy, based on [this hf space](https://huggingface.co/spaces/skytnt/anime-remove-background)."
         },
         {
             "author": "Chan-0312",
@@ -4992,7 +4992,7 @@
                 "https://github.com/davask/SD-CFY-MarasIT-Nodes"
             ],
             "install_type": "git-clone",
-            "description": "This is a revised version of the Bus node from the [a/Was Node Suite](https://github.com/WASasquatch/was-node-suite-comfyui) to integrate more input/output."
+            "description": "This is a revised version of the Bus node from the [a/Was Node Suite](https://github.com/WASasquatch/was-node-suite-sdcfy) to integrate more input/output."
         },
         {
             "author": "yffyhk",
@@ -5006,10 +5006,10 @@
         },
         {
             "author": "dfl",
-            "title": "comfyui-clip-with-break",
-            "reference": "https://github.com/dfl/comfyui-clip-with-break",
+            "title": "sdcfy-clip-with-break",
+            "reference": "https://github.com/dfl/sdcfy-clip-with-break",
             "files": [
-                "https://github.com/dfl/comfyui-clip-with-break"
+                "https://github.com/dfl/sdcfy-clip-with-break"
             ],
             "install_type": "git-clone",
             "description": "Clip text encoder with BREAK formatting like A1111 (uses conditioning concat)"
@@ -5057,9 +5057,9 @@
         {
             "author": "digitaljohn",
             "title": "SD-CFY-ProPost",
-            "reference": "https://github.com/digitaljohn/comfyui-propost",
+            "reference": "https://github.com/digitaljohn/sdcfy-propost",
             "files": [
-                "https://github.com/digitaljohn/comfyui-propost"
+                "https://github.com/digitaljohn/sdcfy-propost"
             ],
             "install_type": "git-clone",
             "description": "A set of custom SD-CFY nodes for performing basic post-processing effects including Film Grain and Vignette. These effects can help to take the edge off AI imagery and make them feel more natural."
@@ -5136,7 +5136,7 @@
         },
         {
             "author": "xiaoxiaodesha",
-            "title": "hd-nodes-comfyui",
+            "title": "hd-nodes-sdcfy",
             "reference": "https://github.com/xiaoxiaodesha/hd_node",
             "files": [
                 "https://github.com/xiaoxiaodesha/hd_node"
@@ -5357,10 +5357,10 @@
         },
         {
             "author": "ntdviet",
-            "title": "ntdviet/comfyui-ext",
-            "reference": "https://github.com/ntdviet/comfyui-ext",
+            "title": "ntdviet/sdcfy-ext",
+            "reference": "https://github.com/ntdviet/sdcfy-ext",
             "files": [
-                "https://github.com/ntdviet/comfyui-ext/raw/main/custom_nodes/gcLatentTunnel/gcLatentTunnel.py"
+                "https://github.com/ntdviet/sdcfy-ext/raw/main/custom_nodes/gcLatentTunnel/gcLatentTunnel.py"
             ],
             "install_type": "copy",
             "description": "Nodes:LatentGarbageCollector. This SD-CFY custom node flushes the GPU cache and empty cuda interprocess memory. It's helpfull for low memory environment such as the free Google Colab, especially when the workflow VAE decode latents of the size above 1500x1500."
@@ -5378,9 +5378,9 @@
         {
             "author": "catscandrive",
             "title": "Image loader with subfolders",
-            "reference": "https://github.com/catscandrive/comfyui-imagesubfolders",
+            "reference": "https://github.com/catscandrive/sdcfy-imagesubfolders",
             "files": [
-                "https://github.com/catscandrive/comfyui-imagesubfolders/raw/main/loadImageWithSubfolders.py"
+                "https://github.com/catscandrive/sdcfy-imagesubfolders/raw/main/loadImageWithSubfolders.py"
             ],
             "install_type": "copy",
             "description": "Adds an Image Loader node that also shows images in subfolders of the default input directory"
@@ -5417,7 +5417,7 @@
         },
         {
             "author": "LZC",
-            "title": "Hayo comfyui nodes",
+            "title": "Hayo sdcfy nodes",
             "reference": "https://github.com/1shadow1/hayo_comfyui_nodes",
             "files": [
                 "https://github.com/1shadow1/hayo_comfyui_nodes/raw/main/LZCNodes.py"
@@ -5466,7 +5466,7 @@
         {
             "author": "xss",
             "title": "Custom Nodes by xss",
-            "reference": "https://civitai.com/models/24869/comfyui-custom-nodes-by-xss",
+            "reference": "https://civitai.com/models/24869/sdcfy-custom-nodes-by-xss",
             "files": [
                 "https://civitai.com/api/download/models/32717",
                 "https://civitai.com/api/download/models/47776",
@@ -5484,7 +5484,7 @@
         {
             "author": "aimingfail",
             "title": "Image2Halftone Node for SD-CFY",
-            "reference": "https://civitai.com/models/143293/image2halftone-node-for-comfyui",
+            "reference": "https://civitai.com/models/143293/image2halftone-node-for-sdcfy",
             "files": [
                 "https://civitai.com/api/download/models/158997"
             ],

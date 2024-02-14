@@ -4,7 +4,7 @@ import {ComfyDialog, $el} from "../../scripts/ui.js";
 
 const BASE_URL = "https://youml.com";
 //const BASE_URL = "http://localhost:3000";
-const DEFAULT_HOMEPAGE_URL = `${BASE_URL}/?from=comfyui`;
+const DEFAULT_HOMEPAGE_URL = `${BASE_URL}/?from=sdcfy`;
 const TOKEN_PAGE_URL = `${BASE_URL}/my-token`;
 const API_ENDPOINT = `${BASE_URL}/api`;
 

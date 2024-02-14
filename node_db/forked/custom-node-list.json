@@ -2,7 +2,7 @@
     "custom_nodes": [
         {
             "author": "gameltb",
-            "title": "comfyui-stablsr",
+            "title": "sdcfy-stablsr",
             "reference": "https://github.com/gameltb/Comfyui-StableSR",
             "files": [
                 "https://github.com/gameltb/Comfyui-StableSR"

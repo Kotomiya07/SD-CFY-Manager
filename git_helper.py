@@ -272,7 +272,7 @@ def apply_snapshot(target):
             with open(path, 'r', encoding="UTF-8") as json_file:
                 info = json.load(json_file)
 
-                comfyui_hash = info['comfyui']
+                comfyui_hash = info['sdcfy']
                 git_custom_node_infos = info['git_custom_nodes']
                 file_custom_node_infos = info['file_custom_nodes']
 

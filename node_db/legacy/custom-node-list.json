@@ -83,9 +83,9 @@
         {
             "author": "LucianoCirino",
             "title": "Efficiency Nodes for SD-CFY [LEGACY]",
-            "reference": "https://github.com/LucianoCirino/efficiency-nodes-comfyui",
+            "reference": "https://github.com/LucianoCirino/efficiency-nodes-sdcfy",
             "files": [
-                "https://github.com/LucianoCirino/efficiency-nodes-comfyui"
+                "https://github.com/LucianoCirino/efficiency-nodes-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "A collection of SD-CFY custom nodes to help streamline workflows and reduce total node count.<BR>NOTE: This repository is the original repository but is no longer maintained. Please use the forked version by jags."
@@ -122,10 +122,10 @@
         },
         {
             "author": "chenbaiyujason",
-            "title": "sc-node-comfyui",
-            "reference": "https://github.com/chenbaiyujason/sc-node-comfyui",
+            "title": "sc-node-sdcfy",
+            "reference": "https://github.com/chenbaiyujason/sc-node-sdcfy",
             "files": [
-                "https://github.com/chenbaiyujason/sc-node-comfyui"
+                "https://github.com/chenbaiyujason/sc-node-sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Nodes for GPT interaction and text manipulation"

@@ -26,7 +26,7 @@
        "description": "This extension provides a feature that generates segment masks on an image using a text prompt. When used in conjunction with Impact Pack, it enables applications such as DDSD."
      },
      {
-       "id":"https://github.com/BadCafeCode/masquerade-nodes-comfyui",
+       "id":"https://github.com/BadCafeCode/masquerade-nodes-sdcfy",
        "tags":"ddetailer",
        "description": "This extension provides a way to recognize and enhance masks for faces similar to Impact Pack."
      },
@@ -106,22 +106,22 @@
        "description": "This extension provides nodes for the roop A1111 webui script."
      },
      {
-       "id":"https://github.com/asagi4/comfyui-prompt-control",
+       "id":"https://github.com/asagi4/sdcfy-prompt-control",
        "tags":"prompt, prompt editing",
        "description": "This extension provides the ability to use prompts like \n\n**a [large::0.1] [cat|dog:0.05] [<lora:somelora:0.5:0.6>::0.5] [in a park:in space:0.4]**\n\n"
      },
      {
-       "id":"https://github.com/adieyal/comfyui-dynamicprompts",
+       "id":"https://github.com/adieyal/sdcfy-dynamicprompts",
        "tags":"prompt, dynamic prompt",
        "description": "This extension is a port of sd-dynamic-prompt to SD-CFY."
      },
      {
-       "id":"https://github.com/kwaroran/abg-comfyui",
+       "id":"https://github.com/kwaroran/abg-sdcfy",
        "tags":"abg, background remover",
-       "description": "A Anime Background Remover node for comfyui, based on this hf space, works same as AGB extention in automatic1111."
+       "description": "A Anime Background Remover node for sdcfy, based on this hf space, works same as AGB extention in automatic1111."
      },
      {
-       "id":"https://github.com/Gourieff/comfyui-reactor-node",
+       "id":"https://github.com/Gourieff/sdcfy-reactor-node",
        "tags":"reactor, sd-webui-roop-nsfw",
        "description": "This is a ported version of SD-CFY for the sd-webui-roop-nsfw extension."
      },
@@ -136,7 +136,7 @@
        "description": "This custom nodes provide functionality that assists in animation creation, similar to deforum."
      },
      {
-       "id":"https://github.com/seanlynch/comfyui-optical-flow",
+       "id":"https://github.com/seanlynch/sdcfy-optical-flow",
        "tags":"deforum, vid2vid",
        "description": "This custom nodes provide functionality that assists in animation creation, similar to deforum."
      },
@@ -176,7 +176,7 @@
        "description": "This extension provides custom nodes for [a/LaMa](https://github.com/advimman/lama) functionality."
      },
      {
-       "id":"https://github.com/Haoming02/comfyui-diffusion-cg",
+       "id":"https://github.com/Haoming02/sdcfy-diffusion-cg",
        "tags":"diffusion-cg",
        "description": "This extension provides custom nodes for [a/SD Webui Diffusion Color Grading](https://github.com/Haoming02/sd-webui-diffusion-cg) functionality."
      },
