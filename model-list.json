@@ -145,7 +145,7 @@
       "type": "insightface",
       "base" : "inswapper",
       "save_path": "insightface",
-      "description": "[264MB] Checkpoint of the insightface swapper model\n(used by ComfyUI-FaceSwap, comfyui-reactor-node, CharacterFaceSwap,\nComfyUI roop and comfy_mtb)",
+      "description": "[264MB] Checkpoint of the insightface swapper model\n(used by ComfyUI-FaceSwap, sdcfy-reactor-node, CharacterFaceSwap,\nComfyUI roop and comfy_mtb)",
       "reference": "https://github.com/facefusion/facefusion-assets",
       "filename": "inswapper_128_fp16.onnx",
       "url": "https://github.com/facefusion/facefusion-assets/releases/download/models/inswapper_128_fp16.onnx"
@@ -155,7 +155,7 @@
       "type": "insightface",
       "base" : "inswapper",
       "save_path": "insightface",
-      "description": "[529MB] Checkpoint of the insightface swapper model\n(used by ComfyUI-FaceSwap, comfyui-reactor-node, CharacterFaceSwap,\nComfyUI roop and comfy_mtb)",
+      "description": "[529MB] Checkpoint of the insightface swapper model\n(used by ComfyUI-FaceSwap, sdcfy-reactor-node, CharacterFaceSwap,\nComfyUI roop and comfy_mtb)",
       "reference": "https://github.com/facefusion/facefusion-assets",
       "filename": "inswapper_128.onnx",
       "url": "https://github.com/facefusion/facefusion-assets/releases/download/models/inswapper_128.onnx"
@@ -1246,7 +1246,7 @@
     },
 
     {
-      "name": "animatediff/mmd_sd_v14.ckpt (comfyui-animatediff) (Updated path)",
+      "name": "animatediff/mmd_sd_v14.ckpt (sdcfy-animatediff) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "AnimateDiff",
@@ -1256,7 +1256,7 @@
       "url": "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v14.ckpt"
     },
     {
-      "name": "animatediff/mm_sd_v15.ckpt (comfyui-animatediff) (Updated path)",
+      "name": "animatediff/mm_sd_v15.ckpt (sdcfy-animatediff) (Updated path)",
       "type": "animatediff",
       "base": "SD1.x",
       "save_path": "AnimateDiff",

@@ -92,7 +92,7 @@ except:
         try:
             import git
         except:
-            print(f"## [ERROR] ComfyUI-Manager: Failed to install the GitPython package in the correct Python environment. Please install it manually in the appropriate environment. (You can seek help at https://app.element.io/#/room/%23comfyui_space%3Amatrix.org)")
+            print(f"## [ERROR] ComfyUI-Manager: Failed to install the GitPython package in the correct Python environment. Please install it manually in the appropriate environment. (You can seek help at https://app.element.io/#/room/%23sdcfy_space%3Amatrix.org)")
 
     print(f"## ComfyUI-Manager: installing dependencies done.")
 
@@ -113,20 +113,20 @@ comfy_path = os.path.dirname(folder_paths.__file__)
 custom_nodes_path = os.path.join(comfy_path, 'custom_nodes')
 js_path = os.path.join(comfy_path, "web", "extensions")
 
-comfyui_manager_path = os.path.dirname(__file__)
-cache_dir = os.path.join(comfyui_manager_path, '.cache')
-local_db_model = os.path.join(comfyui_manager_path, "model-list.json")
-local_db_alter = os.path.join(comfyui_manager_path, "alter-list.json")
-local_db_custom_node_list = os.path.join(comfyui_manager_path, "custom-node-list.json")
-local_db_extension_node_mappings = os.path.join(comfyui_manager_path, "extension-node-map.json")
+sdcfy_manager_path = os.path.dirname(__file__)
+cache_dir = os.path.join(sdcfy_manager_path, '.cache')
+local_db_model = os.path.join(sdcfy_manager_path, "model-list.json")
+local_db_alter = os.path.join(sdcfy_manager_path, "alter-list.json")
+local_db_custom_node_list = os.path.join(sdcfy_manager_path, "custom-node-list.json")
+local_db_extension_node_mappings = os.path.join(sdcfy_manager_path, "extension-node-map.json")
 git_script_path = os.path.join(os.path.dirname(__file__), "git_helper.py")
-components_path = os.path.join(comfyui_manager_path, 'components')
+components_path = os.path.join(sdcfy_manager_path, 'components')
 
-startup_script_path = os.path.join(comfyui_manager_path, "startup-scripts")
+startup_script_path = os.path.join(sdcfy_manager_path, "startup-scripts")
 config_path = os.path.join(os.path.dirname(__file__), "config.ini")
 cached_config = None
 
-channel_list_path = os.path.join(comfyui_manager_path, 'channels.list')
+channel_list_path = os.path.join(sdcfy_manager_path, 'channels.list')
 channel_dict = None
 channel_list = None
 
@@ -143,7 +143,7 @@ def get_channel_dict():
         if not os.path.exists(channel_list_path):
             shutil.copy(channel_list_path+'.template', channel_list_path)
 
-        with open(os.path.join(comfyui_manager_path, 'channels.list'), 'r') as file:
+        with open(os.path.join(sdcfy_manager_path, 'channels.list'), 'r') as file:
             channels = file.read()
             for x in channels.split('\n'):
                 channel_info = x.split("::")
@@ -302,7 +302,7 @@ def try_install_script(url, repo_path, install_cmd):
             print(f"install script failed: {url}")
             return False
 
-def print_comfyui_version():
+def print_sdcfy_version():
     global comfy_ui_revision
     global comfy_ui_commit_datetime
     global comfy_ui_hash
@@ -313,10 +313,10 @@ def print_comfyui_version():
         comfy_ui_revision = len(list(repo.iter_commits('HEAD')))
 
         comfy_ui_hash = repo.head.commit.hexsha
-        cm_global.variables['comfyui.revision'] = comfy_ui_revision
+        cm_global.variables['sdcfy.revision'] = comfy_ui_revision
 
         comfy_ui_commit_datetime = repo.head.commit.committed_datetime
-        cm_global.variables['comfyui.commit_datetime'] = comfy_ui_commit_datetime
+        cm_global.variables['sdcfy.commit_datetime'] = comfy_ui_commit_datetime
 
         is_detached = repo.head.is_detached
         current_branch = repo.active_branch.name
@@ -352,7 +352,7 @@ def print_comfyui_version():
             print("### ComfyUI Revision: UNKNOWN (The currently installed ComfyUI is not a Git repository)")
 
 
-print_comfyui_version()
+print_sdcfy_version()
 
 
 # use subprocess to avoid file system lock by git (Windows)
@@ -557,7 +557,7 @@ async def get_data(uri, silent=False):
 
 def setup_js():
     import nodes
-    js_dest_path = os.path.join(js_path, "comfyui-manager")
+    js_dest_path = os.path.join(js_path, "sdcfy-manager")
 
     if hasattr(nodes, "EXTENSION_WEB_DIRS"):
         if os.path.exists(js_dest_path):
@@ -567,7 +567,7 @@ def setup_js():
         # setup js
         if not os.path.exists(js_dest_path):
             os.makedirs(js_dest_path)
-        js_src_path = os.path.join(comfyui_manager_path, "js", "comfyui-manager.js")
+        js_src_path = os.path.join(sdcfy_manager_path, "js", "sdcfy-manager.js")
 
         print(f"### ComfyUI-Manager: Copy .js from '{js_src_path}' to '{js_dest_path}'")
         shutil.copy(js_src_path, js_dest_path)
@@ -618,7 +618,7 @@ def is_file_created_within_one_day(file_path):
 async def get_data_by_mode(mode, filename):
     try:
         if mode == "local":
-            uri = os.path.join(comfyui_manager_path, filename)
+            uri = os.path.join(sdcfy_manager_path, filename)
             json_obj = await get_data(uri)
         else:
             uri = get_config()['channel_url'] + '/' + filename
@@ -641,7 +641,7 @@ async def get_data_by_mode(mode, filename):
                         json.dump(json_obj, file, indent=4, sort_keys=True)
     except Exception as e:
         print(f"[ComfyUI-Manager] Due to a network error, switching to local mode.\n=> {filename}\n=> {e}")
-        uri = os.path.join(comfyui_manager_path, filename)
+        uri = os.path.join(sdcfy_manager_path, filename)
         json_obj = await get_data(uri)
 
     return json_obj
@@ -1044,7 +1044,7 @@ def get_current_snapshot():
         return web.Response(status=400)
 
     repo = git.Repo(repo_path)
-    comfyui_commit_hash = repo.head.commit.hexsha
+    sdcfy_commit_hash = repo.head.commit.hexsha
 
     git_custom_nodes = {}
     file_custom_nodes = []
@@ -1084,7 +1084,7 @@ def get_current_snapshot():
             file_custom_nodes.append(item)
 
     return {
-        'comfyui': comfyui_commit_hash,
+        'sdcfy': sdcfy_commit_hash,
         'git_custom_nodes': git_custom_nodes,
         'file_custom_nodes': file_custom_nodes,
     }
@@ -1627,8 +1627,8 @@ async def update_custom_node(request):
     return web.Response(status=400)
 
 
-@server.PromptServer.instance.routes.get("/comfyui_manager/update_comfyui")
-async def update_comfyui(request):
+@server.PromptServer.instance.routes.get("/sdcfy_manager/update_sdcfy")
+async def update_sdcfy(request):
     print(f"Update ComfyUI")
 
     try:
@@ -1751,9 +1751,9 @@ manager_terminal_hook = ManagerTerminalHook()
 async def terminal_mode(request):
     if "mode" in request.rel_url.query:
         if request.rel_url.query['mode'] == 'true':
-            sys.__comfyui_manager_terminal_hook.add_hook('cm', manager_terminal_hook)
+            sys.__sdcfy_manager_terminal_hook.add_hook('cm', manager_terminal_hook)
         else:
-            sys.__comfyui_manager_terminal_hook.remove_hook('cm')
+            sys.__sdcfy_manager_terminal_hook.remove_hook('cm')
 
     return web.Response(status=200)
 
@@ -1950,10 +1950,10 @@ async def share_option(request):
 
 
 def get_openart_auth():
-    if not os.path.exists(os.path.join(comfyui_manager_path, ".openart_key")):
+    if not os.path.exists(os.path.join(sdcfy_manager_path, ".openart_key")):
         return None
     try:
-        with open(os.path.join(comfyui_manager_path, ".openart_key"), "r") as f:
+        with open(os.path.join(sdcfy_manager_path, ".openart_key"), "r") as f:
             openart_key = f.read().strip()
         return openart_key if openart_key else None
     except:
@@ -1961,10 +1961,10 @@ def get_openart_auth():
 
 
 def get_matrix_auth():
-    if not os.path.exists(os.path.join(comfyui_manager_path, "matrix_auth")):
+    if not os.path.exists(os.path.join(sdcfy_manager_path, "matrix_auth")):
         return None
     try:
-        with open(os.path.join(comfyui_manager_path, "matrix_auth"), "r") as f:
+        with open(os.path.join(sdcfy_manager_path, "matrix_auth"), "r") as f:
             matrix_auth = f.read()
             homeserver, username, password = matrix_auth.strip().split("\n")
             if not homeserver or not username or not password:
@@ -1979,10 +1979,10 @@ def get_matrix_auth():
 
 
 def get_comfyworkflows_auth():
-    if not os.path.exists(os.path.join(comfyui_manager_path, "comfyworkflows_sharekey")):
+    if not os.path.exists(os.path.join(sdcfy_manager_path, "comfyworkflows_sharekey")):
         return None
     try:
-        with open(os.path.join(comfyui_manager_path, "comfyworkflows_sharekey"), "r") as f:
+        with open(os.path.join(sdcfy_manager_path, "comfyworkflows_sharekey"), "r") as f:
             share_key = f.read()
             if not share_key.strip():
                 return None
@@ -1992,10 +1992,10 @@ def get_comfyworkflows_auth():
 
 
 def get_youml_settings():
-    if not os.path.exists(os.path.join(comfyui_manager_path, ".youml")):
+    if not os.path.exists(os.path.join(sdcfy_manager_path, ".youml")):
         return None
     try:
-        with open(os.path.join(comfyui_manager_path, ".youml"), "r") as f:
+        with open(os.path.join(sdcfy_manager_path, ".youml"), "r") as f:
             youml_settings = f.read().strip()
         return youml_settings if youml_settings else None
     except:
@@ -2003,7 +2003,7 @@ def get_youml_settings():
 
 
 def set_youml_settings(settings):
-    with open(os.path.join(comfyui_manager_path, ".youml"), "w") as f:
+    with open(os.path.join(sdcfy_manager_path, ".youml"), "w") as f:
         f.write(settings)
 
 
@@ -2020,7 +2020,7 @@ async def api_get_openart_auth(request):
 async def api_set_openart_auth(request):
     json_data = await request.json()
     openart_key = json_data['openart_key']
-    with open(os.path.join(comfyui_manager_path, ".openart_key"), "w") as f:
+    with open(os.path.join(sdcfy_manager_path, ".openart_key"), "w") as f:
         f.write(openart_key)
     return web.Response(status=200)
 
@@ -2064,12 +2064,12 @@ def set_matrix_auth(json_data):
     homeserver = json_data['homeserver']
     username = json_data['username']
     password = json_data['password']
-    with open(os.path.join(comfyui_manager_path, "matrix_auth"), "w") as f:
+    with open(os.path.join(sdcfy_manager_path, "matrix_auth"), "w") as f:
         f.write("\n".join([homeserver, username, password]))
 
 
 def set_comfyworkflows_auth(comfyworkflows_sharekey):
-    with open(os.path.join(comfyui_manager_path, "comfyworkflows_sharekey"), "w") as f:
+    with open(os.path.join(sdcfy_manager_path, "comfyworkflows_sharekey"), "w") as f:
         f.write(comfyworkflows_sharekey)
 
 
@@ -2218,7 +2218,7 @@ async def share_art(request):
             form = aiohttp.FormData()
             if comfyworkflows_sharekey:
                 form.add_field("shareKey", comfyworkflows_sharekey)
-            form.add_field("source", "comfyui_manager")
+            form.add_field("source", "sdcfy_manager")
             form.add_field("assetFileKey", assetFileKey)
             form.add_field("assetFileType", assetFileType)
             form.add_field("workflowJsonFileKey", workflowJsonFileKey)
@@ -2241,7 +2241,7 @@ async def share_art(request):
 
     # check if the user has provided Matrix credentials
     if "matrix" in share_destinations:
-        comfyui_share_room_id = '!LGYSoacpJPhIfBqVfb:matrix.org'
+        sdcfy_share_room_id = '!LGYSoacpJPhIfBqVfb:matrix.org'
         filename = os.path.basename(asset_filepath)
         content_type = assetFileType
 
@@ -2277,9 +2277,9 @@ async def share_art(request):
                 text_content += f"{description}\n"
             if credits:
                 text_content += f"\ncredits: {credits}\n"
-            response = matrix.send_message(comfyui_share_room_id, text_content)
-            response = matrix.send_content(comfyui_share_room_id, mxc_url, filename, 'm.image')
-            response = matrix.send_content(comfyui_share_room_id, workflow_json_mxc_url, 'workflow.json', 'm.file')
+            response = matrix.send_message(sdcfy_share_room_id, text_content)
+            response = matrix.send_content(sdcfy_share_room_id, mxc_url, filename, 'm.image')
+            response = matrix.send_content(sdcfy_share_room_id, workflow_json_mxc_url, 'workflow.json', 'm.file')
         except:
             import traceback
             traceback.print_exc()

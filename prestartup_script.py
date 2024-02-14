@@ -49,17 +49,17 @@ def check_file_logging():
 check_file_logging()
 
 
-sys.__comfyui_manager_register_message_collapse = register_message_collapse
-sys.__comfyui_manager_is_import_failed_extension = is_import_failed_extension
+sys.__sdcfy_manager_register_message_collapse = register_message_collapse
+sys.__sdcfy_manager_is_import_failed_extension = is_import_failed_extension
 cm_global.register_api('cm.register_message_collapse', register_message_collapse)
 cm_global.register_api('cm.is_import_failed_extension', is_import_failed_extension)
 
 
-comfyui_manager_path = os.path.dirname(__file__)
-custom_nodes_path = os.path.abspath(os.path.join(comfyui_manager_path, ".."))
-startup_script_path = os.path.join(comfyui_manager_path, "startup-scripts")
+sdcfy_manager_path = os.path.dirname(__file__)
+custom_nodes_path = os.path.abspath(os.path.join(sdcfy_manager_path, ".."))
+startup_script_path = os.path.join(sdcfy_manager_path, "startup-scripts")
 restore_snapshot_path = os.path.join(startup_script_path, "restore-snapshot.json")
-git_script_path = os.path.join(comfyui_manager_path, "git_helper.py")
+git_script_path = os.path.join(sdcfy_manager_path, "git_helper.py")
 
 std_log_lock = threading.Lock()
 
@@ -91,7 +91,7 @@ class TerminalHook:
 
 
 terminal_hook = TerminalHook()
-sys.__comfyui_manager_terminal_hook = terminal_hook
+sys.__sdcfy_manager_terminal_hook = terminal_hook
 
 
 def handle_stream(stream, prefix):
@@ -138,14 +138,14 @@ try:
 
     # Logger setup
     if enable_file_logging:
-        if os.path.exists(f"comfyui{postfix}.log"):
-            if os.path.exists(f"comfyui{postfix}.prev.log"):
-                if os.path.exists(f"comfyui{postfix}.prev2.log"):
-                    os.remove(f"comfyui{postfix}.prev2.log")
-                os.rename(f"comfyui{postfix}.prev.log", f"comfyui{postfix}.prev2.log")
-            os.rename(f"comfyui{postfix}.log", f"comfyui{postfix}.prev.log")
+        if os.path.exists(f"sdcfy{postfix}.log"):
+            if os.path.exists(f"sdcfy{postfix}.prev.log"):
+                if os.path.exists(f"sdcfy{postfix}.prev2.log"):
+                    os.remove(f"sdcfy{postfix}.prev2.log")
+                os.rename(f"sdcfy{postfix}.prev.log", f"sdcfy{postfix}.prev2.log")
+            os.rename(f"sdcfy{postfix}.log", f"sdcfy{postfix}.prev.log")
 
-        log_file = open(f"comfyui{postfix}.log", "w", encoding="utf-8", errors="ignore")
+        log_file = open(f"sdcfy{postfix}.log", "w", encoding="utf-8", errors="ignore")
 
     log_lock = threading.Lock()
 
@@ -291,7 +291,7 @@ print("** Python version:", sys.version)
 print("** Python executable:", sys.executable)
 
 if enable_file_logging:
-    print("** Log path:", os.path.abspath('comfyui.log'))
+    print("** Log path:", os.path.abspath('sdcfy.log'))
 else:
     print("** Log path: file logging is disabled")
 
