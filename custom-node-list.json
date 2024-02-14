@@ -55,12 +55,12 @@
         {
             "author": "Fannovel16",
             "title": "SD-CFY's ControlNet Auxiliary Preprocessors",
-            "reference": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+            "reference": "https://github.com/Fannovel16/sdcfy_controlnet_aux",
             "files": [
-                "https://github.com/Fannovel16/comfyui_controlnet_aux"
+                "https://github.com/Fannovel16/sdcfy_controlnet_aux"
             ],
             "install_type": "git-clone",
-            "description": "This is a rework of comfyui_controlnet_preprocessors based on ControlNet auxiliary models by 🤗. I think the old repo isn't good enough to maintain. All old workflow will still be work with this repo but the version option won't do anything. Almost all v1 preprocessors are replaced by v1.1 except those doesn't appear in v1.1. [w/NOTE: Please refrain from using the controlnet preprocessor alongside this installation, as it may lead to conflicts and prevent proper recognition.]"
+            "description": "This is a rework of sdcfy_controlnet_preprocessors based on ControlNet auxiliary models by 🤗. I think the old repo isn't good enough to maintain. All old workflow will still be work with this repo but the version option won't do anything. Almost all v1 preprocessors are replaced by v1.1 except those doesn't appear in v1.1. [w/NOTE: Please refrain from using the controlnet preprocessor alongside this installation, as it may lead to conflicts and prevent proper recognition.]"
         },
         {
             "author": "Fannovel16",
@@ -420,9 +420,9 @@
         {
             "author": "szhublox",
             "title": "Auto-MBW",
-            "reference": "https://github.com/szhublox/ambw_comfyui",
+            "reference": "https://github.com/szhublox/ambw_sdcfy",
             "files": [
-                "https://github.com/szhublox/ambw_comfyui"
+                "https://github.com/szhublox/ambw_sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Auto-MBW for SD-CFY loosely based on sdweb-auto-MBW. Nodes: auto merge block weighted"
@@ -786,19 +786,19 @@
         {
             "author": "bmad4ever",
             "title": "Bmad Nodes",
-            "reference": "https://github.com/bmad4ever/comfyui_bmad_nodes",
+            "reference": "https://github.com/bmad4ever/sdcfy_bmad_nodes",
             "files": [
-                "https://github.com/bmad4ever/comfyui_bmad_nodes"
+                "https://github.com/bmad4ever/sdcfy_bmad_nodes"
             ],
             "install_type": "git-clone",
             "description": "This custom node offers the following functionalities: API support for setting up API requests, computer vision primarily for masking or collages, and general utility to streamline workflow setup or implement essential missing features."
         },
         {
             "author": "bmad4ever",
-            "title": "comfyui_ab_sampler",
-            "reference": "https://github.com/bmad4ever/comfyui_ab_samplercustom",
+            "title": "sdcfy_ab_sampler",
+            "reference": "https://github.com/bmad4ever/sdcfy_ab_samplercustom",
             "files": [
-                "https://github.com/bmad4ever/comfyui_ab_samplercustom"
+                "https://github.com/bmad4ever/sdcfy_ab_samplercustom"
             ],
             "install_type": "git-clone",
             "description": "Experimental sampler node. Sampling alternates between A and B inputs until only one remains, starting with A. B steps run over a 2x2 grid, where 3/4's of the grid are copies of the original input latent. When the optional mask is used, the region outside the defined roi is copied from the original latent at the end of every step."
@@ -806,9 +806,9 @@
         {
             "author": "bmad4ever",
             "title": "Lists Cartesian Product",
-            "reference": "https://github.com/bmad4ever/comfyui_lists_cartesian_product",
+            "reference": "https://github.com/bmad4ever/sdcfy_lists_cartesian_product",
             "files": [
-                "https://github.com/bmad4ever/comfyui_lists_cartesian_product"
+                "https://github.com/bmad4ever/sdcfy_lists_cartesian_product"
             ],
             "install_type": "git-clone",
             "description": "Given a set of lists, the node adjusts them so that when used as input to another node all the possible argument permutations are computed."
@@ -1540,9 +1540,9 @@
         {
             "author": "badjeff",
             "title": "LoRA Tag Loader for SD-CFY",
-            "reference": "https://github.com/badjeff/comfyui_lora_tag_loader",
+            "reference": "https://github.com/badjeff/sdcfy_lora_tag_loader",
             "files": [
-                "https://github.com/badjeff/comfyui_lora_tag_loader"
+                "https://github.com/badjeff/sdcfy_lora_tag_loader"
             ],
             "install_type": "git-clone",
             "description": "A SD-CFY custom node to read LoRA tag(s) from text and load it into checkpoint model."
@@ -1761,9 +1761,9 @@
         {
             "author": "dagthomas",
             "title": "SDXL Auto Prompter",
-            "reference": "https://github.com/dagthomas/comfyui_dagthomas",
+            "reference": "https://github.com/dagthomas/sdcfy_dagthomas",
             "files": [
-                "https://github.com/dagthomas/comfyui_dagthomas"
+                "https://github.com/dagthomas/sdcfy_dagthomas"
             ],
             "install_type": "git-clone",
             "description": "Easy prompting for generation of endless random art pieces and photographs!"
@@ -1810,10 +1810,10 @@
         },
         {
             "author": "youyegit",
-            "title": "tdxh_node_comfyui",
-            "reference": "https://github.com/youyegit/tdxh_node_comfyui",
+            "title": "tdxh_node_sdcfy",
+            "reference": "https://github.com/youyegit/tdxh_node_sdcfy",
             "files": [
-                "https://github.com/youyegit/tdxh_node_comfyui"
+                "https://github.com/youyegit/tdxh_node_sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Nodes:TdxhImageToSize, TdxhImageToSizeAdvanced, TdxhLoraLoader, TdxhIntInput, TdxhFloatInput, TdxhStringInput. Some nodes for stable diffusion sdcfy. Sometimes it helps conveniently to use less nodes for doing the same things."
@@ -1949,9 +1949,9 @@
         {
             "author": "ealkanat",
             "title": "SD-CFY Easy Padding",
-            "reference": "https://github.com/ealkanat/comfyui_easy_padding",
+            "reference": "https://github.com/ealkanat/sdcfy_easy_padding",
             "files": [
-                "https://github.com/ealkanat/comfyui_easy_padding"
+                "https://github.com/ealkanat/sdcfy_easy_padding"
             ],
             "install_type": "git-clone",
             "description": "SD-CFY Easy Padding is a simple custom SD-CFY node that helps you to add padding to images on SD-CFY."
@@ -2029,9 +2029,9 @@
         {
             "author": "budihartono",
             "title": "Otonx's Custom Nodes",
-            "reference": "https://github.com/budihartono/comfyui_otonx_nodes",
+            "reference": "https://github.com/budihartono/sdcfy_otonx_nodes",
             "files": [
-                "https://github.com/budihartono/comfyui_otonx_nodes"
+                "https://github.com/budihartono/sdcfy_otonx_nodes"
             ],
             "install_type": "git-clone",
             "description": "Nodes: OTX Multiple Values, OTX KSampler Feeder. This extension provides custom nodes for SD-CFY created for personal projects. Made available for reference. Nodes may be updated or changed intermittently or not at all. Review & test before use."
@@ -2370,9 +2370,9 @@
         {
             "author": "storyicon",
             "title": "segment anything",
-            "reference": "https://github.com/storyicon/comfyui_segment_anything",
+            "reference": "https://github.com/storyicon/sdcfy_segment_anything",
             "files": [
-                "https://github.com/storyicon/comfyui_segment_anything"
+                "https://github.com/storyicon/sdcfy_segment_anything"
             ],
             "install_type": "git-clone",
             "description": "Based on GroundingDino and SAM, use semantic strings to segment any element in an image. The sdcfy version of sd-webui-segment-anything."
@@ -2540,9 +2540,9 @@
         {
             "author": "ostris",
             "title": "Ostris Nodes SD-CFY",
-            "reference": "https://github.com/ostris/ostris_nodes_comfyui",
+            "reference": "https://github.com/ostris/ostris_nodes_sdcfy",
             "files": [
-                "https://github.com/ostris/ostris_nodes_comfyui"
+                "https://github.com/ostris/ostris_nodes_sdcfy"
             ],
             "install_type": "git-clone",
             "nodename_pattern": "- Ostris$",
@@ -3392,10 +3392,10 @@
         },
         {
             "author": "zcfrank1st",
-            "title": "comfyui_visual_anagram",
-            "reference": "https://github.com/zcfrank1st/comfyui_visual_anagrams",
+            "title": "sdcfy_visual_anagram",
+            "reference": "https://github.com/zcfrank1st/sdcfy_visual_anagrams",
             "files": [
-                "https://github.com/zcfrank1st/comfyui_visual_anagrams"
+                "https://github.com/zcfrank1st/sdcfy_visual_anagrams"
             ],
             "install_type": "git-clone",
             "description": "Nodes:visual_anagrams_sample, visual_anagrams_animate"
@@ -3554,9 +3554,9 @@
         {
             "author": "MitoshiroPJ",
             "title": "SD-CFY Slothful Attention",
-            "reference": "https://github.com/MitoshiroPJ/comfyui_slothful_attention",
+            "reference": "https://github.com/MitoshiroPJ/sdcfy_slothful_attention",
             "files": [
-                "https://github.com/MitoshiroPJ/comfyui_slothful_attention"
+                "https://github.com/MitoshiroPJ/sdcfy_slothful_attention"
             ],
             "install_type": "git-clone",
             "description": "This custom node allow controlling output without training. The reducing method is similar to [a/Spatial-Reduction Attention](https://paperswithcode.com/method/spatial-reduction-attention), but generating speed may not be increased on typical image sizes due to overheads. (In some cases, slightly slower)"
@@ -4087,19 +4087,19 @@
         {
             "author": "ai-liam",
             "title": "LiamUtil",
-            "reference": "https://github.com/ai-liam/comfyui_liam_util",
+            "reference": "https://github.com/ai-liam/sdcfy_liam_util",
             "files": [
-                "https://github.com/ai-liam/comfyui_liam_util"
+                "https://github.com/ai-liam/sdcfy_liam_util"
             ],
             "install_type": "git-clone",
             "description": "Nodes: LiamLoadImage. This node provides the capability to load images from a URL."
         },
         {
             "author": "Ryuukeisyou",
-            "title": "comfyui_face_parsing",
-            "reference": "https://github.com/Ryuukeisyou/comfyui_face_parsing",
+            "title": "sdcfy_face_parsing",
+            "reference": "https://github.com/Ryuukeisyou/sdcfy_face_parsing",
             "files": [
-                "https://github.com/Ryuukeisyou/comfyui_face_parsing"
+                "https://github.com/Ryuukeisyou/sdcfy_face_parsing"
             ],
             "install_type": "git-clone",
             "description": "This is a set of custom nodes for SD-CFY. The nodes utilize the [a/face parsing model](https://huggingface.co/jonathandinu/face-parsing) to provide detailed segmantation of face. To improve face segmantation accuracy, [a/yolov8 face model](https://huggingface.co/Bingsu/adetailer/) is used to first extract face from an image. There are also auxiliary nodes for image and mask processing. A guided filter is also provided for skin smoothing."
@@ -4156,10 +4156,10 @@
         },
         {
             "author": "Ryuukeisyou",
-            "title": "comfyui_image_io_helpers",
-            "reference": "https://github.com/Ryuukeisyou/comfyui_image_io_helpers",
+            "title": "sdcfy_image_io_helpers",
+            "reference": "https://github.com/Ryuukeisyou/sdcfy_image_io_helpers",
             "files": [
-                "https://github.com/Ryuukeisyou/comfyui_image_io_helpers"
+                "https://github.com/Ryuukeisyou/sdcfy_image_io_helpers"
             ],
             "install_type": "git-clone",
             "description": "Nodes:ImageLoadFromBase64, ImageLoadByPath, ImageLoadAsMaskByPath, ImageSaveToPath, ImageSaveAsBase64."
@@ -4436,10 +4436,10 @@
         },
         {
             "author": "ginlov",
-            "title": "segment_to_mask_comfyui",
-            "reference": "https://github.com/ginlov/segment_to_mask_comfyui",
+            "title": "segment_to_mask_sdcfy",
+            "reference": "https://github.com/ginlov/segment_to_mask_sdcfy",
             "files": [
-                "https://github.com/ginlov/segment_to_mask_comfyui"
+                "https://github.com/ginlov/segment_to_mask_sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Nodes:SegToMask"
@@ -4636,10 +4636,10 @@
         },
         {
             "author": "dave-palt",
-            "title": "comfyui_DSP_imagehelpers",
-            "reference": "https://github.com/dave-palt/comfyui_DSP_imagehelpers",
+            "title": "sdcfy_DSP_imagehelpers",
+            "reference": "https://github.com/dave-palt/sdcfy_DSP_imagehelpers",
             "files": [
-                "https://github.com/dave-palt/comfyui_DSP_imagehelpers"
+                "https://github.com/dave-palt/sdcfy_DSP_imagehelpers"
             ],
             "install_type": "git-clone",
             "description": "Nodes: DSP Image Concat"
@@ -4996,10 +4996,10 @@
         },
         {
             "author": "yffyhk",
-            "title": "comfyui_auto_danbooru",
-            "reference": "https://github.com/yffyhk/comfyui_auto_danbooru",
+            "title": "sdcfy_auto_danbooru",
+            "reference": "https://github.com/yffyhk/sdcfy_auto_danbooru",
             "files": [
-                "https://github.com/yffyhk/comfyui_auto_danbooru"
+                "https://github.com/yffyhk/sdcfy_auto_danbooru"
             ],
             "install_type": "git-clone",
             "description": "Nodes: Get Danbooru, Tag Encode"
@@ -5328,9 +5328,9 @@
         {
             "author": "wsippel",
             "title": "SDXLResolutionPresets",
-            "reference": "https://github.com/wsippel/comfyui_ws",
+            "reference": "https://github.com/wsippel/sdcfy_ws",
             "files": [
-                "https://github.com/wsippel/comfyui_ws/raw/main/sdxl_utility.py"
+                "https://github.com/wsippel/sdcfy_ws/raw/main/sdxl_utility.py"
             ],
             "install_type": "copy",
             "description": "Nodes: SDXLResolutionPresets. Easy access to the officially supported resolutions, in both horizontal and vertical formats: 1024x1024, 1152x896, 1216x832, 1344x768, 1536x640"
@@ -5388,9 +5388,9 @@
         {
             "author": "Smuzzies",
             "title": "Chatbox Overlay node for SD-CFY",
-            "reference": "https://github.com/Smuzzies/comfyui_chatbox_overlay",
+            "reference": "https://github.com/Smuzzies/sdcfy_chatbox_overlay",
             "files": [
-                "https://github.com/Smuzzies/comfyui_chatbox_overlay/raw/main/chatbox_overlay.py"
+                "https://github.com/Smuzzies/sdcfy_chatbox_overlay/raw/main/chatbox_overlay.py"
             ],
             "install_type": "copy",
             "description": "Nodes: Chatbox Overlay. Custom node for SD-CFY to add a text box over a processed image before save node."
@@ -5418,9 +5418,9 @@
         {
             "author": "LZC",
             "title": "Hayo sdcfy nodes",
-            "reference": "https://github.com/1shadow1/hayo_comfyui_nodes",
+            "reference": "https://github.com/1shadow1/hayo_sdcfy_nodes",
             "files": [
-                "https://github.com/1shadow1/hayo_comfyui_nodes/raw/main/LZCNodes.py"
+                "https://github.com/1shadow1/hayo_sdcfy_nodes/raw/main/LZCNodes.py"
             ],
             "install_type": "copy",
             "description": "Nodes:tensor_trans_pil, Make Transparent mask, MergeImages, words_generatee, load_PIL image"
@@ -5428,11 +5428,11 @@
         {
             "author": "celsojr2013",
             "title": "SD-CFY SimpleTools Suit",
-            "reference": "https://github.com/celsojr2013/comfyui_simpletools",
+            "reference": "https://github.com/celsojr2013/sdcfy_simpletools",
             "files": [
-                "https://github.com/celsojr2013/comfyui_simpletools/raw/main/google_translator.py",
-                "https://github.com/celsojr2013/comfyui_simpletools/raw/main/parameters.py",
-                "https://github.com/celsojr2013/comfyui_simpletools/raw/main/resolution_solver.py"
+                "https://github.com/celsojr2013/sdcfy_simpletools/raw/main/google_translator.py",
+                "https://github.com/celsojr2013/sdcfy_simpletools/raw/main/parameters.py",
+                "https://github.com/celsojr2013/sdcfy_simpletools/raw/main/resolution_solver.py"
             ],
             "install_type": "copy",
             "description": "Nodes:Simple Gooogle Translator Client, Simple Mustache Parameter Switcher, Simple Latent Resolution Solver."

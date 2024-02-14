@@ -29,7 +29,7 @@
             "title_aux": "Latent Consistency Model for SD-CFY"
         }
     ],
-    "https://github.com/1shadow1/hayo_comfyui_nodes/raw/main/LZCNodes.py": [
+    "https://github.com/1shadow1/hayo_sdcfy_nodes/raw/main/LZCNodes.py": [
         [
             "LoadPILImages",
             "MergeImages",
@@ -788,7 +788,7 @@
             "title_aux": "SD-CFY-Video-Matting"
         }
     ],
-    "https://github.com/Fannovel16/comfyui_controlnet_aux": [
+    "https://github.com/Fannovel16/sdcfy_controlnet_aux": [
         [
             "AIO_Preprocessor",
             "AnimalPosePreprocessor",
@@ -1634,7 +1634,7 @@
             "title_aux": "SD-CFY-FBCNN"
         }
     ],
-    "https://github.com/MitoshiroPJ/comfyui_slothful_attention": [
+    "https://github.com/MitoshiroPJ/sdcfy_slothful_attention": [
         [
             "NearSightedAttention",
             "NearSightedAttentionSimple",
@@ -1925,7 +1925,7 @@
             "title_aux": "SD-CFY-RenderRiftNodes"
         }
     ],
-    "https://github.com/Ryuukeisyou/comfyui_face_parsing": [
+    "https://github.com/Ryuukeisyou/sdcfy_face_parsing": [
         [
             "BBoxListItemSelect(FaceParsing)",
             "BBoxResize(FaceParsing)",
@@ -1954,10 +1954,10 @@
             "SkinDetectTraditional(FaceParsing)"
         ],
         {
-            "title_aux": "comfyui_face_parsing"
+            "title_aux": "sdcfy_face_parsing"
         }
     ],
-    "https://github.com/Ryuukeisyou/comfyui_image_io_helpers": [
+    "https://github.com/Ryuukeisyou/sdcfy_image_io_helpers": [
         [
             "ImageLoadAsMaskByPath(ImageIOHelpers)",
             "ImageLoadByPath(ImageIOHelpers)",
@@ -1966,7 +1966,7 @@
             "ImageSaveToPath(ImageIOHelpers)"
         ],
         {
-            "title_aux": "comfyui_image_io_helpers"
+            "title_aux": "sdcfy_image_io_helpers"
         }
     ],
     "https://github.com/SLAPaper/SD-CFY-Image-Selector": [
@@ -2155,7 +2155,7 @@
             "title_aux": "Lazy Pony Prompter"
         }
     ],
-    "https://github.com/Smuzzies/comfyui_chatbox_overlay/raw/main/chatbox_overlay.py": [
+    "https://github.com/Smuzzies/sdcfy_chatbox_overlay/raw/main/chatbox_overlay.py": [
         [
             "Chatbox Overlay"
         ],
@@ -3355,7 +3355,7 @@
             "title_aux": "SD-CFY-styles-all"
         }
     ],
-    "https://github.com/ai-liam/comfyui_liam_util": [
+    "https://github.com/ai-liam/sdcfy_liam_util": [
         [
             "LiamLoadImage"
         ],
@@ -3631,7 +3631,7 @@
             "title_aux": "SD-CFY-ClipScore-Nodes"
         }
     ],
-    "https://github.com/badjeff/comfyui_lora_tag_loader": [
+    "https://github.com/badjeff/sdcfy_lora_tag_loader": [
         [
             "LoraTagLoader"
         ],
@@ -3753,15 +3753,15 @@
             "title_aux": "SD-CFY-bleh"
         }
     ],
-    "https://github.com/bmad4ever/comfyui_ab_samplercustom": [
+    "https://github.com/bmad4ever/sdcfy_ab_samplercustom": [
         [
             "AB SamplerCustom (experimental)"
         ],
         {
-            "title_aux": "comfyui_ab_sampler"
+            "title_aux": "sdcfy_ab_sampler"
         }
     ],
-    "https://github.com/bmad4ever/comfyui_bmad_nodes": [
+    "https://github.com/bmad4ever/sdcfy_bmad_nodes": [
         [
             "AdaptiveThresholding",
             "Add String To Many",
@@ -3894,7 +3894,7 @@
             "title_aux": "Bmad Nodes"
         }
     ],
-    "https://github.com/bmad4ever/comfyui_lists_cartesian_product": [
+    "https://github.com/bmad4ever/sdcfy_lists_cartesian_product": [
         [
             "AnyListCartesianProduct"
         ],
@@ -3960,7 +3960,7 @@
             "title_aux": "SD-CFY Sequential Image Loader"
         }
     ],
-    "https://github.com/budihartono/comfyui_otonx_nodes": [
+    "https://github.com/budihartono/sdcfy_otonx_nodes": [
         [
             "OTX Integer Multiple Inputs 4",
             "OTX Integer Multiple Inputs 5",
@@ -4012,7 +4012,7 @@
             "title_aux": "Image loader with subfolders"
         }
     ],
-    "https://github.com/celsojr2013/comfyui_simpletools/raw/main/google_translator.py": [
+    "https://github.com/celsojr2013/sdcfy_simpletools/raw/main/google_translator.py": [
         [
             "GoogleTranslator"
         ],
@@ -4679,7 +4679,7 @@
             "title_aux": "SD-CFY Essentials"
         }
     ],
-    "https://github.com/dagthomas/comfyui_dagthomas": [
+    "https://github.com/dagthomas/sdcfy_dagthomas": [
         [
             "CSL",
             "CSVPromptGenerator",
@@ -4739,12 +4739,12 @@
             "title_aux": "MarasIT Nodes"
         }
     ],
-    "https://github.com/dave-palt/comfyui_DSP_imagehelpers": [
+    "https://github.com/dave-palt/sdcfy_DSP_imagehelpers": [
         [
             "dsp-imagehelpers-concat"
         ],
         {
-            "title_aux": "comfyui_DSP_imagehelpers"
+            "title_aux": "sdcfy_DSP_imagehelpers"
         }
     ],
     "https://github.com/dawangraoming/SD-CFY_ksampler_gpu/raw/main/ksampler_gpu.py": [
@@ -4974,7 +4974,7 @@
             "title_aux": "primitive-types"
         }
     ],
-    "https://github.com/ealkanat/comfyui_easy_padding": [
+    "https://github.com/ealkanat/sdcfy_easy_padding": [
         [
             "sdcfy-easy-padding"
         ],
@@ -6687,7 +6687,7 @@
             "title_aux": "Quality of life Suit:V2"
         }
     ],
-    "https://github.com/ostris/ostris_nodes_comfyui": [
+    "https://github.com/ostris/ostris_nodes_sdcfy": [
         [
             "LLM Pipe Loader - Ostris",
             "LLM Prompt Upsampling - Ostris",
@@ -7417,7 +7417,7 @@
             "title_aux": "SD-CFY roop"
         }
     ],
-    "https://github.com/storyicon/comfyui_segment_anything": [
+    "https://github.com/storyicon/sdcfy_segment_anything": [
         [
             "GroundingDinoModelLoader (segment anything)",
             "GroundingDinoSAMSegment (segment anything)",
@@ -7482,7 +7482,7 @@
             "title_aux": "Vid2vid"
         }
     ],
-    "https://github.com/szhublox/ambw_comfyui": [
+    "https://github.com/szhublox/ambw_sdcfy": [
         [
             "Auto Merge Block Weighted",
             "CLIPMergeSimple",
@@ -7929,7 +7929,7 @@
             "title_aux": "ComfyUi_String_Function_Tree"
         }
     ],
-    "https://github.com/wsippel/comfyui_ws/raw/main/sdxl_utility.py": [
+    "https://github.com/wsippel/sdcfy_ws/raw/main/sdxl_utility.py": [
         [
             "SDXLResolutionPresets"
         ],
@@ -8013,13 +8013,13 @@
             "title_aux": "hd-nodes-sdcfy"
         }
     ],
-    "https://github.com/yffyhk/comfyui_auto_danbooru": [
+    "https://github.com/yffyhk/sdcfy_auto_danbooru": [
         [
             "GetDanbooru",
             "TagEncode"
         ],
         {
-            "title_aux": "comfyui_auto_danbooru"
+            "title_aux": "sdcfy_auto_danbooru"
         }
     ],
     "https://github.com/yolain/SD-CFY-Easy-Use": [
@@ -8186,7 +8186,7 @@
             "title_aux": "Image to Text Node"
         }
     ],
-    "https://github.com/youyegit/tdxh_node_comfyui": [
+    "https://github.com/youyegit/tdxh_node_sdcfy": [
         [
             "TdxhBoolNumber",
             "TdxhClipVison",
@@ -8204,7 +8204,7 @@
             "TdxhStringInputTranslator"
         ],
         {
-            "title_aux": "tdxh_node_comfyui"
+            "title_aux": "tdxh_node_sdcfy"
         }
     ],
     "https://github.com/yuvraj108c/SD-CFY-Whisper": [
@@ -8238,13 +8238,13 @@
             "title_aux": "SD-CFY Yolov8"
         }
     ],
-    "https://github.com/zcfrank1st/comfyui_visual_anagrams": [
+    "https://github.com/zcfrank1st/sdcfy_visual_anagrams": [
         [
             "VisualAnagramsAnimate",
             "VisualAnagramsSample"
         ],
         {
-            "title_aux": "comfyui_visual_anagram"
+            "title_aux": "sdcfy_visual_anagram"
         }
     ],
     "https://github.com/zer0TF/cute-sdcfy": [

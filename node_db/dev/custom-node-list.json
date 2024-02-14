@@ -252,10 +252,10 @@
         },
         {
             "author": "kadirnar",
-            "title": "comfyui_helpers",
-            "reference": "https://github.com/kadirnar/comfyui_helpers",
+            "title": "sdcfy_helpers",
+            "reference": "https://github.com/kadirnar/sdcfy_helpers",
             "files": [
-                "https://github.com/kadirnar/comfyui_helpers"
+                "https://github.com/kadirnar/sdcfy_helpers"
             ],
             "install_type": "git-clone",
             "description": "A collection of nodes randomly selected and gathered, related to noise. NOTE: SD-Advanced-Noise, noise_latent_perlinpinpin, sdcfy-plasma"
@@ -442,10 +442,10 @@
         },
         {
             "author": "jn-jairo",
-            "title": "jn_node_suite_comfyui [WIP]",
-            "reference": "https://github.com/jn-jairo/jn_node_suite_comfyui",
+            "title": "jn_node_suite_sdcfy [WIP]",
+            "reference": "https://github.com/jn-jairo/jn_node_suite_sdcfy",
             "files": [
-                "https://github.com/jn-jairo/jn_node_suite_comfyui"
+                "https://github.com/jn-jairo/jn_node_suite_sdcfy"
             ],
             "install_type": "git-clone",
             "description": "Image manipulation nodes, Temperature control nodes, Tiling nodes, Primitive and operation nodes, ..."

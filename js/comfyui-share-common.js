@@ -264,7 +264,7 @@ export class ShareDialogChooser extends ComfyDialog {
 			{
 				key: "matrix",
 				textContent: "Matrix Server",
-				website: "https://app.element.io/#/room/%23comfyui_space%3Amatrix.org",
+				website: "https://app.element.io/#/room/%23sdcfy_space%3Amatrix.org",
 				description: "Share your art on the official SD-CFY matrix server",
 				onclick: async () => {
 				  showShareDialog('matrix').then((suc) => {

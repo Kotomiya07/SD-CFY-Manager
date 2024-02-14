@@ -245,9 +245,9 @@ def gen_json(node_info):
     # scan from .py file
     node_files, node_dirs = get_nodes(temp_dir)
 
-    comfyui_path = os.path.abspath(os.path.join(temp_dir, "SD-CFY"))
-    node_dirs.remove(comfyui_path)
-    node_dirs = [comfyui_path] + node_dirs
+    sdcfy_path = os.path.abspath(os.path.join(temp_dir, "SD-CFY"))
+    node_dirs.remove(sdcfy_path)
+    node_dirs = [sdcfy_path] + node_dirs
 
     data = {}
     for dirname in node_dirs:

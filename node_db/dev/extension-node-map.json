@@ -625,7 +625,7 @@
             "title_aux": "TatToolkit"
         }
     ],
-    "https://github.com/jn-jairo/jn_node_suite_comfyui": [
+    "https://github.com/jn-jairo/jn_node_suite_sdcfy": [
         [
             "JN_AreaInfo",
             "JN_AreaNormalize",
@@ -699,7 +699,7 @@
             "JN_VAEPatch"
         ],
         {
-            "title_aux": "jn_node_suite_comfyui [WIP]"
+            "title_aux": "jn_node_suite_sdcfy [WIP]"
         }
     ],
     "https://github.com/kadirnar/SD-CFY-Transformers": [
@@ -710,7 +710,7 @@
             "title_aux": "SD-CFY-Transformers"
         }
     ],
-    "https://github.com/kadirnar/comfyui_helpers": [
+    "https://github.com/kadirnar/sdcfy_helpers": [
         [
             "CLIPSeg",
             "CircularVAEDecode",
@@ -740,7 +740,7 @@
             "NoisyLatentPerlin"
         ],
         {
-            "title_aux": "comfyui_helpers"
+            "title_aux": "sdcfy_helpers"
         }
     ],
     "https://github.com/kappa54m/SD-CFY_Usability": [

@@ -131,7 +131,7 @@ def gitpull(path):
     repo.close()
 
 
-def checkout_comfyui_hash(target_hash):
+def checkout_sdcfy_hash(target_hash):
     repo_path = os.path.join(working_directory, '..')  # SD-CFY dir
 
     repo = git.Repo(repo_path)
@@ -272,11 +272,11 @@ def apply_snapshot(target):
             with open(path, 'r', encoding="UTF-8") as json_file:
                 info = json.load(json_file)
 
-                comfyui_hash = info['sdcfy']
+                sdcfy_hash = info['sdcfy']
                 git_custom_node_infos = info['git_custom_nodes']
                 file_custom_node_infos = info['file_custom_nodes']
 
-                checkout_comfyui_hash(comfyui_hash)
+                checkout_sdcfy_hash(sdcfy_hash)
                 checkout_custom_node_hash(git_custom_node_infos)
                 invalidate_custom_node_file(file_custom_node_infos)
 

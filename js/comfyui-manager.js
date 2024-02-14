@@ -187,7 +187,7 @@ docStyle.innerHTML = `
 
 document.head.appendChild(docStyle);
 
-var update_comfyui_button = null;
+var update_sdcfy_button = null;
 var fetch_updates_button = null;
 var update_all_button = null;
 var badge_mode = "none";
@@ -501,13 +501,13 @@ function drawBadge(node, orig, restArgs) {
 
 
 async function updateSD-CFY() {
-	let prev_text = update_comfyui_button.innerText;
-	update_comfyui_button.innerText = "Updating SD-CFY...";
-	update_comfyui_button.disabled = true;
-	update_comfyui_button.style.backgroundColor = "gray";
+	let prev_text = update_sdcfy_button.innerText;
+	update_sdcfy_button.innerText = "Updating SD-CFY...";
+	update_sdcfy_button.disabled = true;
+	update_sdcfy_button.style.backgroundColor = "gray";
 
 	try {
-		const response = await api.fetchApi('/comfyui_manager/update_comfyui');
+		const response = await api.fetchApi('/sdcfy_manager/update_sdcfy');
 
 		if (response.status == 400) {
 			app.ui.dialog.show('Failed to update SD-CFY.');
@@ -532,9 +532,9 @@ async function updateSD-CFY() {
 		return false;
 	}
 	finally {
-		update_comfyui_button.disabled = false;
-		update_comfyui_button.innerText = prev_text;
-		update_comfyui_button.style.backgroundColor = "";
+		update_sdcfy_button.disabled = false;
+		update_sdcfy_button.innerText = prev_text;
+		update_sdcfy_button.style.backgroundColor = "";
 	}
 }
 
@@ -602,7 +602,7 @@ async function updateAll(update_check_checkbox, manager_dialog) {
 		var mode = manager_instance.datasrc_combo.value;
 
 		update_all_button.innerText = "Updating all...";
-		const response1 = await api.fetchApi('/comfyui_manager/update_comfyui');
+		const response1 = await api.fetchApi('/sdcfy_manager/update_sdcfy');
 		const response2 = await api.fetchApi(`/customnode/update_all?mode=${mode}`);
 
 		if (response1.status != 200 && response2.status != 201) {
@@ -683,7 +683,7 @@ class ManagerMenuDialog extends ComfyDialog {
 	createControlsMid() {
 		let self = this;
 
-		update_comfyui_button =
+		update_sdcfy_button =
 			$el("button.cm-button", {
 				type: "button",
 				textContent: "Update SD-CFY",
@@ -756,7 +756,7 @@ class ManagerMenuDialog extends ComfyDialog {
 
 				$el("br", {}, []),
 				update_all_button,
-				update_comfyui_button,
+				update_sdcfy_button,
 				fetch_updates_button,
 
 				$el("br", {}, []),

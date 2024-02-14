@@ -1,7 +1,7 @@
 {
    "items": [
      {
-       "id":"https://github.com/Fannovel16/comfyui_controlnet_aux",
+       "id":"https://github.com/Fannovel16/sdcfy_controlnet_aux",
        "tags":"controlnet",
        "description": "This extension provides preprocessor nodes for using controlnet."
      },
@@ -76,7 +76,7 @@
        "description": "This extension generates clip text by taking an image as input and using the Deepbooru model."
      },
      {
-       "id":"https://github.com/szhublox/ambw_comfyui",
+       "id":"https://github.com/szhublox/ambw_sdcfy",
        "tags":"supermerger",
        "description": "This node takes two models, merges individual blocks together at various ratios, and automatically rates each merge, keeping the ratio with the highest score. "
      },
